@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {Image} from "@danilandreev/material-docs";
+import {Image} from "@material-docs/core";
 // or
-import Image from "@danilandreev/material-docs/components/Image";
+import Image from "@material-docs/core/components/Image";
 `.trim();
 
 export default function ImageAPI() {

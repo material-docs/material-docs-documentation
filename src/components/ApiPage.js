@@ -16,7 +16,7 @@ import {
     TableCell,
     TableHead,
     TableRow
-} from "@danilandreev/material-docs";
+} from "@material-docs/core";
 import {makeStyles} from "@material-ui/core/styles";
 import {grey, purple} from "@material-ui/core/colors";
 import clsx from "clsx";

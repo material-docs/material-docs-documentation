@@ -6,13 +6,13 @@
 import React from "react";
 import {Link} from "@material-ui/core";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {LanguageSelector} from "@danilandreev/material-docs";
+import {LanguageSelector} from "@material-docs/core";
 // or
-import LanguageSelector from "@danilandreev/material-docs/components/LanguageSelector";
+import LanguageSelector from "@material-docs/core/components/LanguageSelector";
 `.trim();
 
 export default function LanguageSelectorAPI() {

@@ -6,13 +6,13 @@
 import React from "react";
 import {Link} from "@material-ui/core";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {PagesGroup} from "@danilandreev/material-docs";
+import {PagesGroup} from "@material-docs/core";
 // or
-import PagesGroup from "@danilandreev/material-docs/components/PagesGroup";
+import PagesGroup from "@material-docs/core/components/PagesGroup";
 `.trim();
 
 export default function PagesGroupAPI() {

@@ -4,20 +4,20 @@
  */
 
 import React from "react";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H2, H3} from "@danilandreev/material-docs/components";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import ListItemContained from "@danilandreev/material-docs/components/ListItemContained/ListItemContained";
-import Block from "@danilandreev/material-docs/components/Block/Block";
-import Code from "@danilandreev/material-docs/components/Code/Code";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H2, H3} from "@material-docs/core/components";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import ListItemContained from "@material-docs/core/components/ListItemContained/ListItemContained";
+import Block from "@material-docs/core/components/Block/Block";
+import Code from "@material-docs/core/components/Code/Code";
 
 const startCode = `
 import React from "react";
-import DocsLayout from "@danilandreev/material-docs/layout";
-import DocsMenu from "@danilandreev/material-docs/components/DocsMenu";
-import DocsPages from "@danilandreev/material-docs/components/DocsPages";
+import DocsLayout from "@material-docs/core/layout";
+import DocsMenu from "@material-docs/core/components/DocsMenu";
+import DocsPages from "@material-docs/core/components/DocsPages";
 
 function MyMaterialDocs() {
     return (
@@ -39,7 +39,7 @@ function MyMaterialDocs() {
 
 const pageCode = `
 import React from "react";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage";
+import DocsPage from "@material-docs/core/components/DocsPage";
 
 function PageAboutMe() {
     return(

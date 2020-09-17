@@ -14,21 +14,21 @@ import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import CardContent from "@material-ui/core/CardContent";
-import Code from "@danilandreev/material-docs/components/Code/Code";
+import Code from "@material-docs/core/components/Code/Code";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
 import {Parallax} from "react-parallax";
 import background from "./images/background.png";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Link from "@danilandreev/material-docs/components/Link/Link";
-import Bold from "@danilandreev/material-docs/components/Bold/Bold";
+import Link from "@material-docs/core/components/Link/Link";
+import Bold from "@material-docs/core/components/Bold/Bold";
 import clsx from "clsx";
 import demoScreenshotMobile from "./images/demo-screenshot-mobile.png";
 import demoScreenshotDesktop1 from "./images/demo-screenshot-desktop-1.png";
 import demoScreenshotDesktop2 from "./images/demo-screenshot-desktop-2.png";
 import Divider from "@material-ui/core/Divider";
-import useSwitchPage from "@danilandreev/material-docs/hooks/useSwitchPage";
+import useSwitchPage from "@material-docs/core/hooks/useSwitchPage";
 
 export default function MaterialDocsLanding() {
     const classes = useStyles();
@@ -105,7 +105,7 @@ export default function MaterialDocsLanding() {
                                         />
                                         <CardContent>
                                             <Typography>Install MaterialDocs's source files via npm.</Typography>
-                                            <Code theme={"darcula"}>$ npm install @danilandreev/material-docs</Code>
+                                            <Code theme={"darcula"}>$ npm install @material-docs/core</Code>
                                             <Typography>Also we recommend to use this framework with Material-UI for best
                                                 experience. But it is optional.</Typography>
                                             <Code
@@ -132,7 +132,7 @@ export default function MaterialDocsLanding() {
                                             <Typography>MaterialDocs components work without any additional setup, and don't
                                                 pollute
                                                 the global scope.</Typography>
-                                            <Code theme={"darcula"}>$ npm install @danilandreev/material-docs</Code>
+                                            <Code theme={"darcula"}>$ npm install @material-docs/core</Code>
                                             <CardActions>
                                                 <Button onClick={event => switchPage(["Tutorials", "Creating Material Docs"])}>
                                                     Explore the docs
@@ -204,7 +204,7 @@ export default function MaterialDocsLanding() {
                                                 repository</Link>
                                         </ListItem>
                                         <ListItem>
-                                            <Link href={"https://www.npmjs.com/package/@danilandreev/material-docs"}>npm
+                                            <Link href={"https://www.npmjs.com/package/@material-docs/core"}>npm
                                                 package</Link>
                                         </ListItem>
                                         <ListItem>

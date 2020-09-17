@@ -4,15 +4,15 @@
  */
 
 import React from "react";
-import {useLang} from "@danilandreev/material-docs/hooks";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H3} from "@danilandreev/material-docs/components";
-import DemoWithCode from "@danilandreev/material-docs/components/DemoWithCode/DemoWithCode";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
+import {useLang} from "@material-docs/core/hooks";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H3} from "@material-docs/core/components";
+import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
 import ImagesOverview from "../../../examples/Images/ImagesOverview";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Link from "@material-docs/core/components/Link/Link";
 
 const codeCode = `
 `.trim();

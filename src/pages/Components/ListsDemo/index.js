@@ -4,23 +4,23 @@
  */
 
 import React from "react";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H2, H3} from "@danilandreev/material-docs/components";
-import DemoWithCode from "@danilandreev/material-docs/components/DemoWithCode/DemoWithCode";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H2, H3} from "@material-docs/core/components";
+import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
 import SimpleList from "../../../examples/Lists/SimpleList";
 import Box from "@material-ui/core/Box";
 import ListWithNestedItems from "../../../examples/Lists/ListWithNestedItems";
 import DecoratedList from "../../../examples/Lists/DecoratedList";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import Link from "@material-docs/core/components/Link/Link";
 
 const SimpleListCode = `
 import React from "react";
-import List from "@danilandreev/material-docs/components/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem";
-import {H4} from "@danilandreev/material-docs/components";
+import List from "@material-docs/core/components/List";
+import ListItem from "@material-docs/core/components/ListItem";
+import {H4} from "@material-docs/core/components";
 
 export default function SimpleList() {
     return (
@@ -39,9 +39,9 @@ export default function SimpleList() {
 
 const ListWithNestedItemsCode = `
 import React from "react";
-import List from "@danilandreev/material-docs/components/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem";
-import ListItemContained from "@danilandreev/material-docs/components/ListItemContained/ListItemContained";
+import List from "@material-docs/core/components/List";
+import ListItem from "@material-docs/core/components/ListItem";
+import ListItemContained from "@material-docs/core/components/ListItemContained/ListItemContained";
 
 export default function ListWithNestedItems() {
     return (
@@ -71,8 +71,8 @@ export default function ListWithNestedItems() {
 
 const DecoratedListCode = `
 import React from "react";
-import List from "@danilandreev/material-docs/components/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem";
+import List from "@material-docs/core/components/List";
+import ListItem from "@material-docs/core/components/ListItem";
 
 export default function DecoratedList() {
     return (

@@ -4,9 +4,9 @@
  */
 
 import React from "react";
-import List from "@danilandreev/material-docs/components/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem";
-import {H4} from "@danilandreev/material-docs/components";
+import List from "@material-docs/core/components/List";
+import ListItem from "@material-docs/core/components/ListItem";
+import {H4} from "@material-docs/core/components";
 
 export default function SimpleList() {
     return (

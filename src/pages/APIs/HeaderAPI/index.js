@@ -5,13 +5,13 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang, Link} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {Header} from "@danilandreev/material-docs";
+import {Header} from "@material-docs/core";
 // or
-import Header from "@danilandreev/material-docs/components/Header";
+import Header from "@material-docs/core/components/Header";
 `.trim();
 
 export default function HeaderAPI() {

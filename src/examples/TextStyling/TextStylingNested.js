@@ -4,10 +4,10 @@
  */
 
 import React from "react";
-import Bold from "@danilandreev/material-docs/components/Bold";
-import Italic from "@danilandreev/material-docs/components/Italic";
-import Block from "@danilandreev/material-docs/components/Block";
-import CodeSpan from "@danilandreev/material-docs/components/CodeSpan";
+import Bold from "@material-docs/core/components/Bold";
+import Italic from "@material-docs/core/components/Italic";
+import Block from "@material-docs/core/components/Block";
+import CodeSpan from "@material-docs/core/components/CodeSpan";
 
 export default function TextStylingNested() {
     return (

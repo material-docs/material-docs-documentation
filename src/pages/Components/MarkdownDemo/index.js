@@ -3,30 +3,30 @@
  * Copyright (C) 2020.
  */
 
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
 import React from "react";
-import {H1, H2, H3} from "@danilandreev/material-docs/components";
-import DemoWithCode from "@danilandreev/material-docs/components/DemoWithCode/DemoWithCode";
+import {H1, H2, H3} from "@material-docs/core/components";
+import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
 import MarkdownOverview from "../../../examples/Markdown/MarkdownOverview";
-import {TaggingContext} from "@danilandreev/material-docs/hooks/useTags";
+import {TaggingContext} from "@material-docs/core/hooks/useTags";
 import Box from "@material-ui/core/Box";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import useLang from "@danilandreev/material-docs/hooks/useLang/useLang";
-import Table from "@danilandreev/material-docs/components/Table/Table";
-import {TableBody, TableCell, TableHead, TableRow} from "@danilandreev/material-docs";
-import CodeSpan from "@danilandreev/material-docs/components/CodeSpan/CodeSpan";
-import Block from "@danilandreev/material-docs/components/Block/Block";
-import Bold from "@danilandreev/material-docs/components/Bold/Bold";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import useLang from "@material-docs/core/hooks/useLang/useLang";
+import Table from "@material-docs/core/components/Table/Table";
+import {TableBody, TableCell, TableHead, TableRow} from "@material-docs/core";
+import CodeSpan from "@material-docs/core/components/CodeSpan/CodeSpan";
+import Block from "@material-docs/core/components/Block/Block";
+import Bold from "@material-docs/core/components/Bold/Bold";
 import ExpansionCodeMD from "../../../examples/Markdown/ExpansionCodeMD";
 import DemoWithCodeMD from "../../../examples/Markdown/DemoWithCodeMD";
 import CodeMD from "../../../examples/Markdown/CodeMD";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Link from "@material-docs/core/components/Link/Link";
 
 const MarkdownOverviewCode = `
 import React from "react";
-import Markdown from "@danilandreev/material-docs/components/Markdown";
+import Markdown from "@material-docs/core/components/Markdown";
 
 const markdown = \`
 # This is an overview markdown example
@@ -50,7 +50,7 @@ export default function MarkdownOverview() {
 
 const expansionCodeBlockExample = `
 import React from "react";
-import Markdown from "@danilandreev/material-docs/components/Markdown";
+import Markdown from "@material-docs/core/components/Markdown";
 
 const markdown = \`
 \\\`\\\`\\\`{"type": "expansion-code", "theme": "darcula", "name": "ExpansionCode in markdown"}
@@ -74,7 +74,7 @@ export default function MarkdownOverview() {
 
 const demoWithCodeBlockExample = `
 import React from "react";
-import Markdown from "@danilandreev/material-docs/components/Markdown";
+import Markdown from "@material-docs/core/components/Markdown";
 
 function HelloWorld() {
     return (
@@ -120,7 +120,7 @@ export default function DemoWithCodeMD() {
 
 const codeBlockExample = `
 import React from "react";
-import Markdown from "@danilandreev/material-docs/components/Markdown";
+import Markdown from "@material-docs/core/components/Markdown";
 
 const markdown = \`
 \\\`\\\`\\\`{"type": "code", "theme": "darcula"}

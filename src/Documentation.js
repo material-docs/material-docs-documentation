@@ -36,16 +36,16 @@ import LanguageSelectorAPI from "./pages/APIs/LanguageSelectorAPI";
 import SearchFieldAPI from "./pages/APIs/SearchFieldAPI";
 
 
-import {DocsLayout, DocsPages, PagesGroup} from "@danilandreev/material-docs";
+import {DocsLayout, DocsPages, PagesGroup} from "@material-docs/core";
 
 import RU from "./locale/RU.json";
 import EN from "./locale/EN.json";
 import ListsDemo from "./pages/Components/ListsDemo";
 import Installation from "./pages/GettingStarted/Installation";
 import LayoutDemo from "./pages/Components/LayoutDemo";
-import DocsMenu from "@danilandreev/material-docs/components/DocsMenu/DocsMenu";
-import AutoDocsMenu from "@danilandreev/material-docs/components/AutoDocsMenu/AutoDocsMenu";
-import Landing from "@danilandreev/material-docs/components/Landing/Landing";
+import DocsMenu from "@material-docs/core/components/DocsMenu/DocsMenu";
+import AutoDocsMenu from "@material-docs/core/components/AutoDocsMenu/AutoDocsMenu";
+import Landing from "@material-docs/core/components/Landing/Landing";
 import MaterialDocsLanding from "./pages/MaterialDocsLanding";
 import CreatingMaterialDocs from "./pages/Tutorials/CreatingMaterialDocs";
 import HeadersDemo from "./pages/Components/HeadersDemo";

@@ -5,13 +5,13 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang, Link} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {H5} from "@danilandreev/material-docs";
+import {H5} from "@material-docs/core";
 // or
-import H5 from "@danilandreev/material-docs/components/H5";
+import H5 from "@material-docs/core/components/H5";
 `.trim();
 
 export default function H5API() {

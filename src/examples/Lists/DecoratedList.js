@@ -4,8 +4,8 @@
  */
 
 import React from "react";
-import List from "@danilandreev/material-docs/components/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem";
+import List from "@material-docs/core/components/List";
+import ListItem from "@material-docs/core/components/ListItem";
 
 export default function DecoratedList() {
     return (

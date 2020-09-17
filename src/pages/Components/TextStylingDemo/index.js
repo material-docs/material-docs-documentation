@@ -4,24 +4,24 @@
  */
 
 import React from "react";
-import {useLang} from "@danilandreev/material-docs/hooks";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H2, H3} from "@danilandreev/material-docs/components";
-import DemoWithCode from "@danilandreev/material-docs/components/DemoWithCode/DemoWithCode";
+import {useLang} from "@material-docs/core/hooks";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H2, H3} from "@material-docs/core/components";
+import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
 import Box from "@material-ui/core/Box";
 import TextStylingOverview from "../../../examples/TextStyling/TextStylingOverview";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
 import TextStylingNested from "../../../examples/TextStyling/TextStylingNested";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Link from "@material-docs/core/components/Link/Link";
 
 const overviewCode = `
 import React from "react";
-import Bold from "@danilandreev/material-docs/components/Bold/Bold";
-import Italic from "@danilandreev/material-docs/components/Italic/Italic";
-import Block from "@danilandreev/material-docs/components/Block/Block";
-import CodeSpan from "@danilandreev/material-docs/components/CodeSpan/CodeSpan";
+import Bold from "@material-docs/core/components/Bold/Bold";
+import Italic from "@material-docs/core/components/Italic/Italic";
+import Block from "@material-docs/core/components/Block/Block";
+import CodeSpan from "@material-docs/core/components/CodeSpan/CodeSpan";
 
 export default function TextStylingOverview() {
     return(
@@ -38,10 +38,10 @@ export default function TextStylingOverview() {
 
 const nestedCode = `
 import React from "react";
-import Bold from "@danilandreev/material-docs/components/Bold/Bold";
-import Italic from "@danilandreev/material-docs/components/Italic/Italic";
-import Block from "@danilandreev/material-docs/components/Block/Block";
-import CodeSpan from "@danilandreev/material-docs/components/CodeSpan/CodeSpan";
+import Bold from "@material-docs/core/components/Bold/Bold";
+import Italic from "@material-docs/core/components/Italic/Italic";
+import Block from "@material-docs/core/components/Block/Block";
+import CodeSpan from "@material-docs/core/components/CodeSpan/CodeSpan";
 
 export default function TextStylingNested() {
     return (
