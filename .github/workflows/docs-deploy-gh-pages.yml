@@ -2,8 +2,8 @@ name: docs-deploy-gh-pages
 
 on:
   release:
-  push:
-    types: [created]
+    types: [ created ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-          ref: docs
+          ref: master
       - uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -35,4 +35,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: docs
+          branch: master
