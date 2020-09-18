@@ -3,19 +3,19 @@
  * Copyright (C) 2020.
  */
 
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
 import React from "react";
-import {H1, H2, H3} from "@danilandreev/material-docs/components";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import DemoWithCode from "@danilandreev/material-docs/components/DemoWithCode/DemoWithCode";
-import {TaggingContext} from "@danilandreev/material-docs/hooks/useTags";
+import {H1, H2, H3} from "@material-docs/core/components";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
+import {TaggingContext} from "@material-docs/core/hooks/useTags";
 import AllHeaders from "../../../examples/Headers/AllHeaders";
-import Code from "@danilandreev/material-docs/components/Code/Code";
+import Code from "@material-docs/core/components/Code/Code";
 import Box from "@material-ui/core/Box";
-import useLang from "@danilandreev/material-docs/hooks/useLang/useLang";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import useLang from "@material-docs/core/hooks/useLang/useLang";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Link from "@material-docs/core/components/Link/Link";
 
 const AllHeadersCode = `
 import React from "react";
@@ -26,7 +26,7 @@ import {
     H4,
     H5,
     H6
-} from "@danilandreev/material-docs/components";
+} from "@material-docs/core/components";
 
 export default function AllHeaders() {
     return (

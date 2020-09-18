@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {DocsMenu} from "@danilandreev/material-docs";
+import {DocsMenu} from "@material-docs/core";
 // or
-import DocsMenu from "@danilandreev/material-docs/components/DocsMenu";
+import DocsMenu from "@material-docs/core/components/DocsMenu";
 `.trim();
 
 export default function DocsMenuAPI() {

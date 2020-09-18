@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {CodeSpan} from "@danilandreev/material-docs";
+import {CodeSpan} from "@material-docs/core";
 // or
-import CodeSpan from "@danilandreev/material-docs/components/CodeSpan";
+import CodeSpan from "@material-docs/core/components/CodeSpan";
 `.trim();
 
 export default function CodeSpanAPI() {

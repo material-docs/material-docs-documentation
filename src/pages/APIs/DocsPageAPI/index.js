@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {DocsPage} from "@danilandreev/material-docs";
+import {DocsPage} from "@material-docs/core";
 // or
-import DocsPage from "@danilandreev/material-docs/components/DocsPage";
+import DocsPage from "@material-docs/core/components/DocsPage";
 `.trim();
 
 export default function DocsPageAPI() {

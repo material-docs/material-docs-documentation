@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import Markdown from "@danilandreev/material-docs/components/Markdown";
+import Markdown from "@material-docs/core/components/Markdown";
 
 function HelloWorld() {
     return (

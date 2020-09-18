@@ -4,21 +4,21 @@
  */
 
 import React from "react";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H2, H3, H4} from "@danilandreev/material-docs/components";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H2, H3, H4} from "@material-docs/core/components";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Link from "@material-ui/core/Link";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import Code from "@danilandreev/material-docs/components/Code/Code";
-import Bold from "@danilandreev/material-docs/components/Bold/Bold";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import Code from "@material-docs/core/components/Code/Code";
+import Bold from "@material-docs/core/components/Bold/Bold";
 
 const installCode = `
 // with npm
-npm install @danilandreev/material-docs
+npm install @material-docs/core
 
 // with yarn
-yarn add @danilandreev/material-docs
+yarn add @material-docs/core
 `.trim();
 
 const MUIInstallationCode = `

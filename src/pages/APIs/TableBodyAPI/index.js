@@ -6,13 +6,13 @@
 import React from "react";
 import {Link} from "@material-ui/core";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {TableBody} from "@danilandreev/material-docs";
+import {TableBody} from "@material-docs/core";
 // or
-import TableBody from "@danilandreev/material-docs/components/TableBody";
+import TableBody from "@material-docs/core/components/TableBody";
 `.trim();
 
 export default function TableBodyAPI() {

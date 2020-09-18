@@ -6,13 +6,13 @@
 import React from "react";
 import {Link} from "@material-ui/core";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {Code} from "@danilandreev/material-docs";
+import {Code} from "@material-docs/core";
 // or
-import Code from "@danilandreev/material-docs/components/Code";
+import Code from "@material-docs/core/components/Code";
 `.trim();
 
 export default function CodeAPI() {

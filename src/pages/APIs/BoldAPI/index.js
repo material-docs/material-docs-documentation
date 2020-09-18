@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {Bold} from "@danilandreev/material-docs";
+import {Bold} from "@material-docs/core";
 // or
-import Bold from "@danilandreev/material-docs/components/Bold";
+import Bold from "@material-docs/core/components/Bold";
 `.trim();
 
 export default function BoldAPI() {

@@ -5,13 +5,13 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang, Link} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {H3} from "@danilandreev/material-docs";
+import {H3} from "@material-docs/core";
 // or
-import H3 from "@danilandreev/material-docs/components/H3";
+import H3 from "@material-docs/core/components/H3";
 `.trim();
 
 export default function H3API() {

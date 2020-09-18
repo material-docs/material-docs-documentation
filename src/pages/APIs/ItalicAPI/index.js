@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-import Link from "@danilandreev/material-docs/components/Link/Link";
+import Link from "@material-docs/core/components/Link/Link";
 
 const importCode = `
-import {Italic} from "@danilandreev/material-docs";
+import {Italic} from "@material-docs/core";
 // or
-import Italic from "@danilandreev/material-docs/components/Italic";
+import Italic from "@material-docs/core/components/Italic";
 `.trim();
 
 export default function ItalicAPI() {

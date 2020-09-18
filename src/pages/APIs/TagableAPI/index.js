@@ -5,13 +5,13 @@
 
 import React from "react";
 
-import {H2, List, ListItem, useLang, Link} from "@danilandreev/material-docs";
+import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 const importCode = `
-import {Tagable} from "@danilandreev/material-docs";
+import {Tagable} from "@material-docs/core";
 // or
-import Tagable from "@danilandreev/material-docs/components/Tagable";
+import Tagable from "@material-docs/core/components/Tagable";
 `.trim();
 
 export default function TagableAPI() {

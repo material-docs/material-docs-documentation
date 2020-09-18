@@ -4,17 +4,17 @@
  */
 
 import React from "react";
-import DocsPage from "@danilandreev/material-docs/components/DocsPage/DocsPage";
-import {H1, H3} from "@danilandreev/material-docs/components";
-import Markdown from "@danilandreev/material-docs/components/Markdown/Markdown";
-import Code from "@danilandreev/material-docs/components/Code/Code";
-import List from "@danilandreev/material-docs/components/List/List";
-import ListItem from "@danilandreev/material-docs/components/ListItem/ListItem";
-import Link from "@danilandreev/material-docs/components/Link";
+import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
+import {H1, H3} from "@material-docs/core/components";
+import Markdown from "@material-docs/core/components/Markdown/Markdown";
+import Code from "@material-docs/core/components/Code/Code";
+import List from "@material-docs/core/components/List/List";
+import ListItem from "@material-docs/core/components/ListItem/ListItem";
+import Link from "@material-docs/core/components/Link";
 
 const SimpleLayoutCode = `
 import React from "react";
-import {DocsLayout, DocsPages, DocsPage, DocsMenu, DocsMenuItem} from "@danilandreev/material-docs";
+import {DocsLayout, DocsPages, DocsPage, DocsMenu, DocsMenuItem} from "@material-docs/core";
 
 export default function Documentation() {
     return (
@@ -34,7 +34,7 @@ export default function Documentation() {
 
 const LayoutWithAutoMenu = `
 import React from "react";
-import {DocsLayout, DocsPages, DocsPage, DocsMenu, DocsMenuItem, PagesGroup, AutoDocsMenu} from "@danilandreev/material-docs";
+import {DocsLayout, DocsPages, DocsPage, DocsMenu, DocsMenuItem, PagesGroup, AutoDocsMenu} from "@material-docs/core";
 
 export default function Documentation() {
     return (
