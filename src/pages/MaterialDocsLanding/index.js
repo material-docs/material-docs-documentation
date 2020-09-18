@@ -5,7 +5,7 @@
 
 import React from "react";
 import {useStyles} from "./classes";
-import LogoWide from "./images/MaterialDocsLogoOverview.png";
+import LogoWide from "./images/MaterialDocsLogoOverview.svg";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -18,7 +18,7 @@ import Code from "@material-docs/core/components/Code/Code";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
 import {Parallax} from "react-parallax";
-import background from "./images/background.png";
+import background from "./images/back1_v002.png";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Link from "@material-docs/core/components/Link/Link";
