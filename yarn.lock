@@ -1310,10 +1310,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.3.tgz#c945cd153af68822670d64c098d6ccb8496507cf"
-  integrity sha512-MLtRphlPMOVNtFWJH1WUJXFnmtWNX2SVE7mEbO73pLxovJEt6U6LjO/hVBznYf8HtxB3pd3jwfHOE2/yS8cPew==
+"@material-docs/core@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.4.tgz#38a44257d95cfc3148f29f0d30be97ddccf9a2d1"
+  integrity sha512-qpm3UUKZ9F/KVk++BxGz5dLXEDJXMEkakHqyPiNKhuRwpEXDc0lz3om00KoPbrNAR7TYuf605Ya4fxeatFUsfQ==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
@@ -1333,17 +1333,15 @@
     react-syntax-highlighter "^13.0.0"
     routing-manager "^2.0.4"
 
-"@material-docs/react-components-docs-extension@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.7.tgz#c3d63ae6ce63e38371872be960cce0e4a45ec6df"
-  integrity sha512-77vaQSd4lVovfu3oVu+3VFwNdSM4yMHSpJolcaZ7vRxCBEwkv4mWFhPugMLtdbUXmlgbTELYKk+4fBT9jDmfYg==
+"@material-docs/react-components-docs-extension@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.9.tgz#17af89e13e990328fcaf8813a8d43377442546e1"
+  integrity sha512-YHGH+EgRQUeWFctx/f6D2zZG0pcXDo3n9CS81Gf29GliQpZvfkFhIOW3N3uXAbE7rM+qbEjEepWEE9BQUNKslw==
   dependencies:
-    "@material-docs/core" "^0.4.3"
     "@material-ui/core" "^4.11.0"
     "@material-ui/styles" "^4.10.0"
     clsx "^1.1.1"
-    react "^16.13.1"
-    react-dom "^16.13.1"
+    prop-types "^15.7.2"
     react-scripts "3.4.3"
 
 "@material-ui/core@^4.11.0":

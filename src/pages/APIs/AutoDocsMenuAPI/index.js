@@ -40,12 +40,18 @@ export default function AutoDocsMenuAPI() {
             searchTags={["auto", "menu", "docs", "system", "api"]}
         >
             <ReactComponentApiPageSummary>
-                <H3>The API documentation of the React component.</H3>
+                <H3 noTag noDivider>
+                    <Markdown data={{name: "AutoDocsMenu"}} typographyInheritSize inline>
+                        The API documentation of the &&name React component. Learn more about the props and the CSS customization points.
+                    </Markdown>
+                </H3>
             </ReactComponentApiPageSummary>
             <ReactComponentApiPageImport>
                 <Code theme={"darcula"}>{importCode}</Code>
                 <Markdown>
-                    You can learn more about the difference by [reading this guide](https://...).
+                    You can learn more about the difference by [reading this guide](https://material-ui.com/guides/minimizing-bundle-size/).
+                    ## Component name
+
                 </Markdown>
             </ReactComponentApiPageImport>
             <ReactComponentApiPageProps>
