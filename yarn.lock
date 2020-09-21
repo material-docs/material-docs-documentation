@@ -1301,10 +1301,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.3.6":
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.3.6.tgz#06f58bd27b86d195455b20ed2623ef2e0a7e21ae"
-  integrity sha512-m7/8Cbx0POgZfawirVMpA4f/M81IVdl30VtDRWmN0c7HKb+rQ7PvGgS1Xcq5jNjD7C5K5gURr+qs8K66YMP1/Q==
+"@material-docs/core@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.1.tgz#00fa9b8556989dee26594174af002ad3dadcafd9"
+  integrity sha512-41ryomVh9xS9iZligetuSmTKWLQgb3CpxDkAe33ZFkD1PA04iyAfR0mJXz9xWd4e8W6bQ1aFCXJMnlaPx9flcQ==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
@@ -1323,6 +1323,42 @@
     react-scripts "3.4.1"
     react-syntax-highlighter "^13.0.0"
     routing-manager "^2.0.4"
+
+"@material-docs/core@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.2.tgz#adedf66982d26dc85d824b661ae6c0a663d69cfd"
+  integrity sha512-qu3A0m70MKEt1wl5SIOJg+V9+UL/LFOa7cjKaLg5MRYe57UUNum+Bdr0+viwNfLH/ylrQT1p01LIJViv3tn2lw==
+  dependencies:
+    "@material-ui/core" "^4.11.0"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/styles" "^4.10.0"
+    clsx "^1.1.1"
+    helmet "^4.1.0"
+    lodash "^4.17.20"
+    marked "^1.1.1"
+    notistack "^0.9.17"
+    prop-types "^15.7.2"
+    react "^16.13.1"
+    react-dom "^16.13.1"
+    react-helmet-async "^1.0.6"
+    react-lazy-load-image-component "^1.5.0"
+    react-router-dom "^5.2.0"
+    react-scripts "3.4.1"
+    react-syntax-highlighter "^13.0.0"
+    routing-manager "^2.0.4"
+
+"@material-docs/react-components-docs-extension@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.5.tgz#e246aa74a677eb82f7e229218c95ad15f7c75d44"
+  integrity sha512-Ok6hyCukSZ36i3iBgDhB9SLztKZzpmICqCvgMDlcnocWcGMCGZPEHzJDXff6mZPmlINqkX1vF/Ehlbnsi43K4w==
+  dependencies:
+    "@material-docs/core" "^0.4.2"
+    "@material-ui/core" "^4.11.0"
+    "@material-ui/styles" "^4.10.0"
+    clsx "^1.1.1"
+    react "^16.13.1"
+    react-dom "^16.13.1"
+    react-scripts "3.4.3"
 
 "@material-ui/core@^4.11.0":
   version "4.11.0"
