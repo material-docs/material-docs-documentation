@@ -22,44 +22,15 @@ import ReactComponentApiPageFooter
 import Style from "@material-docs/react-components-docs-extension/components/Style";
 import Prop from "@material-docs/react-components-docs-extension/components/Prop";
 import Markdown from "@material-docs/core/components/Markdown/Markdown";
-import {H3} from "@material-docs/core/components/H3/H3";
+import H3 from "@material-docs/core/components/H3";
 import Code from "@material-docs/core/components/Code/Code";
-
-const importCode = `
-import {AutoDocsMenu} from "@material-docs/core";
-// or
-import AutoDocsMenu from "@material-docs/core/components/AutoDocsMenu";
-`.trim();
-
-// export default function AutoDocsMenuAPI() {
-//     const {lang} = useLang();
-//     const locale = lang.locale.pages.AutoDocsMenuAPI;
-//     const localeSpells = lang.locale.common.spells;
-//     const componentAPILocale = lang.locale.common.ComponentAPI;
-//
-//     return (
-//         <ApiPage
-//             lang={lang}
-//             localeName={"AutoDocsMenuAPI"}
-//             searchTags={["auto", "menu", "docs", "system", "api"]}
-//             name={"AutoDocsMenu"}
-//             importCode={importCode}
-//         >
-//             <H2>Demos</H2>
-//             <List>
-//                 <ListItem><Link page={["Components", "Layout"]}>Layout</Link></ListItem>
-//             </List>
-//         </ApiPage>
-//     );
-// }
+import importCode from "./importCode.md";
 
 export default function AutoDocsMenuAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.AutoDocsMenuAPI;
     const localeSpells = lang.locale.common.spells;
     const componentAPILocale = lang.locale.common.ComponentAPI;
-
-    console.log(lang);
 
     return (
         <ReactComponentApiPage
@@ -68,29 +39,26 @@ export default function AutoDocsMenuAPI() {
 
             searchTags={["auto", "menu", "docs", "system", "api"]}
         >
-            {/*<ReactComponentApiPageSummary>*/}
-            {/*    <H3>The API documentation of the React component.</H3>*/}
-            {/*</ReactComponentApiPageSummary>*/}
-            {/*<ReactComponentApiPageImport>*/}
-            {/*    <Code theme={"darcula"}>*/}
-            {/*        import Component from "./lib/MyComponent";*/}
-            {/*        import Component from "./lib";*/}
-            {/*    </Code>*/}
-            {/*    <Markdown>*/}
-            {/*        You can learn more about the difference by [reading this guide](https://...).*/}
-            {/*    </Markdown>*/}
-            {/*</ReactComponentApiPageImport>*/}
-            {/*<ReactComponentApiPageProps>*/}
-            {/*    <Prop name={"children"} type={"node"} def={"null"}>Children of an element</Prop>*/}
-            {/*    <Prop name={"name"} type={"string"} def={"\"\""}>Your name</Prop>*/}
-            {/*</ReactComponentApiPageProps>*/}
-            {/*<ReactComponentApiPageStyles>*/}
-            {/*    <Style name={"root"} global={"Mui-root"}>Styles applied to the root element</Style>*/}
-            {/*    <Style name={"link"} global={"Mui-link"}>Styles applied to the link element</Style>*/}
-            {/*</ReactComponentApiPageStyles>*/}
-            {/*<ReactComponentApiPageFooter>*/}
-            {/*    More information...*/}
-            {/*</ReactComponentApiPageFooter>*/}
+            <ReactComponentApiPageSummary>
+                <H3>The API documentation of the React component.</H3>
+            </ReactComponentApiPageSummary>
+            <ReactComponentApiPageImport>
+                <Code theme={"darcula"}>{importCode}</Code>
+                <Markdown>
+                    You can learn more about the difference by [reading this guide](https://...).
+                </Markdown>
+            </ReactComponentApiPageImport>
+            <ReactComponentApiPageProps>
+                <Prop name={"children"} type={"node"} def={"null"}>Children of an element</Prop>
+                <Prop name={"name"} type={"string"} def={"\"\""}>Your name</Prop>
+            </ReactComponentApiPageProps>
+            <ReactComponentApiPageStyles>
+                <Style name={"root"} global={"Mui-root"}>Styles applied to the root element</Style>
+                <Style name={"link"} global={"Mui-link"}>Styles applied to the link element</Style>
+            </ReactComponentApiPageStyles>
+            <ReactComponentApiPageFooter>
+                More information...
+            </ReactComponentApiPageFooter>
         </ReactComponentApiPage>
     );
 }

@@ -1085,6 +1085,15 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@craco/craco@^5.6.4":
+  version "5.6.4"
+  resolved "https://registry.yarnpkg.com/@craco/craco/-/craco-5.6.4.tgz#de7a707c727864f39e6afc192fb6732c3ca45f90"
+  integrity sha512-/Qi6yPMOBC7SEZJEDI5vYaPiGFs7HzO4AAZkGB0W3MX2OCw4u4FZC+ZO6TBptGzM3QLrF7WFt5AyQnXhNBcn3A==
+  dependencies:
+    cross-spawn "^7.0.0"
+    lodash "^4.17.15"
+    webpack-merge "^4.2.2"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -1301,10 +1310,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.1.tgz#00fa9b8556989dee26594174af002ad3dadcafd9"
-  integrity sha512-41ryomVh9xS9iZligetuSmTKWLQgb3CpxDkAe33ZFkD1PA04iyAfR0mJXz9xWd4e8W6bQ1aFCXJMnlaPx9flcQ==
+"@material-docs/core@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.3.tgz#c945cd153af68822670d64c098d6ccb8496507cf"
+  integrity sha512-MLtRphlPMOVNtFWJH1WUJXFnmtWNX2SVE7mEbO73pLxovJEt6U6LjO/hVBznYf8HtxB3pd3jwfHOE2/yS8cPew==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
@@ -1324,35 +1333,12 @@
     react-syntax-highlighter "^13.0.0"
     routing-manager "^2.0.4"
 
-"@material-docs/core@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.2.tgz#adedf66982d26dc85d824b661ae6c0a663d69cfd"
-  integrity sha512-qu3A0m70MKEt1wl5SIOJg+V9+UL/LFOa7cjKaLg5MRYe57UUNum+Bdr0+viwNfLH/ylrQT1p01LIJViv3tn2lw==
+"@material-docs/react-components-docs-extension@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.7.tgz#c3d63ae6ce63e38371872be960cce0e4a45ec6df"
+  integrity sha512-77vaQSd4lVovfu3oVu+3VFwNdSM4yMHSpJolcaZ7vRxCBEwkv4mWFhPugMLtdbUXmlgbTELYKk+4fBT9jDmfYg==
   dependencies:
-    "@material-ui/core" "^4.11.0"
-    "@material-ui/icons" "^4.9.1"
-    "@material-ui/styles" "^4.10.0"
-    clsx "^1.1.1"
-    helmet "^4.1.0"
-    lodash "^4.17.20"
-    marked "^1.1.1"
-    notistack "^0.9.17"
-    prop-types "^15.7.2"
-    react "^16.13.1"
-    react-dom "^16.13.1"
-    react-helmet-async "^1.0.6"
-    react-lazy-load-image-component "^1.5.0"
-    react-router-dom "^5.2.0"
-    react-scripts "3.4.1"
-    react-syntax-highlighter "^13.0.0"
-    routing-manager "^2.0.4"
-
-"@material-docs/react-components-docs-extension@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.5.tgz#e246aa74a677eb82f7e229218c95ad15f7c75d44"
-  integrity sha512-Ok6hyCukSZ36i3iBgDhB9SLztKZzpmICqCvgMDlcnocWcGMCGZPEHzJDXff6mZPmlINqkX1vF/Ehlbnsi43K4w==
-  dependencies:
-    "@material-docs/core" "^0.4.2"
+    "@material-docs/core" "^0.4.3"
     "@material-ui/core" "^4.11.0"
     "@material-ui/styles" "^4.10.0"
     clsx "^1.1.1"
@@ -3424,6 +3410,13 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
+craco-raw-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/craco-raw-loader/-/craco-raw-loader-1.0.1.tgz#db04660a24419b09988a5b2651e627a9c3a35d2a"
+  integrity sha512-Xxtvc72WWzmkZIGJmb65c6kg7ErhHuUDH2xjY+vkouZH3W0RgeT4GN6etEDkjHvSJmFcPH9lAUXkt+xK7ks+JQ==
+  dependencies:
+    raw-loader "^1.0.0"
+
 create-ecdh@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.3.tgz#c9111b6f33045c4697f144787f9254cdc77c45ff"
@@ -3474,6 +3467,15 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+cross-spawn@^7.0.0:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
+  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
+  dependencies:
+    path-key "^3.1.0"
+    shebang-command "^2.0.0"
+    which "^2.0.1"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -6882,6 +6884,15 @@ loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -9081,6 +9092,22 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+raw-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0.tgz#3f9889e73dadbda9a424bce79809b4133ad46405"
+  integrity sha512-Uqy5AqELpytJTRxYT4fhltcKPj0TyaEpzJDcGz7DFJi+pQOOi3GjR/DOdxTkTsF+NzhnldIoG6TORaBlInUuqA==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
+
+raw-loader@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-4.0.1.tgz#14e1f726a359b68437e183d5a5b7d33a3eba6933"
+  integrity sha512-baolhQBSi3iNh1cglJjA0mYzga+wePk7vdEX//1dTFd+v4TsQlQE0jitJSNF1OIP82rdYulH7otaVmdlDaJ64A==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^2.6.5"
 
 react-app-polyfill@^1.0.6:
   version "1.0.6"
@@ -11300,6 +11327,13 @@ webpack-manifest-plugin@2.2.0:
     lodash ">=3.5 <5"
     object.entries "^1.1.0"
     tapable "^1.0.0"
+
+webpack-merge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
+  integrity sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
+  dependencies:
+    lodash "^4.17.15"
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"

@@ -47,7 +47,7 @@ export default function MaterialDocsLanding() {
                         <Button
                             size={"large"}
                             className={classes.getStartedButton}
-                            onClick={event => {debugger; switchPage(["Getting started", "Installation"])}}
+                            onClick={event => switchPage(["Getting started", "Installation"])}
                         >
                             Get started
                         </Button>
