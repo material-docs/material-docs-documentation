@@ -8,12 +8,7 @@ import React from "react";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
-
-const importCode = `
-import {DocsMenuItem} from "@material-docs/core";
-// or
-import DocsMenuItem from "@material-docs/core/components/DocsMenuItem";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function DocsMenuItemAPI() {
     const {lang} = useLang();

@@ -8,11 +8,7 @@ import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 
-const importCode = `
-import {H6} from "@material-docs/core";
-// or
-import H6 from "@material-docs/core/components/H6";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function H6API() {
     const {lang} = useLang();

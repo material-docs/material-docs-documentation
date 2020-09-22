@@ -7,12 +7,7 @@ import React from "react";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link";
-
-const importCode = `
-import {Block} from "@material-docs/core";
-// or
-import Block from "@material-docs/core/components/Block";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function BlockAPI() {
     const {lang} = useLang();

@@ -1,3 +1,0 @@
-## Demos
-* Lol
-* Kek

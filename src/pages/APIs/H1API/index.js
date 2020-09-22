@@ -8,11 +8,7 @@ import React from "react";
 import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {H1} from "@material-docs/core";
-// or
-import H1 from "@material-docs/core/components/H1";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function H1API() {
     const {lang} = useLang();

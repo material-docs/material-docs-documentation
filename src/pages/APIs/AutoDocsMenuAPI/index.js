@@ -6,9 +6,9 @@
 import React from "react";
 import ApiPage from "../../../components/ApiPage";
 import importCode from "./importCode.md";
-import demos from "./demos.md";
-import Markdown from "@material-docs/core/components/Markdown";
 import useLang from "@material-docs/core/hooks/useLang";
+import {H2, List, ListItem} from "@material-docs/core";
+import Link from "@material-docs/core/components/Link";
 
 
 export default function AutoDocsMenuAPI() {
@@ -25,7 +25,10 @@ export default function AutoDocsMenuAPI() {
             ]}
             enableCss={false}
         >
-            <Markdown>{demos}</Markdown>
+            <H2>Demos</H2>
+            <List>
+                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
+            </List>
         </ApiPage>
     );
 }

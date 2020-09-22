@@ -8,11 +8,7 @@ import React from "react";
 import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {Header} from "@material-docs/core";
-// or
-import Header from "@material-docs/core/components/Header";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function HeaderAPI() {
     const {lang} = useLang();

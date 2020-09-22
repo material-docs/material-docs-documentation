@@ -9,11 +9,7 @@ import {Link} from "@material-ui/core";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {TableBody} from "@material-docs/core";
-// or
-import TableBody from "@material-docs/core/components/TableBody";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function TableBodyAPI() {
     const {lang} = useLang();

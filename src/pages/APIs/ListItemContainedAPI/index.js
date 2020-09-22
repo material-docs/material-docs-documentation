@@ -9,11 +9,7 @@ import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
-const importCode = `
-import {ListItemContained} from "@material-docs/core";
-// or
-import ListItemContained from "@material-docs/core/components/ListItemContained";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function ListItemContainedAPI() {
     const {lang} = useLang();

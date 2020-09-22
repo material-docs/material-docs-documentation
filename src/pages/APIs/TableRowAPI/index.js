@@ -8,12 +8,7 @@ import {Link} from "@material-ui/core";
 
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
-
-const importCode = `
-import {TableRow} from "@material-docs/core";
-// or
-import TableRow from "@material-docs/core/components/TableRow";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function TableRowAPI() {
     const {lang} = useLang();

@@ -9,11 +9,7 @@ import {Link} from "@material-ui/core";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {PagesGroup} from "@material-docs/core";
-// or
-import PagesGroup from "@material-docs/core/components/PagesGroup";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function PagesGroupAPI() {
     const {lang} = useLang();

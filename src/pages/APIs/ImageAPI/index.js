@@ -9,12 +9,7 @@ import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
-const importCode = `
-import {Image} from "@material-docs/core";
-// or
-import Image from "@material-docs/core/components/Image";
-`.trim();
-
+import importCode from "./importCode.md";
 export default function ImageAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.ImageAPI;

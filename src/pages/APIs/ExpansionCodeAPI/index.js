@@ -9,11 +9,7 @@ import {Link} from "@material-ui/core";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {ExpansionCode} from "@material-docs/core";
-// or
-import ExpansionCode from "@material-docs/core/components/ExpansionCode";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function ExpansionCodeAPI() {
     const {lang} = useLang();

@@ -9,11 +9,7 @@ import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
-const importCode = `
-import {Bold} from "@material-docs/core";
-// or
-import Bold from "@material-docs/core/components/Bold";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function BoldAPI() {
     const {lang} = useLang();
