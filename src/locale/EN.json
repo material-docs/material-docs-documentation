@@ -3,6 +3,12 @@
   "label": "English",
   "locale": {
     "pages": {
+      "CodeDemo": {
+        "searchDescription": "",
+        "searchTags": {
+
+        }
+      },
       "ImagesDemo": {
         "pageAbout": "Pictures are needed in order to visually demonstrate some information",
         "infoBlock": "You don't have to worry about page loading speed due to large images. The __Image__ component supports __lazy loading__ technology."
@@ -858,8 +864,6 @@
               "page": "page",
               "preset": "preset"
             }
-
-
           },
           "RCDEPropAPI": {
             "searchDescription": "API documentation of the RCDE Prop component.",

@@ -4,12 +4,11 @@
  */
 
 import React from "react";
-import {Link} from "@material-ui/core";
-
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 import importCode from "./importCode.md";
+import Link from "@material-docs/core/components/Link";
 
 export default function CodeAPI() {
     const {lang} = useLang();
@@ -33,7 +32,7 @@ export default function CodeAPI() {
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link>Code showing</Link></ListItem>
+                <ListItem><Link page={["Components", "Code showers"]}>Code showing</Link></ListItem>
             </List>
         </ApiPage>
     );

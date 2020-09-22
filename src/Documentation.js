@@ -66,6 +66,7 @@ import RCDEReactComponentApiPageAPI
 import RCDEStyleAPI from "./pages/Extensions/ReactComponentsDocsExtension/APIs/StyleAPI";
 import ReactComponentApiPageDemo
     from "./pages/Extensions/ReactComponentsDocsExtension/Components/ReactComponentApiPageDemo";
+import CodeDemo from "./pages/Components/Code";
 
 
 export default function Documentation() {
@@ -107,6 +108,7 @@ export default function Documentation() {
                     <Installation/>
                 </PagesGroup>
                 <PagesGroup name={"Components"}>
+                    <CodeDemo/>
                     <ListsDemo/>
                     <LayoutDemo/>
                     <HeadersDemo/>
@@ -164,6 +166,9 @@ export default function Documentation() {
                             <RCDEReactComponentApiPageAPI />
                         </PagesGroup>
                     </PagesGroup>
+                </PagesGroup>
+                <PagesGroup name={"System"}>
+
                 </PagesGroup>
             </DocsPages>
         </DocsLayout>

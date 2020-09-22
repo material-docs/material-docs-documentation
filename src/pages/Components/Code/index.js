@@ -9,43 +9,79 @@ import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
 import {H1, H3} from "@material-docs/core/components";
 import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
 import Markdown from "@material-docs/core/components/Markdown/Markdown";
-import ImagesOverview from "../../../examples/Images/ImagesOverview";
 import List from "@material-docs/core/components/List/List";
 import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Link from "@material-docs/core/components/Link/Link";
 
-const codeCode = `
-`.trim();
+import codeCode from "../../../examples/Code/codeExample.md";
+import convertJsonToArray from "../../../utils/convertJsonToArray";
+import CodeExample from "../../../examples/Code/CodeExample";
+import Box from "@material-ui/core/Box";
 
-const expansionCodeCode = `
-`.trim();
+import expansionCodeCode from "../../../examples/Code/expansionCodeExample.md";
+import ExpansionCodeExample from "../../../examples/Code/ExpansionCodeExample";
 
-const demoWithCodeCode = `
-`.trim();
+import {TaggingContext} from "@material-docs/core/hooks/useTags"
 
-export default function ImagesDemo() {
+import demoWithCodeCode from "../../../examples/Code/expansionCodeExample.md";
+import DemoWithCodeExample from "../../../examples/Code/DemoWithCodeExpample";
+
+export default function CodeDemo() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.ImagesDemo;
+    const locale = lang.locale.pages.CodeDemo;
+
     return (
         <DocsPage
-            name={"Images"}
-            searchLabel={"Text decorators"}
-            searchDescription={"Text styling demonstration page."}
-            keys={["text", "styling", "decoration", "wrappers", "demo"]}
+            name={"Code showers"}
+            searchDescription={locale.searchDescription}
+            searchTags={convertJsonToArray(locale.searchTags)}
         >
-            <H1>Images</H1>
-            <H3 noTag noDivider>{locale.pageAbout}</H3>
-            <Markdown>{locale.infoBlock}</Markdown>
+            <H1>Code showers</H1>
+            <H3 noTag noDivider>Code showers - React components, designed to help you to share your source code.</H3>
+            <Markdown>asd</Markdown>
             <DemoWithCode
-                code={overviewCode}
+                name={"<Code/>"}
+                code={codeCode}
                 theme={"darcula"}
                 paperContainer
+                actions={[{label: "Source code", link: ""}]}
             >
-                <ImagesOverview/>
+                <Box p={1}>
+                    <CodeExample />
+                </Box>
+            </DemoWithCode>
+            <DemoWithCode
+                name={"<ExpansionCode/>"}
+                code={expansionCodeCode}
+                theme={"darcula"}
+                paperContainer
+                actions={[{label: "Source code", link: ""}]}
+            >
+                <Box p={1}>
+                    <TaggingContext.Provider value={{setTag: () => {}, removeTag: () => {}}}>
+                        <ExpansionCodeExample />
+                    </TaggingContext.Provider>
+                </Box>
+            </DemoWithCode>
+            <DemoWithCode
+                name={"<DemoWithCode/>"}
+                code={demoWithCodeCode}
+                theme={"darcula"}
+                actions={[{label: "Source code", link: ""}]}
+                paperContainer
+                actions={[{label: "Source code", link: ""}]}
+            >
+                <Box p={1}>
+                    <TaggingContext.Provider value={{setTag: () => {}, removeTag: () => {}}}>
+                        <DemoWithCodeExample />
+                    </TaggingContext.Provider>
+                </Box>
             </DemoWithCode>
             <H3>APIs</H3>
             <List>
-                <ListItem><Link page={["Component APIs", "Image"]}>Image</Link></ListItem>
+                <ListItem><Link page={["Component APIs", "Code"]}>Code</Link></ListItem>
+                <ListItem><Link page={["Component APIs", "DemoWithCode"]}>DemoWithCode</Link></ListItem>
+                <ListItem><Link page={["Component APIs", "ExpansionCode"]}>ExpansionCode</Link></ListItem>
             </List>
         </DocsPage>
     );
