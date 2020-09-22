@@ -149,6 +149,9 @@ export default function Documentation() {
                 <PagesGroup name={"Tutorials"}>
                     <CreatingMaterialDocs/>
                 </PagesGroup>
+                <PagesGroup name={"Extensions"}>
+
+                </PagesGroup>
             </DocsPages>
         </DocsLayout>
     );
