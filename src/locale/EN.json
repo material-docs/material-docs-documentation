@@ -111,57 +111,21 @@
         ]
       },
       "DocsPageAPI": {
-        "pageAbout": "The API documentation of the DocsPage React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsPage - react component, designed to provide user with page functional",
-        "ComponentNameHeader": "Component name",
-        "ComponentNameText": "The DocsPage name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "name",
-            "type": "string",
-            "default": "",
-            "description": "Page name. Route will be generated automatically from name."
-          },
-          {
-            "name": "searchTags",
-            "type": "string[]",
-            "default": "",
-            "description": "Keywords for search engine."
-          },
-          {
-            "name": "searchLabel",
-            "type": "string",
-            "default": "",
-            "description": "Label text, displayed in search result if page match search requirements."
-          },
-          {
-            "name": "searchDescription",
-            "type": "string",
-            "default": "",
-            "description": "Description text, displayed in search result if page match search requirements."
-          },
-          {
-            "name": "noGenerateAutoSearch",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, page will not generate search items from pages automatically."
-          },
-          {
-            "name": "noAutoMenu",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, page will not participate in auto menu generation."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "DocsPage - react component, designed to provide user with page functional",
+        "searchTags": {
+          "docs": "docs",
+          "page": "page",
+          "api": "api"
+        },
+        "props": {
+          "name": "Page name. Route will be generated automatically from name.",
+          "searchTags": "Keywords for search engine.",
+          "searchLabel": "Label text, displayed in search result if page match search requirements.",
+          "searchDescription": "Description text, displayed in search result if page match search requirements.",
+          "noGenerateAutoSearch": "If true, page will not generate search items from pages automatically.",
+          "noAutoMenu": "If true, page will not participate in auto menu generation.",
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "contentItem": "Styles applied to the item element of content panel.",
@@ -321,56 +285,22 @@
         }
       },
       "ExpansionCodeAPI": {
-        "pageAbout": "The API documentation of the ExpansionCode React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "ExpansionCode - react component, designed to show code in collapsable blocks. User can view full code or part of code.",
-        "ComponentNameText": "The ExpansionCode name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "name",
-            "type": "string",
-            "default": "",
-            "description": "Name of the code block. If defined - it will appear in H3 header in ExpansionCode toolbar."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true and name prop is true - header will not generate tags fot content panel."
-          },
-          {
-            "name": "collapsedHeight",
-            "type": "number | string",
-            "default": "100px",
-            "description": "Height of the component when it is collapsed."
-          },
-          {
-            "name": "actions",
-            "type": "DemoCodeAction[]",
-            "default": "",
-            "description": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button."
-          },
-          {
-            "name": "theme",
-            "type": "\"light\" | \"dark\" | \"darcula\"",
-            "default": "\"light\"",
-            "description": "Code highlighting and background styling type."
-          },
-          {
-            "name": "language",
-            "type": "string",
-            "default": "\"javascript\"",
-            "description": "Language name for code highlighter."
-          },
-          {
-            "name": "children",
-            "type": "string",
-            "default": "\"light\"",
-            "description": "Code to display in code highlighter. This code will appear in the Code block if component is expanded."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "ExpansionCode - react component, designed to show code in collapsable blocks. User can view full code or part of code.",
+        "searchTags": {
+          "demo": "demo",
+          "with": "with",
+          "code": "code",
+          "api": "api"
+        },
+        "props": {
+          "name": "Name of the code block. If defined - it will appear in H3 header in ExpansionCode toolbar.",
+          "noTag": "If true and name prop is true - header will not generate tags fot content panel.",
+          "collapsedHeight": "Height of the component when it is collapsed.",
+          "actions": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button.",
+          "theme": "Code highlighting and background styling type.",
+          "language": "Language name for code highlighter.",
+          "children": "Code to display in code highlighter. This code will appear in the Code block if component is expanded."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "collapsedCode": "Styles applied to the div element between Collapse component and Code component when code is collapsed.",
@@ -485,74 +415,26 @@
         }
       },
       "DocsMenuItemAPI": {
-        "pageAbout": "The API documentation of the DocsMenuItem React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsMenuItem - react component, designed create menu items for <DocsMenu/>.",
-        "ComponentNameText": "The DocsMenuItem name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "defaultExpanded",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, panel will be expanded on startup."
-          },
-          {
-            "name": "textPrimary",
-            "type": "string",
-            "default": "",
-            "description": "Primary text form menu list item."
-          },
-          {
-            "name": "textSecondary",
-            "type": "string",
-            "default": "",
-            "description": "Secondary text for menu list item. Will be displayed in the bottom."
-          },
-          {
-            "name": "icon",
-            "type": "string",
-            "default": "node",
-            "description": "Icon, displayed in left corner. Used to customize menu item appearance."
-          },
-          {
-            "name": "onClick",
-            "type": "function(event: any): void",
-            "default": "",
-            "description": "Callback, will be triggered on onclick event handling."
-          },
-          {
-            "name": "page",
-            "type": "string | any",
-            "default": "",
-            "description": "Page name for redirecting or object structure for routing-manager changeRoute."
-          },
-          {
-            "name": "link",
-            "type": "string",
-            "default": "",
-            "description": "Link to the page, which includes groups. If defined - will be used with highest priority."
-          },
-          {
-            "name": "isCurrent",
-            "type": "(function(routeParams, pageRoute, page): boolean) | boolean",
-            "default": "false",
-            "description": "If equals true or function returned true, button will be active. Used when displayed page, connected to this menu item."
-          },
-          {
-            "name": "dense",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, compact vertical padding designed for keyboard and mouse input will be used for the list and list items. The prop is available to descendant components as the dense context."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "DocsMenuItem - react component, designed create menu items for <DocsMenu/>.",
+        "searchTags": {
+          "docs": "docs",
+          "menu": "menu",
+          "item": "item",
+          "api": "api",
+          "layout": "layout"
+        },
+        "props": {
+          "defaultExpanded": "If true, panel will be expanded on startup.",
+          "textPrimary": "Primary text form menu list item.",
+          "textSecondary": "Secondary text for menu list item. Will be displayed in the bottom.",
+          "icon": "Icon, displayed in left corner. Used to customize menu item appearance.",
+          "onClick": "Callback, will be triggered on onclick event handling.",
+          "page": "Page name for redirecting or object structure for routing-manager changeRoute.",
+          "link": "Link to the page, which includes groups. If defined - will be used with highest priority.",
+          "isCurrent": "If equals true or function returned true, button will be active. Used when displayed page, connected to this menu item.",
+          "dense": "If true, compact vertical padding designed for keyboard and mouse input will be used for the list and list items. The prop is available to descendant components as the dense context.",
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "highlighted": "Styles applied to the root element when prop isCurrent equals or returned true",
@@ -881,46 +763,31 @@
         }
       },
       "DocsMenuAPI": {
-        "pageAbout": "The API documentation of the DocsMenu React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsMenu - react component, designed to create menu.",
-        "ComponentNameText": "The DocsMenu name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "dense",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, menu will have smaller spacing between items."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenuItem."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": false,
-        "css": {},
-        "noCssText": "This is service element. It doesn't have any styles."
+        "searchDescription": "DocsMenu - react component, designed to create menu.",
+        "searchTags": {
+          "docs": "docs",
+          "menu": "menu",
+          "container": "container",
+          "api": "api"
+        },
+        "props": {
+          "dense": "If true, menu will have smaller spacing between items.",
+          "children": "Children of an element. Normally DocsMenuItem."
+        },
+        "css": {}
       },
       "DocsPagesAPI": {
-        "pageAbout": "The API documentation of the DocsPages React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsPages - react component, designed to create pages.",
-        "ComponentNameText": "The DocsPages name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsPage."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": false,
-        "css": {},
-        "noCssText": "This is service element. It doesn't have any styles."
+        "searchDescription": "DocsPages - react component, designed to create pages.",
+        "searchTags": {
+          "docs": "docs",
+          "pages": "pages",
+          "container": "container",
+          "api": "api"
+        },
+        "props": {
+          "children": "Children of an element. Normally DocsPage."
+        },
+        "css": {}
       },
       "ListItemContainedAPI": {
         "pageAbout": "The API documentation of the ListItemContained React component. Learn more about the props and the CSS customization points.",
@@ -941,120 +808,34 @@
         "noCssText": "This is service element. It doesn't have any styles."
       },
       "DocsLayoutAPI": {
-        "pageAbout": "The API documentation of the DocsLayout React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsLayout - react component, designed to create MaterialDocs layout.",
-        "ComponentNameText": "The DocsLayout name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "searchData",
-            "type": "SearchDataItem[]",
-            "default": "",
-            "description": "An array of SearchDataItem items to do search from."
-          },
-          {
-            "name": "noGenerateAutoSearch",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, Material Docs will not generate search items from pages automatically."
-          },
-          {
-            "name": "defaultLang",
-            "type": "Lang",
-            "default": "",
-            "description": "Default language settings."
-          },
-          {
-            "name": "langs",
-            "type": "Lang[]",
-            "default": "",
-            "description": "List of all available langs."
-          },
-          {
-            "name": "onHelpToTranslate",
-            "type": "function(lang: Lang): void",
-            "default": "",
-            "description": "Function, called on help to translate button click. If not defined - button will not be rendered."
-          },
-          {
-            "name": "router",
-            "type": "\"hash-router\" | \"browser-router\"",
-            "default": "\"browser-router\"",
-            "description": "react-router-dom Router type."
-          },
-          {
-            "name": "basename",
-            "type": "string",
-            "default": "",
-            "description": "Basename param for react-router-dom Router."
-          },
-          {
-            "name": "mask",
-            "type": "string",
-            "default": "\"/*page\"",
-            "description": "Mask for routing-manager ChangeRouteProvider routeMask property."
-          },
-          {
-            "name": "noSearchField",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, search field will not be displayed."
-          },
-          {
-            "name": "noLanguageSelector",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, language selector will not be displayed."
-          },
-          {
-            "name": "actions",
-            "type": "AppBarAction[]",
-            "default": "[]",
-            "description": "An array of actions. Will be displayed in material-ui IconButton components in Toolbar component inside AppBar."
-          },
-          {
-            "name": "keywords",
-            "type": "string[]",
-            "default": "",
-            "description": "An array of keywords of the docs for search engines. Needs for metadata."
-          },
-          {
-            "name": "author",
-            "type": "string",
-            "default": "",
-            "description": "The author of the docs. Needs for metadata."
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "default": "",
-            "description": "The description of the docs. Needs for metadata."
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "default": "",
-            "description": "Name of the docs. Needs for metadata. Will be displayed in app header. Also you can find this name near version label in side menu drawer."
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "default": "",
-            "description": "Version of the docs. Needs for metadata."
-          },
-          {
-            "name": "logo",
-            "type": "string",
-            "default": "",
-            "description": "A path to the logo image, will be displayed in drawer near name and version."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
+        "searchDescription": "DocsLayout - react component, designed to create MaterialDocs layout.",
+        "searchTags": {
+          "docs": "docs",
+          "layout": "layout",
+          "main": "main",
+          "component": "component",
+          "api": "api"
+        },
+        "props": {
+          "searchData": "An array of SearchDataItem items to do search from.",
+          "noGenerateAutoSearch": "If true, Material Docs will not generate search items from pages automatically.",
+          "defaultLang": "Default language settings.",
+          "langs": "List of all available langs.",
+          "onHelpToTranslate": "Function, called on help to translate button click. If not defined - button will not be rendered.",
+          "router": "react-router-dom Router type.",
+          "basename": "Basename param for react-router-dom Router.",
+          "mask": "Mask for routing-manager ChangeRouteProvider routeMask property.",
+          "noSearchField": "If true, search field will not be displayed.",
+          "noLanguageSelector": "If true, language selector will not be displayed.",
+          "actions": "An array of actions. Will be displayed in material-ui IconButton components in Toolbar component inside AppBar.",
+          "keywords": "An array of keywords of the docs for search engines. Needs for metadata.",
+          "author": "The author of the docs. Needs for metadata.",
+          "description": "The description of the docs. Needs for metadata.",
+          "name": "Name of the docs. Needs for metadata. Will be displayed in app header. Also you can find this name near version label in side menu drawer.",
+          "version": "Version of the docs. Needs for metadata.",
+          "logo": "A path to the logo image, will be displayed in drawer near name and version.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "forwardRef": true,
         "enableCss": true,
         "css": {
@@ -1075,228 +856,120 @@
         }
       },
       "H1API": {
-        "pageAbout": "The API documentation of the H1 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H1 - react component, designed to create H1 header.",
-        "ComponentNameText": "The MatDocH1 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H1 - react component, designed to create H1 header.",
+        "searchTags": {
+          "h1": "h1",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h1": "Styles applied to the h1 element."
         }
       },
       "H2API": {
-        "pageAbout": "The API documentation of the H2 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H2 - react component, designed to create H2 header.",
-        "ComponentNameText": "The MatDocH2 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H2 - react component, designed to create H2 header.",
+        "searchTags": {
+          "h2": "h2",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h2": "Styles applied to the h2 element."
         }
       },
       "H3API": {
-        "pageAbout": "The API documentation of the H3 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H3 - react component, designed to create H3 header.",
-        "ComponentNameText": "The MatDocH3 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H3 - react component, designed to create H3 header.",
+        "searchTags": {
+          "h3": "h3",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h3": "Styles applied to the h3 element."
         }
       },
       "H4API": {
-        "pageAbout": "The API documentation of the H4 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H4 - react component, designed to create H4 header.",
-        "ComponentNameText": "The MatDocH4 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "true",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "true",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H4 - react component, designed to create H4 header.",
+        "searchTags": {
+          "h4": "h4",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h4": "Styles applied to the h4 element."
         }
       },
       "H5API": {
-        "pageAbout": "The API documentation of the H5 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H5 - react component, designed to create H5 header.",
-        "ComponentNameText": "The MatDocH5 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "true",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "true",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H5 - react component, designed to create H5 header.",
+        "searchTags": {
+          "h5": "h5",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h5": "Styles applied to the h5 element."
         }
       },
       "H6API": {
-        "pageAbout": "The API documentation of the H6 React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "H6 - react component, designed to create H6 header.",
-        "ComponentNameText": "The MatDocH6 name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "H6 - react component, designed to create H6 header.",
+        "searchTags": {
+          "h6": "h6",
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h6": "Styles applied to the h6 element."

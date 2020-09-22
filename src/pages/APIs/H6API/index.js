@@ -4,9 +4,9 @@
  */
 
 import React from "react";
-
 import {H2, List, ListItem, useLang, Link} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
+
 
 const importCode = `
 import {H6} from "@material-docs/core";
@@ -17,16 +17,23 @@ import H6 from "@material-docs/core/components/H6";
 export default function H6API() {
     const {lang} = useLang();
     const locale = lang.locale.pages.H6API;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"H6API"}
-            searchTags={["h6", "header", "tag", "anchor", "api"]}
             name={"H6"}
+            localeName={"H6API"}
+            overrideName={"MatDoc-H6"}
             importCode={importCode}
+            properties={[
+                {name: "noDivider", type: "boolean", default: "true", description: locale.props.noDivider},
+                {name: "noTag", type: "boolean", default: "true", description: locale.props.noTag},
+                {name: "id", type: "string", default: "", description: locale.props.id},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "h1", global: "MatDoc-h1", description: locale.css.h1},
+            ]}
         >
             <H2>Demos</H2>
             <List>

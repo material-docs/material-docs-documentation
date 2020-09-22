@@ -17,16 +17,23 @@ import H1 from "@material-docs/core/components/H1";
 export default function H1API() {
     const {lang} = useLang();
     const locale = lang.locale.pages.H1API;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"H1API"}
-            searchTags={["h1", "header", "tag", "anchor", "api"]}
             name={"H1"}
+            localeName={"H1API"}
+            overrideName={"MatDoc-H1"}
             importCode={importCode}
+            properties={[
+                {name: "noDivider", type: "boolean", default: "false", description: locale.props.noDivider},
+                {name: "noTag", type: "boolean", default: "false", description: locale.props.noTag},
+                {name: "id", type: "string", default: "", description: locale.props.id},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "h1", global: "MatDoc-h1", description: locale.css.h1},
+            ]}
         >
             <H2>Demos</H2>
             <List>

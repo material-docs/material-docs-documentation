@@ -17,16 +17,23 @@ import H5 from "@material-docs/core/components/H5";
 export default function H5API() {
     const {lang} = useLang();
     const locale = lang.locale.pages.H5API;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"H5API"}
-            searchTags={["h5", "header", "tag", "anchor", "api"]}
             name={"H5"}
+            localeName={"H5API"}
+            overrideName={"MatDoc-H5"}
             importCode={importCode}
+            properties={[
+                {name: "noDivider", type: "boolean", default: "true", description: locale.props.noDivider},
+                {name: "noTag", type: "boolean", default: "true", description: locale.props.noTag},
+                {name: "id", type: "string", default: "", description: locale.props.id},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "h1", global: "MatDoc-h1", description: locale.css.h1},
+            ]}
         >
             <H2>Demos</H2>
             <List>
