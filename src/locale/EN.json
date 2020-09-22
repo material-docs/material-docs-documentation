@@ -1471,16 +1471,12 @@
         "Import": "Import"
       },
       "ComponentAPI": {
+        "summary": "The API documentation of the &&name React component. Learn more about the props and the CSS customization points.",
         "importDifferenceText": "You can learn more about the difference by [reading this guide](https://material-ui.com/guides/minimizing-bundle-size/).",
         "customization": "You can override the style of the component thanks to one of these customization points: \n* With a rule name of the  [```classes``` object prop](https://material-ui.com/customization/components/#overriding-styles-with-classes). \n* With a [global class name](https://material-ui.com/customization/components/#overriding-styles-with-global-class-names). \n* With a theme and an [```overrides``` property](https://material-ui.com/customization/globals/#css). \n\n\n If that's not sufficient, you can check the implementation of the component for more detail.",
-        "ruleName": "Rule name",
-        "ruleDescription": "Description",
-        "propName": "Name",
-        "propType": "Type",
-        "propDefault": "Default",
-        "propDescription": "Description",
-        "ComponentNameHeader": "Component name",
-        "ref": "The ```ref``` is forwarded to the root element."
+        "componentName": "## Component name  \nThe ___&&name___ name can be used for providing [default props](https://material-ui.com/customization/globals/#default-props) or [style overrides](https://material-ui.com/customization/globals/#css) at the theme level.",
+        "refText": "The ```ref``` is forwarded to the root element.",
+        "propsText": "Any other props supplied will be provided to the root element (native element)."
       }
     }
   }

@@ -1310,10 +1310,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.4.tgz#38a44257d95cfc3148f29f0d30be97ddccf9a2d1"
-  integrity sha512-qpm3UUKZ9F/KVk++BxGz5dLXEDJXMEkakHqyPiNKhuRwpEXDc0lz3om00KoPbrNAR7TYuf605Ya4fxeatFUsfQ==
+"@material-docs/core@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.5.tgz#8a8962b297dd933eb9f03511e629459655d30f83"
+  integrity sha512-oNr1mcKRnR4YxrcoBMCLh4ZDz+BOWLJFOxw6ebr7PQ+NwIAy21h/uRl3H7RfMEjjs6FbNI7kcEMWlCG2klK7OA==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
@@ -1324,8 +1324,6 @@
     marked "^1.1.1"
     notistack "^0.9.17"
     prop-types "^15.7.2"
-    react "^16.13.1"
-    react-dom "^16.13.1"
     react-helmet-async "^1.0.6"
     react-lazy-load-image-component "^1.5.0"
     react-router-dom "^5.2.0"

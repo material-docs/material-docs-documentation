@@ -4,112 +4,86 @@
  */
 
 import React from "react";
-import {
-    Code,
-    DocsPage,
-    H1,
-    H2,
-    H3,
-    Markdown,
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableRow
-} from "@material-docs/core";
-import {makeStyles} from "@material-ui/core/styles";
-import {grey, purple} from "@material-ui/core/colors";
-import clsx from "clsx";
+import {Code, H3, Markdown} from "@material-docs/core";
+import ReactComponentApiPage from "@material-docs/react-components-docs-extension/components/ReactComponentApiPage";
+import ReactComponentApiPageSummary
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageSummary";
+import ReactComponentApiPageImport
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageImport";
+import ReactComponentApiPageProps
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageProps";
+import Prop from "@material-docs/react-components-docs-extension/components/Prop";
+import ReactComponentApiPageStyles
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageStyles";
+import Style from "@material-docs/react-components-docs-extension/components/Style";
+import ReactComponentApiPageFooter
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageFooter";
+import ReactComponentApiPageDetails
+    from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageDetails";
 
 
-const useStyles = makeStyles(theme => ({
-    datatype: {
-        color: purple[800],
-    },
-    code: {
-        fontFamily: "monospace",
-        fontSize: "14px",
-    },
-    underlined: {
-        textDecoration: `underline dotted ${grey[500]}`,
-    }
-}));
-
-export default function ApiPage({lang, localeName, importCode, name, searchTags, children, ...props}) {
-    const classes = useStyles();
+export default function ApiPage(props, ref) {
+    const {
+        lang,
+        localeName,
+        importCode,
+        name,
+        properties = [],
+        css = [],
+        children,
+        enableCss = true,
+        enableProps = true,
+        refNotForwarded = false,
+        propsForwarded = false,
+        ...other
+    } = props;
     if (!lang) throw new Error(`Documentation: lang is required prop`);
     if (!localeName) throw new Error(`Documentation: localeName is required prop`);
 
     const locale = lang.locale.pages[localeName];
-    const localeSpells = lang.locale.common.spells;
     const componentAPILocale = lang.locale.common.ComponentAPI;
 
-    const showProps = !!locale.enableProps || !!locale.noPropsText;
-    const showCss = !!locale.enableCss || !!locale.noCssText;
     return (
-        <DocsPage
+        <ReactComponentApiPage
             name={name}
-            searchTags={searchTags || locale.searchTags}
-            searchDescription={locale.pageSearchDescription}
+            searchDescription={locale.searchDescription}
+            searchTags={locale.searchTags}
         >
-            <H1 noDivider>{name}</H1>
-            <H3 noDivider noTag>{locale.pageAbout}</H3>
-            <H2>{localeSpells.Import}</H2>
-            <Code language={"javascript"} theme={"darcula"}>
-                {importCode}
-            </Code>
-            <Markdown>{componentAPILocale.importDifferenceText}</Markdown>
-            <H2>{componentAPILocale.ComponentNameHeader}</H2>
-            <Markdown>{locale.ComponentNameText}</Markdown>
-            {showProps && <H2>Props</H2>}
-            {locale.enableProps &&
-            <Table>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>{componentAPILocale.propName}</TableCell>
-                        <TableCell>{componentAPILocale.propType}</TableCell>
-                        <TableCell>{componentAPILocale.propDefault}</TableCell>
-                        <TableCell>{componentAPILocale.propDescription}</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {locale.props.map(prop => (
-                        <TableRow key={prop.name}>
-                            <TableCell className={classes.code}>{prop.name}</TableCell>
-                            <TableCell className={clsx(classes.datatype, classes.code)}>{prop.type}</TableCell>
-                            <TableCell className={clsx(classes.code, classes.underlined)}>{prop.default}</TableCell>
-                            <TableCell>{prop.description}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+            <ReactComponentApiPageSummary>
+                <H3 noTag noDivider>
+                    <Markdown data={{name}} typographyInheritSize inline>
+                        {componentAPILocale.summary}
+                    </Markdown>
+                </H3>
+            </ReactComponentApiPageSummary>
+            <ReactComponentApiPageImport>
+                <Code theme={"darcula"}>{importCode}</Code>
+                <Markdown>{componentAPILocale.importDifferenceText}</Markdown>
+                <Markdown data={{name}}>{componentAPILocale.componentName}</Markdown>
+            </ReactComponentApiPageImport>
+            {enableProps &&
+            <ReactComponentApiPageProps>
+                {properties.map(prop =>
+                    <Prop name={prop.name} type={prop.type} def={prop.default} key={prop.name}>{prop.description}</Prop>
+                )}
+            </ReactComponentApiPageProps>
             }
-            {!locale.enableProps && <Markdown>{locale.noPropsText}</Markdown>}
-            {locale.forwardRef && <Markdown>{componentAPILocale.ref}</Markdown>}
-            {showCss && <H2>CSS</H2>}
-            {locale.enableCss &&
-            <Table>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>{componentAPILocale.ruleName}</TableCell>
-                        <TableCell>{componentAPILocale.ruleDescription}</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {Object.keys(locale.css).map(key => (
-                        <TableRow key={key}>
-                            <TableCell className={classes.code}>{key}</TableCell>
-                            <TableCell>{locale.css[key]}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+            <ReactComponentApiPageDetails>
+                {!refNotForwarded && <Markdown>{componentAPILocale.refText}</Markdown>}
+                {propsForwarded && <Markdown>{componentAPILocale.propsText}</Markdown>}
+            </ReactComponentApiPageDetails>
+            {enableCss &&
+            <ReactComponentApiPageStyles>
+                {css.map(rule => <Style name={rule.name} global={rule.global}
+                                        key={rule.name}>{rule.description}</Style>)}
+            </ReactComponentApiPageStyles>
             }
-            {!locale.enableCss && <Markdown>{locale.noCssText}</Markdown>}
-            {locale.enableCss &&
-            <Markdown>{componentAPILocale.customization}</Markdown>
-            }
-            {children}
-        </DocsPage>
+            <ReactComponentApiPageFooter>
+                <Markdown data={{name}}>
+                    {componentAPILocale.customization}
+                </Markdown>
+                {children}
+            </ReactComponentApiPageFooter>
+        </ReactComponentApiPage>
     );
 }
