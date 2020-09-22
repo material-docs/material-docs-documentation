@@ -18,16 +18,20 @@ import TableHead from "@material-docs/core/components/TableHead";
 export default function TableHeadAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.TableHeadAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"TableHeadAPI"}
-            searchTags={["table", "cell", "row", "header", "api", "head"]}
             name={"TableHead"}
+            localeName={"TableHeadAPI"}
+            overrideName={"MatDoc-TableHead"}
             importCode={importCode}
+            properties={[
+                {name: "component", type: "elementType", default: "\"thead\"", description: locale.props.component},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

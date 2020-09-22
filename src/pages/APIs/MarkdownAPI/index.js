@@ -18,16 +18,21 @@ import Markdown from "@material-docs/core/components/Markdown";
 export default function MarkdownAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.MarkdownAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"MarkdownAPI"}
-            searchTags={["mark", "down", "parser", "interpret", "layout", "api"]}
             name={"Markdown"}
+            localeName={"MarkdownAPI"}
+            overrideName={"MatDoc-Markdown"}
             importCode={importCode}
+            properties={[
+                {name: "inline", type: "boolean", default: "false", description: locale.props.inline},
+                {name: "data", type: "object", default: "{}", description: locale.props.data},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

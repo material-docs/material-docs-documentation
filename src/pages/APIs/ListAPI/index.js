@@ -18,16 +18,26 @@ import List from "@material-docs/core/components/List";
 export default function ListAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.ListAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"ListAPI"}
-            searchTags={["list", "image", "styling", "api"]}
             name={"List"}
+            localeName={"ListAPI"}
+            overrideName={"MatDoc-List"}
             importCode={importCode}
+            properties={[
+                {name: "image", type: "string", default: "", description: locale.props.image},
+                {name: "styling", type: "\"inside\" | \"outside\" | \"inherit\" | \"revert\" | \"unset\"", default: "\"inside\"", description: locale.props.styling},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "stylePositionInside", global: "MatDoc-stylePositionInside", description: locale.css.stylePositionInside},
+                {name: "stylePositionOutside", global: "MatDoc-stylePositionOutside", description: locale.css.stylePositionOutside},
+                {name: "stylePositionInherit", global: "MatDoc-stylePositionInherit", description: locale.css.stylePositionInherit},
+                {name: "stylePositionRevert", global: "MatDoc-stylePositionRevert", description: locale.css.stylePositionRevert},
+                {name: "stylePositionUnset", global: "MatDoc-stylePositionUnset", description: locale.css.stylePositionUnset},
+            ]}
         >
             <H2>Demos</H2>
             <List>

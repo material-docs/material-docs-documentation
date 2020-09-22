@@ -23,11 +23,21 @@ export default function TableAPI() {
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"TableAPI"}
-            searchTags={["table", "cell", "row", "header", "api"]}
             name={"Table"}
+            localeName={"TableAPI"}
+            overrideName={"MatDoc-DemoWithCode"}
             importCode={importCode}
+            properties={[
+                {name: "component", type: "elementType", default: "\"table\"", description: locale.props.component},
+                {name: "padding", type: "\"default\" | \"checkbox\" | \"none\"", default: "\"default\"", description: locale.props.padding},
+                {name: "size", type: "\"small\" | \"medium\"", default: "\"medium\"", description: locale.props.size},
+                {name: "stickyHeader", type: "boolean", default: "false", description: locale.props.stickyHeader},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "stickyHeader", global: "MatDoc-stickyHeader", description: locale.css.stickyHeader},
+            ]}
         >
             <H2>Demos</H2>
             <List>

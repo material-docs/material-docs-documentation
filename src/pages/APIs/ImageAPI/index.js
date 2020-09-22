@@ -18,16 +18,24 @@ import Image from "@material-docs/core/components/Image";
 export default function ImageAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.ImageAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
             lang={lang}
-            localeName={"ImageAPI"}
-            searchTags={["image", "lazy", "load", "picture", "card", "banner", "logo"]}
             name={"Image"}
+            localeName={"ImageAPI"}
+            overrideName={"MatDoc-Image"}
             importCode={importCode}
+            properties={[
+                {name: "src", type: "string", default: "", description: locale.props.src},
+                {name: "alt", type: "string", default: "", description: locale.props.alt},
+                {name: "fullWidth", type: "boolean", default: "false", description: locale.props.fullWidth},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "fullWidth", global: "MatDoc-fullWidth", description: locale.css.fullWidth},
+            ]}
         >
             <H2>Demos</H2>
             <List>

@@ -23,11 +23,18 @@ export default function TableBodyAPI() {
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"TableBodyAPI"}
-            searchTags={["table", "cell", "row", "header", "api", "body"]}
             name={"TableBody"}
+            localeName={"TableBodyAPI"}
+            overrideName={"MatDoc-TableBody"}
+            searchTags={["table", "cell", "row", "header", "api", "body"]}
             importCode={importCode}
+            properties={[
+                {name: "component", type: "elementType", default: "\"tbody\"", description: locale.props.component},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

@@ -181,98 +181,54 @@
         }
       },
       "PagesGroupAPI": {
-        "pageAbout": "The API documentation of the PagesGroup React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "PagesGroup - react component, designed to combine pages in groups for AutoDocsMenu.",
-        "ComponentNameText": "The PagesGroup name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "name",
-            "type": "string",
-            "default": "",
-            "description": "Name of the group. Will be displayed on button in menu."
-          },
-          {
-            "name": "getData",
-            "type": "(data: PagesGroupData): void",
-            "default": "",
-            "description": "Callback, provided to get group data without context usage."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "enableCss": false,
-        "noCssText": "This is a service component. It doesn't generate html elements."
+        "searchDescription": "PagesGroup - react component, designed to combine pages in groups for AutoDocsMenu.",
+        "searchTags": {
+          "page": "page",
+          "group": "group",
+          "gather": "gather",
+          "container": "container"
+        },
+        "props": {
+          "name": "Name of the group. Will be displayed on button in menu.",
+          "getData": "Callback, provided to get group data without context usage.",
+          "children": "Children of an element."
+        },
+        "css": {}
       },
       "ImageAPI": {
-        "pageAbout": "The API documentation of the Image React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Image - react component, designed to show images. Image component uses lazy load technology.",
-        "ComponentNameText": "The Image name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "src",
-            "type": "string",
-            "default": "",
-            "description": "Source link. Used to define image path."
-          },
-          {
-            "name": "alt",
-            "type": "string",
-            "default": "",
-            "description": "Alternative text. Will be displayed if image can not load."
-          },
-          {
-            "name": "fullWidth",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true - image will be 100 percent wide."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Elements, which will appear in image caption."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Image - react component, designed to show images. Image component uses lazy load technology.",
+        "searchTags": {
+          "image": "image",
+          "lazy": "lazy",
+          "load": "load",
+          "picture": "picture",
+          "card": "card",
+          "banner": "banner",
+          "logo": "logo"
+        },
+        "props": {
+          "src": "Source link. Used to define image path.",
+          "alt": "Alternative text. Will be displayed if image can not load.",
+          "fullWidth": "If true - image will be 100 percent wide.",
+          "children": "Elements, which will appear in image caption."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "fullWidth": "Styles applied to the root component if fullWidth prop is true."
         }
       },
       "ListItemAPI": {
-        "pageAbout": "The API documentation of the ListItem React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "ListItem - react component, designed to generate list. Component simulates list item component.",
-        "ComponentNameText": "The ListItem name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "type",
-            "type": "\"circle\" | \"square\" | \"upper-roman\" | \"lower-alpha\" | \"none\"",
-            "default": "\"circle\"",
-            "description": "Type of list decoration."
-          },
-          {
-            "name": "dense",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, vertical distance between list items will be smaller."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "ListItem - react component, designed to generate list. Component simulates list item component.",
+        "searchTags": {
+          "list": "list",
+          "item": "item",
+          "api": "api"
+        },
+        "props": {
+          "type": "Type of list decoration.",
+          "dense": "If true, vertical distance between list items will be smaller.",
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "typeCircle": "Styles applied to the root component if type prop equals circle.",
@@ -359,52 +315,35 @@
         }
       },
       "ItalicAPI": {
-        "pageAbout": "The API documentation of the Italic React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Italic - react component, designed to make text italic.",
-        "ComponentNameText": "The Italic name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Italic - react component, designed to make text italic.",
+        "searchTags": {
+          "italic": "italic",
+          "font": "font",
+          "text": "text",
+          "styling": "styling",
+          "api": "api"
+        },
+        "props": {
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "italic": "Styles applied to the root element, provides italic text styling."
         }
       },
       "ListAPI": {
-        "pageAbout": "The API documentation of the List React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "List - react component, designed to show code in monospace font inside inline code block.",
-        "ComponentNameText": "The List name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "image",
-            "type": "string",
-            "default": "",
-            "description": "List styling image. If defined - will be applied to list-style-image style."
-          },
-          {
-            "name": "styling",
-            "type": "\"inside\" | \"outside\" | \"inherit\" | \"revert\" | \"unset\"",
-            "default": "\"inside\"",
-            "description": "List styling type."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "List - react component, designed to show code in monospace font inside inline code block.",
+        "searchTags": {
+          "list": "list",
+          "image": "image",
+          "styling": "styling",
+          "api": "api"
+        },
+        "props": {
+          "image": "List styling image. If defined - will be applied to list-style-image style.",
+          "styling": "List styling type.",
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "stylePositionInside": "Styles applied to the root element when prop styling equals \"inside\"",
@@ -442,113 +381,60 @@
         }
       },
       "MarkdownAPI": {
-        "pageAbout": "The API documentation of the DocsMenuItem React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DocsMenuItem - react component, designed create menu items for <DocsMenu/>.",
-        "ComponentNameText": "The DocsMenuItem name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "inline",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, markdown container will be inline."
-          },
-          {
-            "name": "data",
-            "type": "object",
-            "default": "{}",
-            "description": "Data structure, used as storage to store components or other data, which can not describe via markdown."
-          },
-          {
-            "name": "children",
-            "type": "string | string[]",
-            "default": "",
-            "description": "Markdown based notation. Used to generate visual elements."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "DocsMenuItem - react component, designed create menu items for <DocsMenu/>.",
+        "searchTags": {
+          "mark": "mark",
+          "down": "down",
+          "parser": "parser",
+          "interpret": "interpret",
+          "layout": "layout",
+          "api": "api"
+        },
+        "props": {
+          "inline": "If true, markdown container will be inline.",
+          "data": "Data structure, used as storage to store components or other data, which can not describe via markdown.",
+          "children": "Markdown based notation. Used to generate visual elements."
+        },
         "css": {
           "root": "Styles applied to the root element."
         }
       },
       "TableAPI": {
-        "pageAbout": "The API documentation of the Table React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Table - react component, designed to create tables.",
-        "ComponentNameText": "The Table name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "component",
-            "type": "elementType",
-            "default": "\"table\"",
-            "description": "The component used for the root node. Either a string to use a HTML element or a component."
-          },
-          {
-            "name": "padding",
-            "type": "\"default\" | \"checkbox\" | \"none\"",
-            "default": "\"default\"",
-            "description": "Allows TableCells to inherit padding of the Table."
-          },
-          {
-            "name": "size",
-            "type": "\"small\" | \"medium\"",
-            "default": "\"medium\"",
-            "description": "Allows TableCells to inherit size of the Table."
-          },
-          {
-            "name": "stickyHeader",
-            "type": "boolean",
-            "default": "false",
-            "description": "Set the header sticky."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "The content of the table, normally TableHead and TableBody."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Table - react component, designed to create tables.",
+        "searchTags": {
+          "table": "table",
+          "cell": "cell",
+          "row": "row",
+          "header": "header",
+          "api": "api"
+        },
+        "props": {
+          "component": "The component used for the root node. Either a string to use a HTML element or a component.",
+          "padding": "Allows TableCells to inherit padding of the Table.",
+          "size": "Allows TableCells to inherit size of the Table.",
+          "stickyHeader": "Set the header sticky.",
+          "children": "The content of the table, normally TableHead and TableBody."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "stickyHeader": "Styles applied to the root element if stickyHeader={true}."
         }
       },
       "TableRowAPI": {
-        "pageAbout": "The API documentation of the TableRow React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "TableRow - react component, designed to create tables.",
-        "ComponentNameText": "The TableRow name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "component",
-            "type": "elementType",
-            "default": "\"tr\"",
-            "description": "The component used for the root node. Either a string to use a HTML element or a component."
-          },
-          {
-            "name": "hover",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, the table row will shade on hover."
-          },
-          {
-            "name": "selected",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, the table row will have the selected shading."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Should be valid <tr> children such as TableCell."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "TableRow - react component, designed to create tables.",
+        "searchTags": {
+          "table": "table",
+          "cell": "cell",
+          "row": "row",
+          "header": "header",
+          "api": "api"
+        },
+        "props": {
+          "component": "The component used for the root node. Either a string to use a HTML element or a component.",
+          "hover": "If true, the table row will shade on hover.",
+          "selected": "If true, the table row will have the selected shading.",
+          "children": "Should be valid <tr> children such as TableCell."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "selected": "Pseudo-class applied to the root element if selected={true}.",
@@ -558,62 +444,24 @@
         }
       },
       "TableCellAPI": {
-        "pageAbout": "The API documentation of the TableCell React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "TableCell - react component, designed to create tables.",
-        "ComponentNameText": "The TableCell name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "align",
-            "type": "\"center\" | \"inherit\" | \"justify\" | \"left\" | \"right\"",
-            "default": "\"inherit\"",
-            "description": "Set the text-align on the table cell content.\nMonetary or generally number fields should be right aligned as that allows you to add them up quickly in your head without having to worry about decimals."
-          },
-          {
-            "name": "component",
-            "type": "elementType",
-            "default": "false",
-            "description": "The component used for the root node. Either a string to use a HTML element or a component."
-          },
-          {
-            "name": "padding",
-            "type": "\"checkbox\" | \"default\" | \"none\"",
-            "default": "\"default\"",
-            "description": "Sets the padding applied to the cell. By default, the Table parent component set the value (default)."
-          },
-          {
-            "name": "scope",
-            "type": "string",
-            "default": "",
-            "description": "Set scope attribute."
-          },
-          {
-            "name": "size",
-            "type": "\"medium\" | \"small\"",
-            "default": "\"medium\"",
-            "description": "Specify the size of the cell. By default, the Table parent component set the value (medium)."
-          },
-          {
-            "name": "sortDirection",
-            "type": "\"asc\" | \"desc\" | \"false\"",
-            "default": "\"false\"",
-            "description": "Set aria-sort direction."
-          },
-          {
-            "name": "variant",
-            "type": "\"body\" | \"footer\" | \"head\"",
-            "default": "\"body\"",
-            "description": "Specify the cell type. By default, the TableHead, TableBody or TableFooter parent component set the value."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "The table cell contents."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "TableCell - react component, designed to create tables.",
+        "searchTags": {
+          "table": "table",
+          "cell": "cell",
+          "row": "row",
+          "header": "header",
+          "api": "api"
+        },
+        "props": {
+          "align": "Set the text-align on the table cell content.\nMonetary or generally number fields should be right aligned as that allows you to add them up quickly in your head without having to worry about decimals.",
+          "component": "The component used for the root node. Either a string to use a HTML element or a component.",
+          "padding": "Sets the padding applied to the cell. By default, the Table parent component set the value (default).",
+          "scope": "Set scope attribute.",
+          "size": "Specify the size of the cell. By default, the Table parent component set the value (medium).",
+          "sortDirection": "Set aria-sort direction.",
+          "variant": "Specify the cell type. By default, the TableHead, TableBody or TableFooter parent component set the value.",
+          "children": "The table cell contents."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "head": "Styles applied to the root element if variant=\"head\" or context.table.head.",
@@ -630,51 +478,37 @@
         }
       },
       "TableBodyAPI": {
-        "pageAbout": "The API documentation of the TableBody React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "TableBody - react component, designed to create tables.",
-        "ComponentNameText": "The TableBody name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "component",
-            "type": "elementType",
-            "default": "\"tbody\"",
-            "description": "The component used for the root node. Either a string to use a HTML element or a component."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "The content of the component, normally TableRow."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "TableBody - react component, designed to create tables.",
+        "searchTags": {
+          "table": "table",
+          "cell": "cell",
+          "row": "row",
+          "header": "header",
+          "api": "api",
+          "body": "body"
+        },
+        "props": {
+          "component": "The component used for the root node. Either a string to use a HTML element or a component.",
+          "children": "The content of the component, normally TableRow."
+        },
         "css": {
           "root": "Styles applied to the root element."
         }
       },
       "TableHeadAPI": {
-        "pageAbout": "The API documentation of the TableHead React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "TableHead - react component, designed to create tables.",
-        "ComponentNameText": "The TableHead name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "component",
-            "type": "elementType",
-            "default": "\"thead\"",
-            "description": "The component used for the root node. Either a string to use a HTML element or a component."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "The content of the component, normally TableRow."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "TableHead - react component, designed to create tables.",
+        "searchTags": {
+          "table": "table",
+          "cell": "cell",
+          "row": "row",
+          "header": "header",
+          "api": "api",
+          "head": "head"
+        },
+        "props": {
+          "component": "The component used for the root node. Either a string to use a HTML element or a component.",
+          "children": "The content of the component, normally TableRow."
+        },
         "css": {
           "root": "Styles applied to the root element."
         }
@@ -711,46 +545,33 @@
         "css": {}
       },
       "LanguageSelectorAPI": {
-        "pageAbout": "The API documentation of the LanguageSelector React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "LanguageSelector - react component, designed to add language selection mechanism and locale management.",
-        "ComponentNameText": "The LanguageSelector name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "size",
-            "type": "\"small\" | \"large\"",
-            "default": "\"large\"",
-            "description": "The size of an element. If small - will be displayed just locale icon, if large - locale icon with current language name."
-          }
-        ],
-        "noPropsText": "This component has no props and takes info with useLang hook. It must be placed inside LangContext.Provider",
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "LanguageSelector - react component, designed to add language selection mechanism and locale management.",
+        "searchTags": {
+          "language": "language",
+          "locale": "locale",
+          "select": "select",
+          "api": "api"
+        },
+        "props": {
+          "size": "The size of an element. If small - will be displayed just locale icon, if large - locale icon with current language name."
+        },
         "css": {
           "root": "Styles applied to the root element."
         }
       },
       "SearchFieldAPI": {
-        "pageAbout": "The API documentation of the SearchField React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "SearchField - react component, designed to add search mechanism.",
-        "ComponentNameText": "The SearchField name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "searchData",
-            "type": "SearchDataItem[]",
-            "default": "",
-            "description": "Array of SearchDataItem items to do search from."
-          },
-          {
-            "name": "doSearch",
-            "type": "function(query, searchData): Promise<SearchDataItem[]>",
-            "default": "",
-            "description": "Callback, called on search. If defined, default search function will not be called. Must return array of SearchDataItem."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "SearchField - react component, designed to add search mechanism.",
+        "searchTags": {
+          "search": "search",
+          "engine": "engine",
+          "selector": "selector",
+          "results": "results",
+          "api": "api"
+        },
+        "props": {
+          "searchData": "Array of SearchDataItem items to do search from.",
+          "doSearch": "Callback, called on search. If defined, default search function will not be called. Must return array of SearchDataItem."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "rootFocused": "Styles applied to the root element when result item is focused.",
@@ -790,22 +611,17 @@
         "css": {}
       },
       "ListItemContainedAPI": {
-        "pageAbout": "The API documentation of the ListItemContained React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "ListItemContained - react component, designed to add list items nesting mechanism.",
-        "ComponentNameText": "The ListItemContained name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally ListItem."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": false,
-        "css": {},
-        "noCssText": "This is service element. It doesn't have any styles."
+        "searchDescription": "ListItemContained - react component, designed to add list items nesting mechanism.",
+        "searchTags": {
+          "list": "list",
+          "item": "item",
+          "contain": "contain",
+          "api": "api"
+        },
+        "props": {
+          "children": "Children of an element. Normally ListItem."
+        },
+        "css": {}
       },
       "DocsLayoutAPI": {
         "searchDescription": "DocsLayout - react component, designed to create MaterialDocs layout.",
@@ -976,26 +792,17 @@
         }
       },
       "HeaderAPI": {
-        "pageAbout": "The API documentation of the Header React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Header - react component, designed to create headers.",
-        "ComponentNameText": "The MatDocHeader name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "heading",
-            "type": "1 | 2 | 3 | 4 | 5 | 6",
-            "default": "1",
-            "description": "Heading size."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Header - react component, designed to create headers.",
+        "searchTags": {
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api"
+        },
+        "props": {
+          "heading": "Heading size.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "h1": "Styles applied to the header when heading = 1.",
@@ -1007,44 +814,21 @@
         }
       },
       "TagableAPI": {
-        "pageAbout": "The API documentation of the Header React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Header - react component, designed to create headers.",
-        "ComponentNameText": "The MatDocHeader name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "variant",
-            "type": "\"h1\" | \"h2\" | \"h3\" | \"h4\" | \"h5\"",
-            "default": "\"h1\"",
-            "description": "Variant of header. h1 h2 h3 h4 h5."
-          },
-          {
-            "name": "noDivider",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, bottom divider line will not be displayed."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true, component will not provide tagging mechanism."
-          },
-          {
-            "name": "id",
-            "type": "string",
-            "default": "",
-            "description": "HTML id for the element to provide tagging mechanism."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Normally DocsMenu and DocsPages."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Header - react component, designed to create headers.",
+        "searchTags": {
+          "header": "header",
+          "tag": "tag",
+          "anchor": "anchor",
+          "api": "api",
+          "tagable": "tagable"
+        },
+        "props": {
+          "variant": "Variant of header. h1 h2 h3 h4 h5.",
+          "noDivider": "If true, bottom divider line will not be displayed.",
+          "noTag": "If true, component will not provide tagging mechanism.",
+          "id": "HTML id for the element to provide tagging mechanism.",
+          "children": "Children of an element. Normally DocsMenu and DocsPages."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "container": "Styles applied to container element.",

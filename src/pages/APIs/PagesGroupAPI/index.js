@@ -18,16 +18,19 @@ import PagesGroup from "@material-docs/core/components/PagesGroup";
 export default function PagesGroupAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.PagesGroupAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"PagesGroupAPI"}
-            searchTags={["page", "group", "gather", "container"]}
             name={"PagesGroup"}
+            localeName={"PagesGroupAPI"}
+            overrideName={"MatDoc-PagesGroup"}
             importCode={importCode}
+            properties={[
+                {name: "name", type: "string", default: "", description: locale.props.name},
+                {name: "getData", type: "function(data: PagesGroupData): void", default: "", description: locale.props.code},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            enableCss={false}
         >
             <H2>Demos</H2>
             <List>

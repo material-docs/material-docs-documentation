@@ -18,16 +18,20 @@ import LanguageSelector from "@material-docs/core/components/LanguageSelector";
 export default function LanguageSelectorAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.LanguageSelectorAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"LanguageSelectorAPI"}
-            searchTags={["language", "locale", "select", "api"]}
             name={"LanguageSelector"}
+            localeName={"LanguageSelectorAPI"}
+            overrideName={"MatDoc-LanguageSelector"}
+            searchTags={["language", "locale", "select", "api"]}
             importCode={importCode}
+            properties={[
+                {name: "size", type: "\"small\" | \"large\"", default: "\"large\"", description: locale.props.size},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

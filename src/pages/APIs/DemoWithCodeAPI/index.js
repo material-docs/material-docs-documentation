@@ -26,7 +26,7 @@ export default function DemoWithCodeAPI() {
             localeName={"DemoWithCodeAPI"}
             importCode={importCode}
             properties={[
-                {name: "name", type: "string", default: "\"default\"", description: locale.props.name},
+                {name: "name", type: "string", default: "", description: locale.props.name},
                 {name: "code", type: "string", default: "", description: locale.props.code},
                 {name: "ratio", type: "AspectRatio", default: "", description: locale.props.ratio},
                 {name: "defaultExpanded", type: "boolean", default: "false", description: locale.props.defaultExpanded},

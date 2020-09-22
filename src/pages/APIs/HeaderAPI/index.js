@@ -17,16 +17,26 @@ import Header from "@material-docs/core/components/Header";
 export default function HeaderAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.HeaderAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"HeaderAPI"}
-            searchTags={["header", "tag", "anchor", "api"]}
             name={"Header"}
+            localeName={"HeaderAPI"}
+            overrideName={"MatDoc-Header"}
             importCode={importCode}
+            properties={[
+                {name: "heading", type: "1 | 2 | 3 | 4 | 5 | 6", default: "1", description: locale.props.heading},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "h1", global: "MatDoc-h1", description: locale.css.h1},
+                {name: "h2", global: "MatDoc-h2", description: locale.css.h2},
+                {name: "h3", global: "MatDoc-h3", description: locale.css.h3},
+                {name: "h4", global: "MatDoc-h4", description: locale.css.h4},
+                {name: "h5", global: "MatDoc-h5", description: locale.css.h5},
+                {name: "h6", global: "MatDoc-h6", description: locale.css.h6},
+            ]}
         >
             <H2>Demos</H2>
             <List>
