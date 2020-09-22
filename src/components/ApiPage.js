@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import {Code, H3, Markdown} from "@material-docs/core";
+import {Code, H3, Markdown, useLang} from "@material-docs/core";
 import ReactComponentApiPage from "@material-docs/react-components-docs-extension/components/ReactComponentApiPage";
 import ReactComponentApiPageSummary
     from "@material-docs/react-components-docs-extension/components/ReactComponentApiPageSummary";
@@ -24,10 +24,11 @@ import ReactComponentApiPageDetails
 
 export default function ApiPage(props, ref) {
     const {
-        lang,
+        // lang,
         localeName,
         importCode,
         name,
+        overrideName,
         properties = [],
         css = [],
         children,
@@ -37,17 +38,19 @@ export default function ApiPage(props, ref) {
         propsForwarded = false,
         ...other
     } = props;
-    if (!lang) throw new Error(`Documentation: lang is required prop`);
+    const {lang} = useLang();
     if (!localeName) throw new Error(`Documentation: localeName is required prop`);
 
     const locale = lang.locale.pages[localeName];
     const componentAPILocale = lang.locale.common.ComponentAPI;
 
+    const searchTags = locale.searchTags && Object.keys(locale.searchTags).map(key => locale.searchTags[key]);
+
     return (
         <ReactComponentApiPage
             name={name}
             searchDescription={locale.searchDescription}
-            searchTags={locale.searchTags}
+            searchTags={searchTags}
         >
             <ReactComponentApiPageSummary>
                 <H3 noTag noDivider>
@@ -59,7 +62,7 @@ export default function ApiPage(props, ref) {
             <ReactComponentApiPageImport>
                 <Code theme={"darcula"}>{importCode}</Code>
                 <Markdown>{componentAPILocale.importDifferenceText}</Markdown>
-                <Markdown data={{name}}>{componentAPILocale.componentName}</Markdown>
+                {overrideName && <Markdown data={{name: overrideName}}>{componentAPILocale.componentName}</Markdown>}
             </ReactComponentApiPageImport>
             {enableProps &&
             <ReactComponentApiPageProps>
@@ -74,8 +77,9 @@ export default function ApiPage(props, ref) {
             </ReactComponentApiPageDetails>
             {enableCss &&
             <ReactComponentApiPageStyles>
-                {css.map(rule => <Style name={rule.name} global={rule.global}
-                                        key={rule.name}>{rule.description}</Style>)}
+                {css.map(rule =>
+                    <Style name={rule.name} global={rule.global} key={rule.name}>{rule.description}</Style>
+                )}
             </ReactComponentApiPageStyles>
             }
             <ReactComponentApiPageFooter>

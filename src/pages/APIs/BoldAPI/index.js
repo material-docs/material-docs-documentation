@@ -18,16 +18,20 @@ import Bold from "@material-docs/core/components/Bold";
 export default function BoldAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.BoldAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"BoldAPI"}
-            searchTags={["bold", "font", "text", "styling", "api"]}
             name={"Bold"}
+            overrideName={"MatDoc-Bold"}
+            localeName={"BoldAPI"}
             importCode={importCode}
+            properties={[
+                {name: "chidlren", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDocs-root", description: locale.css.root},
+                {name: "bold", global: "MatDocs-bold", description: locale.css.bold},
+            ]}
         >
             <H2>Demos</H2>
             <List>

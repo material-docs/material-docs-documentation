@@ -18,16 +18,22 @@ import Code from "@material-docs/core/components/Code";
 export default function CodeAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.CodeAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"CodeAPI"}
-            searchTags={["code", "highlight", "language", "api"]}
             name={"Code"}
+            localeName={"CodeAPI"}
+            overrideName={"MatDocs-Code"}
             importCode={importCode}
+            properties={[
+                {name: "language", type: "string", default: "\"javascript\"", description: locale.props.language},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.theme},
+                {name: "children", type: "string", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "highlighterContainer", global: "MatDoc-highlighterContainer", description: locale.css.highlighterContainer},
+            ]}
         >
             <H2>Demos</H2>
             <List>

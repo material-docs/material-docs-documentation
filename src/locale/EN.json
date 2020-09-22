@@ -171,62 +171,24 @@
         }
       },
       "DemoWithCodeAPI": {
-        "pageAbout": "The API documentation of the DemoWithCode React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "DemoWithCode - react component, designed to create code blocks with interactive demo.",
-        "ComponentNameText": "The DemoWithCode name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "name",
-            "type": "string",
-            "default": "",
-            "description": "Name of the component. Will be displayed in H3 header if defined."
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "default": "",
-            "description": "Code to display in inner Code block."
-          },
-          {
-            "name": "ratio",
-            "type": "AspectRatio",
-            "default": "",
-            "description": "If defined, demo field will keep input aspect ratio."
-          },
-          {
-            "name": "defaultExpanded",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true - code area will be expanded on startup."
-          },
-          {
-            "name": "noTag",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true and name prop is defined - header with name will not generate tag for content tab."
-          },
-          {
-            "name": "paperContainer",
-            "type": "boolean",
-            "default": "false",
-            "description": "If true - demo content will be wrapped in Paper component."
-          },
-          {
-            "name": "actions",
-            "type": "DemoCodeAction[]",
-            "default": "",
-            "description": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element. Will be placed in demo block."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "DemoWithCode - react component, designed to create code blocks with interactive demo.",
+        "searchTags": {
+          "demo": "demo",
+          "with": "with",
+          "api": "api",
+          "showing": "showing",
+          "code": "code"
+        },
+        "props": {
+          "name": "Name of the component. Will be displayed in H3 header if defined.",
+          "code": "Code to display in inner Code block.",
+          "ratio": "If defined, demo field will keep input aspect ratio.",
+          "defaultExpanded": "If true - code area will be expanded on startup.",
+          "noTag": "If true and name prop is defined - header with name will not generate tag for content tab.",
+          "paperContainer": "If true - demo content will be wrapped in Paper component.",
+          "actions": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button.",
+          "children": "Children of an element. Will be placed in demo block."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "collapse": "Styles applied to the Collapse element, which contains code.",
@@ -237,31 +199,18 @@
         }
       },
       "CodeAPI": {
-        "pageAbout": "The API documentation of the Code React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Code - react component, designed to create code blocks.",
-        "ComponentNameText": "The Code name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "language",
-            "type": "string",
-            "default": "\"javascript\"",
-            "description": "Language name for code highlighter."
-          },
-          {
-            "name": "theme",
-            "type": "\"light\"",
-            "default": "\"light\" | \"dark\" | \"darcula\"",
-            "description": "Code highlighting and background styling type."
-          },
-          {
-            "name": "children",
-            "type": "string",
-            "default": "",
-            "description": "Code to display in code highlighter."
-          }
-        ],
-        "enableCss": true,
+        "searchDescription": "Code - react component, designed to create code blocks.",
+        "searchTags": {
+          "code": "code",
+          "highlight": "highlight",
+          "language": "language",
+          "api": "api"
+        },
+        "props": {
+          "language": "Language name for code highlighter.",
+          "theme": "Code highlighting and background styling type.",
+          "children": "Code to display in code highlighter."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "highlighterContainer": "Styles applied to the code highlighter container."
@@ -432,26 +381,19 @@
         }
       },
       "BlockAPI": {
-        "pageAbout": "The API documentation of the Block React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Block - react component, designed to show slided information blocks, such as tips, notes, etc.",
-        "ComponentNameText": "The Block name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "color",
-            "type": "\"dark\" | \"light\"",
-            "default": "\"light\"",
-            "description": "Color styling, which will be applied to block."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Block - react component, designed to show slided information blocks, such as tips, notes, etc.",
+        "searchTags": {
+          "block": "block",
+          "tip": "tip",
+          "slided": "slided",
+          "separated": "separated",
+          "blockquote": "blockquote",
+          "quote": "quote"
+        },
+        "props": {
+          "color": "Color styling, which will be applied to block.",
+          "children": "Children of an element."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "colorLight": "Styles applied to the root element when prop color equals \"light\"",
@@ -459,30 +401,19 @@
         }
       },
       "CodeSpanAPI": {
-        "pageAbout": "The API documentation of the CodeSpan React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "CodeSpan - react component, designed to show code in monospace font inside inline code block.",
-        "ComponentNameText": "The CodeSpan name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "color",
-            "type": "\"default\" | \"primary\" | \"secondary\" | \"grey\"",
-            "default": "\"default\"",
-            "description": "Background color of the inline code block."
-          },
-          {
-            "name": "text",
-            "type": "\"white\" | \"black\" | \"inherit\"",
-            "default": "\"inherit\"",
-            "description": "Text color of code."
-          },
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "Children of an element."
-          }
-        ],
+        "searchDescription": "CodeSpan - react component, designed to show code in monospace font inside inline code block.",
+        "searchTags": {
+          "code": "code",
+          "span": "span",
+          "inline": "inline",
+          "component": "component",
+          "block": "block"
+        },
+        "props": {
+          "color": "Background color of the inline code block.",
+          "text": "Text color of code.",
+          "children": "Children of an element."
+        },
         "forwardRef": true,
         "enableCss": true,
         "css": {
@@ -867,42 +798,35 @@
         }
       },
       "BoldAPI": {
-        "pageAbout": "The API documentation of the Bold React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "Bold - react component, designed to create tables.",
-        "ComponentNameText": "The Bold name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "children",
-            "type": "node",
-            "default": "",
-            "description": "The content of the component."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": true,
+        "searchDescription": "Bold - react component, designed to create tables.",
+        "searchTags": {
+          "bold": "bold",
+          "font": "font",
+          "text": "text",
+          "styling": "styling",
+          "api": "api"
+        },
+        "props": {
+          "children": "The content of the component."
+        },
         "css": {
           "root": "Styles applied to the root element.",
           "bold": "Styles applied to the root element with bold text styling."
         }
       },
       "AutoDocsMenuAPI": {
-        "pageAbout": "The API documentation of the AutoDocsMenu React component. Learn more about the props and the CSS customization points.",
-        "pageSearchDescription": "AutoDocsMenu - react component, designed create tables.",
-        "ComponentNameText": "The AutoDocsMenu name can be used for providing default props or style overriders at the theme level.",
-        "enableProps": true,
-        "props": [
-          {
-            "name": "layoutData",
-            "type": "PagesGroupData",
-            "default": "",
-            "description": "Pages and groups hierarchy data."
-          }
-        ],
-        "forwardRef": true,
-        "enableCss": false,
-        "css": {},
-        "noCssText": "This component is service and doesn't have any styles."
+        "searchTags": {
+          "api": "api",
+          "auto": "auto",
+          "docs": "docs",
+          "menu": "menu",
+          "layout": "layout"
+        },
+        "searchDescription": "AutoDocsMenu React component API page.",
+        "props": {
+          "layoutData": "Pages and groups hierarchy data."
+        },
+        "css": {}
       },
       "LanguageSelectorAPI": {
         "pageAbout": "The API documentation of the LanguageSelector React component. Learn more about the props and the CSS customization points.",
@@ -1474,7 +1398,7 @@
         "summary": "The API documentation of the &&name React component. Learn more about the props and the CSS customization points.",
         "importDifferenceText": "You can learn more about the difference by [reading this guide](https://material-ui.com/guides/minimizing-bundle-size/).",
         "customization": "You can override the style of the component thanks to one of these customization points: \n* With a rule name of the  [```classes``` object prop](https://material-ui.com/customization/components/#overriding-styles-with-classes). \n* With a [global class name](https://material-ui.com/customization/components/#overriding-styles-with-global-class-names). \n* With a theme and an [```overrides``` property](https://material-ui.com/customization/globals/#css). \n\n\n If that's not sufficient, you can check the implementation of the component for more detail.",
-        "componentName": "## Component name  \nThe ___&&name___ name can be used for providing [default props](https://material-ui.com/customization/globals/#default-props) or [style overrides](https://material-ui.com/customization/globals/#css) at the theme level.",
+        "componentName": "## Component name  \nThe ```&&name``` name can be used for providing [default props](https://material-ui.com/customization/globals/#default-props) or [style overrides](https://material-ui.com/customization/globals/#css) at the theme level.",
         "refText": "The ```ref``` is forwarded to the root element.",
         "propsText": "Any other props supplied will be provided to the root element (native element)."
       }
