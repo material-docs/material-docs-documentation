@@ -16,42 +16,8 @@ import List from "@material-docs/core/components/List/List";
 import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Link from "@material-docs/core/components/Link/Link";
 
-const overviewCode = `
-import React from "react";
-import Bold from "@material-docs/core/components/Bold/Bold";
-import Italic from "@material-docs/core/components/Italic/Italic";
-import Block from "@material-docs/core/components/Block/Block";
-import CodeSpan from "@material-docs/core/components/CodeSpan/CodeSpan";
-
-export default function TextStylingOverview() {
-    return(
-        <React.Fragment>
-            This is a <Bold>bold text</Bold> near <Italic>italic text</Italic> inside my line. <br/>
-            And me is <Italic><Bold>bold italic text</Bold></Italic>
-            <Block>I am text in <CodeSpan>{"<Block/>"}</CodeSpan> component. </Block>
-            Lets see on prev code line via inline code block
-            <CodeSpan>{"<Block>I am text in <CodeSpan>{\\"<Block/>\\"}</CodeSpan> component. </Block>"}</CodeSpan>
-        </React.Fragment>
-    );
-}
-`.trim();
-
-const nestedCode = `
-import React from "react";
-import Bold from "@material-docs/core/components/Bold/Bold";
-import Italic from "@material-docs/core/components/Italic/Italic";
-import Block from "@material-docs/core/components/Block/Block";
-import CodeSpan from "@material-docs/core/components/CodeSpan/CodeSpan";
-
-export default function TextStylingNested() {
-    return (
-        <React.Fragment>
-            I <Bold> am an <Italic>italic text inside</Italic> bold component.</Bold><br/><br/>
-            <Block>I am a <CodeSpan>Block</CodeSpan> with <Italic><Bold>an italic bold text</Bold> inside!</Italic></Block>
-        </React.Fragment>
-    );
-}
-`.trim();
+import overviewCode from "../../../examples/TextStyling/TextStylingOverview.md";
+import nestedCode from "../../../examples/TextStyling/TextStylingNested.md";
 
 export default function TextStylingDemo() {
     const {lang} = useLang();
