@@ -41,7 +41,7 @@ export default function ApiPage(props, ref) {
     const {lang} = useLang();
     if (!localeName) throw new Error(`Documentation: localeName is required prop`);
 
-    const locale = lang.locale.pages[localeName];
+    const locale = props.locale || lang.locale.pages[localeName];
     const componentAPILocale = lang.locale.common.ComponentAPI;
 
     const searchTags = locale.searchTags && Object.keys(locale.searchTags).map(key => locale.searchTags[key]);

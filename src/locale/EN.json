@@ -846,6 +846,79 @@
         }
       }
     },
+    "extensionDocs": {
+      "ReactComponentsDocsExtension": {
+        "pages": {
+          "ReactComponentApiPageDemo": {
+            "searchDescription": "Demo page of ReactComponentApiPage react component.",
+            "searchTags": {
+              "extension": "extension",
+              "component": "component",
+              "api": "api",
+              "page": "page",
+              "preset": "preset"
+            }
+
+
+          },
+          "RCDEPropAPI": {
+            "searchDescription": "API documentation of the RCDE Prop component.",
+            "searchTags": {
+              "extension": "extension",
+              "api": "api",
+              "prop": "prop"
+            },
+            "props": {
+              "name": "A name of the property.",
+              "type": "The type of the property.",
+              "def": "Default value of the property.",
+              "children": "A description of the property."
+            },
+            "css": {
+              "typeLabel": "Styles applied to the property type span wrapper.",
+              "nameLabel": "Styles applied to the property name span wrapper.",
+              "defaultLabel": "Styles applied to the property default value span wrapper."
+            }
+          },
+          "RCDEStyleAPI": {
+            "searchDescription": "API documentation of the RCDE Prop component.",
+            "searchTags": {
+              "extension": "extension",
+              "api": "api",
+              "css": "css",
+              "style": "style"
+            },
+            "props": {
+              "name": "Name of the CSS rule.",
+              "global": "Global class name.",
+              "children": "A description of the CSS rule."
+            },
+            "css": {
+              "globalLabel": "Styles applied to the rule global name span wrapper.",
+              "nameLabel": "Styles applied to the rule name span wrapper."
+            }
+          },
+          "RCDEReactComponentApiPageAPI": {
+            "searchDescription": "API documentation of the RCDE Prop component.",
+            "searchTags": {
+              "extension": "extension",
+              "api": "api",
+              "css": "css",
+              "style": "style"
+            },
+            "props": {
+              "name": "Name of the CSS rule.",
+              "global": "Global class name.",
+              "children": "A description of the CSS rule."
+            },
+            "css": {
+              "globalLabel": "Styles applied to the rule global name span wrapper.",
+              "nameLabel": "Styles applied to the rule name span wrapper."
+            }
+          }
+        }
+      }
+    },
     "common": {
       "spells": {
         "Props": "Props",
