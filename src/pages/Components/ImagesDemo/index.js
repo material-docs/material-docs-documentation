@@ -33,6 +33,10 @@ export default function ImagesDemo() {
                 theme={"darcula"}
                 paperContainer
                 defaultExpanded
+                actions={[{
+                    label: "GitHub source",
+                    link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Images/ImagesOverview.js"
+                }]}
             >
                 <ImagesOverview/>
             </DemoWithCode>

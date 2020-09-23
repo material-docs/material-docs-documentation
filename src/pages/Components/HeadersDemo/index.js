@@ -38,6 +38,10 @@ export default function HeadersDemo() {
                 theme={"darcula"}
                 defaultExpanded
                 name={locale.headersExample}
+                actions={[{
+                    label: "GitHub source",
+                    link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Headers/AllHeaders.js"
+                }]}
             >
                 <Box p={2}>
                     <TaggingContext.Provider value={{

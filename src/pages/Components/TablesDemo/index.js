@@ -33,6 +33,7 @@ export default function TablesDemo() {
                 code={simpleTableCode}
                 paperContainer
                 defaultExpanded
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Tables/SimpleTable.js"}]}
             >
                 <Box p={1}>
                     <SimpleTable/>
@@ -44,6 +45,7 @@ export default function TablesDemo() {
                 theme={"darcula"}
                 code={tableWithMarkdownCode}
                 paperContainer
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Tables/TableWithMarkdown.js"}]}
             >
                 <Box p={1}>
                     <TableWithMarkdown/>
