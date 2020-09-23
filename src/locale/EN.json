@@ -361,6 +361,19 @@
           "italic": "Styles applied to the root element, provides italic text styling."
         }
       },
+      "ItalicAPI": {
+        "searchDescription": "Italic - react component, designed to make text italic.",
+        "searchTags": {
+          "locale": "locale",
+          "lang": "lang",
+          "api": "api"
+        },
+        "props": {
+          "path": "Path to the data in the Lang.locale. Exampele: __\"hello/darkness/my\"__.",
+          "children": "Children of the component. Will be displayed by default if can not load data from Lang."
+        },
+        "css": {}
+      },
       "ListAPI": {
         "searchDescription": "List - react component, designed to show code in monospace font inside inline code block.",
         "searchTags": {
@@ -423,6 +436,8 @@
         "props": {
           "inline": "If true, markdown container will be inline.",
           "data": "Data structure, used as storage to store components or other data, which can not describe via markdown.",
+          "typographyInheritSize": "Paragraph Typography component will inherit font settings.",
+          "locale": "Locale path to get data from. Example: __\"where/is/my/data\"__. Path starts from _Lang.locale_.",
           "children": "Markdown based notation. Used to generate visual elements."
         },
         "css": {
