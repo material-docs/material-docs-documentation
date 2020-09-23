@@ -27,6 +27,7 @@ export default function DocsPageAPI() {
                 {name: "searchDescription", type: "string", default: "", description: locale.props.searchDescription},
                 {name: "noGenerateAutoSearch", type: "boolean", default: "false", description: locale.props.noGenerateAutoSearch},
                 {name: "noAutoMenu", type: "boolean", default: "false", description: locale.props.noAutoMenu},
+                {name: "order", type: "number", default: "", description: locale.props.code},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[

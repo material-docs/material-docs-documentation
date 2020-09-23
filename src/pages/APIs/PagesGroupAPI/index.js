@@ -24,6 +24,7 @@ export default function PagesGroupAPI() {
             properties={[
                 {name: "name", type: "string", default: "", description: locale.props.name},
                 {name: "getData", type: "function(data: PagesGroupData): void", default: "", description: locale.props.code},
+                {name: "order", type: "number", default: "", description: locale.props.code},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             enableCss={false}

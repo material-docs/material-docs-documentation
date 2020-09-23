@@ -154,6 +154,7 @@
           "searchDescription": "Description text, displayed in search result if page match search requirements.",
           "noGenerateAutoSearch": "If true, page will not generate search items from pages automatically.",
           "noAutoMenu": "If true, page will not participate in auto menu generation.",
+          "order": "As lower order as higher will be displayed menu item.",
           "children": "Children of an element."
         },
         "css": {
@@ -181,6 +182,8 @@
           "noTag": "If true and name prop is defined - header with name will not generate tag for content tab.",
           "paperContainer": "If true - demo content will be wrapped in Paper component.",
           "actions": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button.",
+          "p": "Padding of demo block in theme.spacing units.",
+          "m": "Margin of demo block in theme.spacing units.",
           "children": "Children of an element. Will be placed in demo block."
         },
         "css": {
@@ -221,6 +224,7 @@
         "props": {
           "name": "Name of the group. Will be displayed on button in menu.",
           "getData": "Callback, provided to get group data without context usage.",
+          "order": "As lower order as higher will be displayed menu item.",
           "children": "Children of an element."
         },
         "css": {}
