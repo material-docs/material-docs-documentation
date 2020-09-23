@@ -19,7 +19,7 @@
         "tablesWithMarkdownHeader": "Таблицы с markdown",
         "tablesWithMarkdownSummary": "Для кастомизации таблиц вы можете использовать компонент __Markdown__. Не забудьте выставить пропы ```typographyInheritSize``` и ```inline``` в компоненте __Markdown__",
         "moreInfoHeader": "Больше информации",
-        "moreInfoSummary": "Вы можете узнать больше информации о настройке таблиц [тут](https://material-ui.com/components/tables/)ю"
+        "moreInfoSummary": "Вы можете узнать больше информации о настройке таблиц [тут](https://material-ui.com/components/tables/)."
       },
       "CodeDemo": {
         "searchDescription": "Демонстрация космпонентов Code showers",
