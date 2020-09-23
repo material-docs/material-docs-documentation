@@ -3,6 +3,22 @@
   "label": "English",
   "locale": {
     "pages": {
+      "TablesDemo": {
+        "searchDescription": "Demo of Table parts components.",
+        "searchTags": {
+          "demo": "demo",
+          "table": "table",
+          "row": "row",
+          "cell": "cell",
+          "demonstration": "demonstration"
+        },
+        "simpleTableHeader": "Simple Table",
+        "simpleTableSummary": "Tables are needed to showcase a lot of structured data.",
+        "tablesWithMarkdownHeader": "Tables with markdown",
+        "tablesWithMarkdownSummary": "You can use the __Markdown__ component to customize tables. Don't forget to set the ```typographyInheritSize``` and ```inline``` props in the __Markdown__ component",
+        "moreInfoHeader": "More info",
+        "moreInfoSummary": "You can find more info about tables usage [here](https://material-ui.com/components/tables/)."
+      },
       "CodeDemo": {
         "searchDescription": "Demo of Code showers components.",
         "searchTags": {

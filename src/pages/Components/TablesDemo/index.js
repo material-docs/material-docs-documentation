@@ -18,16 +18,19 @@ import H2 from "@material-docs/core/components/H2";
 import List from "@material-docs/core/components/List";
 import ListItem from "@material-docs/core/components/ListItem";
 import Link from "@material-docs/core/components/Link";
+import {useLang} from "@material-docs/core";
 
 export default function TablesDemo() {
+    const {lang} = useLang();
+    const locale = lang.locale.pages.TablesDemo;
+
     return (
         <DocsPage
             name={"Tables"}
         >
             <H1>Tables</H1>
-            <Markdown></Markdown>
-            <H3>Simple Table</H3>
-            <Markdown>Таблицы нужны для демонстрации большого количества структурированных данных.</Markdown>
+            <H3>{locale.simpleTableHeader}</H3>
+            <Markdown>{locale.simpleTableSummary}</Markdown>
             <DemoWithCode
                 theme={"darcula"}
                 code={simpleTableCode}
@@ -39,8 +42,8 @@ export default function TablesDemo() {
                     <SimpleTable/>
                 </Box>
             </DemoWithCode>
-            <H3>Tables with markdown</H3>
-            <Markdown>Для кастомизации таблиц вы можете использовать компонент __Markdown__. Не забудьте выставить пропы ```typographyInheritSize``` и ```inline``` в компоненте __Markdown__</Markdown>
+            <H3>{locale.tablesWithMarkdownHeader}</H3>
+            <Markdown>{locale.tablesWithMarkdownSummary}</Markdown>
             <DemoWithCode
                 theme={"darcula"}
                 code={tableWithMarkdownCode}
@@ -51,8 +54,8 @@ export default function TablesDemo() {
                     <TableWithMarkdown/>
                 </Box>
             </DemoWithCode>
-            <H2>Больше информации</H2>
-            <Markdown>Вы можете узнать больше информации о настройке таблиц [тут]()</Markdown>
+            <H2>{locale.moreInfoHeader}</H2>
+            <Markdown>{locale.moreInfoSummary}</Markdown>
             <H2>Demos</H2>
             <List>
                 <ListItem><Link page={["Component APIs", "Table"]}>Table</Link></ListItem>
