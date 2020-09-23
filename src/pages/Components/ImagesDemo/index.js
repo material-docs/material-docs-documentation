@@ -10,21 +10,10 @@ import {H1, H3} from "@material-docs/core/components";
 import DemoWithCode from "@material-docs/core/components/DemoWithCode/DemoWithCode";
 import Markdown from "@material-docs/core/components/Markdown/Markdown";
 import ImagesOverview from "../../../examples/Images/ImagesOverview";
+import imagesOverviewCode from "../../../examples/Images/ImagesOverview.md";
 import List from "@material-docs/core/components/List/List";
 import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Link from "@material-docs/core/components/Link/Link";
-
-const overviewCode = `
-import React from "react";
-import Image from "@material-docs/core/components/Image/Image";
-import image from "images/GithubBannerWide.png"
-
-export default function ImagesOverview() {
-    return (
-        <Image src={image} alt={"overview image"} fullWidth/>
-    );
-}
-`.trim();
 
 export default function ImagesDemo() {
     const {lang} = useLang();
@@ -40,9 +29,10 @@ export default function ImagesDemo() {
             <H3 noTag noDivider>{locale.pageAbout}</H3>
             <Markdown>{locale.infoBlock}</Markdown>
             <DemoWithCode
-                code={overviewCode}
+                code={imagesOverviewCode}
                 theme={"darcula"}
                 paperContainer
+                defaultExpanded
             >
                 <ImagesOverview/>
             </DemoWithCode>

@@ -1,0 +1,9 @@
+import React from "react";
+import Image from "@material-docs/core/components/Image";
+import image from "./images/GithubBannerWide.png";
+
+export default function ImagesOverview() {
+    return (
+        <Image src={image} alt={"overview image"} fullWidth/>
+    );
+}

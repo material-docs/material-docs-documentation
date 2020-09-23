@@ -16,78 +16,10 @@ import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Markdown from "@material-docs/core/components/Markdown/Markdown";
 import Link from "@material-docs/core/components/Link/Link";
 
-const SimpleListCode = `
-import React from "react";
-import List from "@material-docs/core/components/List";
-import ListItem from "@material-docs/core/components/ListItem";
-import {H4} from "@material-docs/core/components";
+import simpleListCode from "../../../examples/Lists/SimpleList.md";
+import listWithNestedItemsCode from "../../../examples/Lists/ListWithNestedItems.md";
+import decoratedListCode from "../../../examples/Lists/DecoratedList.md";
 
-export default function SimpleList() {
-    return (
-        <React.Fragment>
-            <H4 noTag>Buy</H4>
-            <List>
-                <ListItem>Carrot x3</ListItem>
-                <ListItem>Potato 3kg</ListItem>
-                <ListItem>Apples 1kg</ListItem>
-                <ListItem>Strawberry 1kg</ListItem>
-            </List>
-        </React.Fragment>
-    );
-}
-`.trim();
-
-const ListWithNestedItemsCode = `
-import React from "react";
-import List from "@material-docs/core/components/List";
-import ListItem from "@material-docs/core/components/ListItem";
-import ListItemContained from "@material-docs/core/components/ListItemContained/ListItemContained";
-
-export default function ListWithNestedItems() {
-    return (
-        <React.Fragment>
-            <List>
-                <ListItem>
-                    Web
-                    <ListItemContained>
-                        <ListItem>Front-end</ListItem>
-                        <ListItem>Back-end</ListItem>
-                    </ListItemContained>
-                </ListItem>
-                <ListItem>
-                    <ListItemContained>
-                        <ListItem>Engine programmer</ListItem>
-                        <ListItem>Level designer</ListItem>
-                        <ListItem>Character artist</ListItem>
-                    </ListItemContained>
-                    Gamedev
-                </ListItem>
-                <ListItem>Data science</ListItem>
-            </List>
-        </React.Fragment>
-    );
-}
-`.trim();
-
-const DecoratedListCode = `
-import React from "react";
-import List from "@material-docs/core/components/List";
-import ListItem from "@material-docs/core/components/ListItem";
-
-export default function DecoratedList() {
-    return (
-        <React.Fragment>
-            <List>
-                <ListItem type={"circle"}>I am list item with circle styling</ListItem>
-                <ListItem type={"square"}>I am list item with square styling</ListItem>
-                <ListItem type={"upper-roman"}>I am list item with upper-roman styling</ListItem>
-                <ListItem type={"lower-alpha"}>I am list item with lower-alpha styling</ListItem>
-                <ListItem type={"none"}>I am list item without styling</ListItem>
-            </List>
-        </React.Fragment>
-    );
-}
-`.trim();
 
 export default function ListsDemo() {
     return (
@@ -104,7 +36,7 @@ export default function ListsDemo() {
                 can contain
                 its content and nested list items inside ```ListItemContained``` component.
             </Markdown>
-            <DemoWithCode code={SimpleListCode} paperContainer theme={"darcula"} name={"Simple list"} defaultExpanded>
+            <DemoWithCode code={simpleListCode} paperContainer theme={"darcula"} name={"Simple list"} defaultExpanded>
                 <Box p={2}>
                     <SimpleList/>
                 </Box>
@@ -114,7 +46,7 @@ export default function ListsDemo() {
                 You can create __nested lists__ inside ```ListItem``` component. Just place __nested items__ inside
                 ```ListItemContained``` component in ```ListItem```.
             </Markdown>
-            <DemoWithCode code={ListWithNestedItemsCode} paperContainer theme={"darcula"}
+            <DemoWithCode code={listWithNestedItemsCode} paperContainer theme={"darcula"}
                           name={"List with nested items"}>
                 <Box p={2}>
                     <ListWithNestedItems/>
@@ -122,7 +54,7 @@ export default function ListsDemo() {
             </DemoWithCode>
 
             <Markdown>Lists can be __decorated__ with several points type.</Markdown>
-            <DemoWithCode code={DecoratedListCode} paperContainer theme={"darcula"} name={"List with items decoration"}>
+            <DemoWithCode code={decoratedListCode} paperContainer theme={"darcula"} name={"List with items decoration"}>
                 <Box p={2}>
                     <DecoratedList/>
                 </Box>

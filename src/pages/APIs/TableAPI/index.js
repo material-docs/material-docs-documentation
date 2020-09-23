@@ -4,16 +4,11 @@
  */
 
 import React from "react";
-import {Link} from "@material-ui/core";
-
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {Table} from "@material-docs/core";
-// or
-import Table from "@material-docs/core/components/Table";
-`.trim();
+import importCode from "./importCode.md";
+import Link from "@material-docs/core/components/Link";
 
 export default function TableAPI() {
     const {lang} = useLang();
@@ -23,15 +18,25 @@ export default function TableAPI() {
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"TableAPI"}
-            searchTags={["table", "cell", "row", "header", "api"]}
             name={"Table"}
+            localeName={"TableAPI"}
+            overrideName={"MatDoc-DemoWithCode"}
             importCode={importCode}
+            properties={[
+                {name: "component", type: "elementType", default: "\"table\"", description: locale.props.component},
+                {name: "padding", type: "\"default\" | \"checkbox\" | \"none\"", default: "\"default\"", description: locale.props.padding},
+                {name: "size", type: "\"small\" | \"medium\"", default: "\"medium\"", description: locale.props.size},
+                {name: "stickyHeader", type: "boolean", default: "false", description: locale.props.stickyHeader},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "stickyHeader", global: "MatDoc-stickyHeader", description: locale.css.stickyHeader},
+            ]}
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link>Tables</Link></ListItem>
+                <ListItem><Link page={["Components", "Tables"]}>Tables</Link></ListItem>
             </List>
         </ApiPage>
     );

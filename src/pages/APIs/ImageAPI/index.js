@@ -9,29 +9,32 @@ import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
-const importCode = `
-import {Image} from "@material-docs/core";
-// or
-import Image from "@material-docs/core/components/Image";
-`.trim();
-
+import importCode from "./importCode.md";
 export default function ImageAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.ImageAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
             lang={lang}
-            localeName={"ImageAPI"}
-            searchTags={["image", "lazy", "load", "picture", "card", "banner", "logo"]}
             name={"Image"}
+            localeName={"ImageAPI"}
+            overrideName={"MatDoc-Image"}
             importCode={importCode}
+            properties={[
+                {name: "src", type: "string", default: "", description: locale.props.src},
+                {name: "alt", type: "string", default: "", description: locale.props.alt},
+                {name: "fullWidth", type: "boolean", default: "false", description: locale.props.fullWidth},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "fullWidth", global: "MatDoc-fullWidth", description: locale.css.fullWidth},
+            ]}
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
+                <ListItem><Link page={["Components", "Images"]}>Text styling</Link></ListItem>
             </List>
         </ApiPage>
     );

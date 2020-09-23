@@ -9,25 +9,25 @@ import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
-const importCode = `
-import {Bold} from "@material-docs/core";
-// or
-import Bold from "@material-docs/core/components/Bold";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function BoldAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.BoldAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"BoldAPI"}
-            searchTags={["bold", "font", "text", "styling", "api"]}
             name={"Bold"}
+            overrideName={"MatDoc-Bold"}
+            localeName={"BoldAPI"}
             importCode={importCode}
+            properties={[
+                {name: "chidlren", type: "node", default: "", description: locale.props.children},
+            ]}
+            css={[
+                {name: "root", global: "MatDocs-root", description: locale.css.root},
+                {name: "bold", global: "MatDocs-bold", description: locale.css.bold},
+            ]}
         >
             <H2>Demos</H2>
             <List>

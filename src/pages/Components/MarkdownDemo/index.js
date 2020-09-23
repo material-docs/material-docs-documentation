@@ -24,124 +24,10 @@ import List from "@material-docs/core/components/List/List";
 import ListItem from "@material-docs/core/components/ListItem/ListItem";
 import Link from "@material-docs/core/components/Link/Link";
 
-const MarkdownOverviewCode = `
-import React from "react";
-import Markdown from "@material-docs/core/components/Markdown";
-
-const markdown = \`
-# This is an overview markdown example
-### It generated from markdown text and rendered using Material Docs elements
-> You can change styling by providing theme overrides!
-
-| Hello darkness my old friend     | Здравствуй, ночь, моя старая подруга! |
-|----------------------------------|---------------------------------------|
-| I've come to talk with you again | Я пришел снова побеседовать с тобой   |
-\`.trim();
-
-export default function MarkdownOverview() {
-    return (
-        <Markdown>
-            {markdown}
-        </Markdown>
-    );
-}
-`.trim();
-
-
-const expansionCodeBlockExample = `
-import React from "react";
-import Markdown from "@material-docs/core/components/Markdown";
-
-const markdown = \`
-\\\`\\\`\\\`{"type": "expansion-code", "theme": "darcula", "name": "ExpansionCode in markdown"}
-import React from "react";
-
-function test() {
-    console.log("I am function in expansion code element.");
-    return null;
-}
-\\\`\\\`\\\`
-\`.trim();
-
-export default function MarkdownOverview() {
-    return (
-        <Markdown>
-            {markdown}
-        </Markdown>
-    );
-}
-`.trim();
-
-const demoWithCodeBlockExample = `
-import React from "react";
-import Markdown from "@material-docs/core/components/Markdown";
-
-function HelloWorld() {
-    return (
-        <div>
-            <h1>Hello darkness my old friend</h1>
-        </div>
-    );
-}
-
-const markdown = \`
-\\\`\\\`\\\`
-{
-    "type"
-:
-    "demo-with-code", "theme"
-:
-    "darcula", "name"
-:
-    "DemoWithCode in markdown", "demo"
-:
-    "exampleFunction"
-}
-import React from "react";
-
-function HelloWorld() {
-    return (
-        <div>
-            <h1>Hello darkness my old friend</h1>
-        </div>
-    );
-}
-\\\`\\\`\\\`
-\`.trim();
-
-export default function DemoWithCodeMD() {
-    return (
-        <Markdown data={{exampleFunction: <HelloWorld/>}}>
-            {markdown}
-        </Markdown>
-    );
-}
-`.trim();
-
-const codeBlockExample = `
-import React from "react";
-import Markdown from "@material-docs/core/components/Markdown";
-
-const markdown = \`
-\\\`\\\`\\\`{"type": "code", "theme": "darcula"}
-import React from "react";
-
-function test() {
-    console.log("I am function in code element.");
-    return null;
-}
-\\\`\\\`\\\`
-\`.trim();
-
-export default function CodeMD() {
-    return (
-        <Markdown>
-            {markdown}
-        </Markdown>
-    );
-}
-
-`.trim();
+import markdownOverviewCode from "../../../examples/Markdown/MarkdownOverview.md";
+import expansionCodeBlockExample from "../../../examples/Markdown/ExpansionCodeMD.md"
+import demoWithCodeBlockExample from "../../../examples/Markdown/DemoWithCodeMD.md";
+import codeBlockExample from "../../../examples/Markdown/CodeMD.md"
 
 
 const codeBlockExamples = {
@@ -165,7 +51,7 @@ export default function MarkdownDemo() {
             <H3 noTag noDivider>{locale.pageAbout}</H3>
             <Markdown>{locale.infoBlock1}</Markdown>
             <DemoWithCode
-                code={MarkdownOverviewCode}
+                code={markdownOverviewCode}
                 theme={"darcula"}
                 paperContainer
                 defaultExpanded

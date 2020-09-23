@@ -60,6 +60,14 @@ import H4API from "./pages/APIs/H4API";
 import H5API from "./pages/APIs/H5API";
 import H6API from "./pages/APIs/H6API";
 import HeaderAPI from "./pages/APIs/HeaderAPI";
+import RCDEPropAPI from "./pages/Extensions/ReactComponentsDocsExtension/APIs/PropAPI";
+import RCDEReactComponentApiPageAPI
+    from "./pages/Extensions/ReactComponentsDocsExtension/APIs/ReactComponentApiPageAPI";
+import RCDEStyleAPI from "./pages/Extensions/ReactComponentsDocsExtension/APIs/StyleAPI";
+import ReactComponentApiPageDemo
+    from "./pages/Extensions/ReactComponentsDocsExtension/Components/ReactComponentApiPageDemo";
+import CodeDemo from "./pages/Components/CodeDemo";
+import TablesDemo from "./pages/Components/TablesDemo";
 
 
 export default function Documentation() {
@@ -101,12 +109,14 @@ export default function Documentation() {
                     <Installation/>
                 </PagesGroup>
                 <PagesGroup name={"Components"}>
+                    <CodeDemo/>
                     <ListsDemo/>
                     <LayoutDemo/>
                     <HeadersDemo/>
                     <MarkdownDemo/>
                     <TextStylingDemo/>
                     <ImagesDemo/>
+                    <TablesDemo/>
                 </PagesGroup>
                 <PagesGroup name={"Component APIs"}>
                     <DocsLayoutAPI/>
@@ -148,6 +158,19 @@ export default function Documentation() {
                 </PagesGroup>
                 <PagesGroup name={"Tutorials"}>
                     <CreatingMaterialDocs/>
+                </PagesGroup>
+                <PagesGroup name={"Extensions"}>
+                    <PagesGroup name={"React Components Docs Extension"}>
+                        <ReactComponentApiPageDemo/>
+                        <PagesGroup name={"Component API"}>
+                            <RCDEPropAPI/>
+                            <RCDEStyleAPI/>
+                            <RCDEReactComponentApiPageAPI/>
+                        </PagesGroup>
+                    </PagesGroup>
+                </PagesGroup>
+                <PagesGroup name={"System"}>
+
                 </PagesGroup>
             </DocsPages>
         </DocsLayout>

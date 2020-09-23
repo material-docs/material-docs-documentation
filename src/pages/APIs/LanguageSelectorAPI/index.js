@@ -9,25 +9,25 @@ import {Link} from "@material-ui/core";
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {LanguageSelector} from "@material-docs/core";
-// or
-import LanguageSelector from "@material-docs/core/components/LanguageSelector";
-`.trim();
+import importCode from "./importCode.md";
 
 export default function LanguageSelectorAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.LanguageSelectorAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"LanguageSelectorAPI"}
-            searchTags={["language", "locale", "select", "api"]}
             name={"LanguageSelector"}
+            localeName={"LanguageSelectorAPI"}
+            overrideName={"MatDoc-LanguageSelector"}
+            searchTags={["language", "locale", "select", "api"]}
             importCode={importCode}
+            properties={[
+                {name: "size", type: "\"small\" | \"large\"", default: "\"large\"", description: locale.props.size},
+            ]}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

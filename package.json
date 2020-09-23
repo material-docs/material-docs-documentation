@@ -1,5 +1,5 @@
 {
-  "name": "material-docs-documentation",
+  "name": "@material-docs/material-docs-documentation",
   "version": "0.1.3",
   "private": false,
   "description": "Documentation for Material Docs. material-docs - react framework for easy creating documentation site in material design style.",
@@ -29,10 +29,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@material-docs/core": "^0.3.6",
+    "@craco/craco": "^5.6.4",
+    "@material-docs/core": "^0.4.5",
+    "@material-docs/react-components-docs-extension": "^0.2.0",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.1",
+    "craco-raw-loader": "^1.0.1",
+    "raw-loader": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-parallax": "^3.0.3",
@@ -44,9 +48,9 @@
     "@testing-library/user-event": "^7.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

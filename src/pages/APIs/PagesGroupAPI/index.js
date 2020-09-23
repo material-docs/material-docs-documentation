@@ -4,34 +4,33 @@
  */
 
 import React from "react";
-import {Link} from "@material-ui/core";
 
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
-const importCode = `
-import {PagesGroup} from "@material-docs/core";
-// or
-import PagesGroup from "@material-docs/core/components/PagesGroup";
-`.trim();
+import importCode from "./importCode.md";
+import Link from "@material-docs/core/components/Link";
 
 export default function PagesGroupAPI() {
     const {lang} = useLang();
     const locale = lang.locale.pages.PagesGroupAPI;
-    const localeSpells = lang.locale.common.spells;
-    const componentAPILocale = lang.locale.common.ComponentAPI;
 
     return (
         <ApiPage
-            lang={lang}
-            localeName={"PagesGroupAPI"}
-            searchTags={["page", "group", "gather", "container"]}
             name={"PagesGroup"}
+            localeName={"PagesGroupAPI"}
+            overrideName={"MatDoc-PagesGroup"}
             importCode={importCode}
+            properties={[
+                {name: "name", type: "string", default: "", description: locale.props.name},
+                {name: "getData", type: "function(data: PagesGroupData): void", default: "", description: locale.props.code},
+                {name: "children", type: "node", default: "", description: locale.props.children},
+            ]}
+            enableCss={false}
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link>Lists</Link></ListItem>
+                <ListItem><Link page={["Components", "Layout"]}>Layout</Link></ListItem>
             </List>
         </ApiPage>
     );
