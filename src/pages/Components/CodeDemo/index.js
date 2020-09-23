@@ -23,7 +23,7 @@ import ExpansionCodeExample from "../../../examples/Code/ExpansionCodeExample";
 
 import {TaggingContext} from "@material-docs/core/hooks/useTags"
 
-import demoWithCodeCode from "../../../examples/Code/expansionCodeExample.md";
+import demoWithCodeCode from "../../../examples/Code/demoWithCodeExampleCode.md";
 import DemoWithCodeExample from "../../../examples/Code/DemoWithCodeExpample";
 import H2 from "@material-docs/core/components/H2";
 
