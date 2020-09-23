@@ -25,6 +25,7 @@ import {TaggingContext} from "@material-docs/core/hooks/useTags"
 
 import demoWithCodeCode from "../../../examples/Code/expansionCodeExample.md";
 import DemoWithCodeExample from "../../../examples/Code/DemoWithCodeExpample";
+import H2 from "@material-docs/core/components/H2";
 
 export default function CodeDemo() {
     const {lang} = useLang();
@@ -38,9 +39,11 @@ export default function CodeDemo() {
         >
             <H1>Code showers</H1>
             <H3 noTag noDivider>Code showers - React components, designed to help you to share your source code.</H3>
-            <Markdown>asd</Markdown>
+            <Markdown>{locale.globalDetails}</Markdown>
+            <H2>{locale.componentsHeader}</H2>
+            <H3 noDivider>{"<Code/>"}</H3>
+            <Markdown>{locale.codeDetails}</Markdown>
             <DemoWithCode
-                name={"<Code/>"}
                 code={codeCode}
                 theme={"darcula"}
                 paperContainer
@@ -50,8 +53,9 @@ export default function CodeDemo() {
                     <CodeExample />
                 </Box>
             </DemoWithCode>
+            <H3 noDivider>{"<ExpansionCode/>"}</H3>
+            <Markdown>{locale.expansionCodeDetails}</Markdown>
             <DemoWithCode
-                name={"<ExpansionCode/>"}
                 code={expansionCodeCode}
                 theme={"darcula"}
                 paperContainer
@@ -63,8 +67,9 @@ export default function CodeDemo() {
                     </TaggingContext.Provider>
                 </Box>
             </DemoWithCode>
+            <H3 noDivider>{"<DemoWithCode/>"}</H3>
+            <Markdown>{locale.demoWithCodeDetails}</Markdown>
             <DemoWithCode
-                name={"<DemoWithCode/>"}
                 code={demoWithCodeCode}
                 theme={"darcula"}
                 actions={[{label: "Source code", link: ""}]}

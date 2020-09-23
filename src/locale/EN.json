@@ -1,13 +1,21 @@
 {
-  "name": "english",
+  "name": "en-us",
   "label": "English",
   "locale": {
     "pages": {
       "CodeDemo": {
-        "searchDescription": "",
+        "searchDescription": "Demo of Code showers components.",
         "searchTags": {
-
-        }
+          "demo": "demo",
+          "code": "code",
+          "showing": "showing",
+          "demonstration": "demonstration"
+        },
+        "globalDetails": "Code showers - these are React components created to enable the user to showcase the source code.",
+        "componentsHeader": "Components",
+        "codeDetails": "You can use the ```Code``` component to showcase your sources or other code.",
+        "expansionCodeDetails": "If you want your code to have additional features such as:\n* Ability to collapse code\n* Ability to copy code to clipboard\n* Ability to add additional actions.\n\n\n  Then ```ExpansionCode``` is the right choice.",
+        "demoWithCodeDetails": "The ```DemoWithCode``` component is used to demonstrate the functionality that the code implements. It expands the capabilities of the [```ExpansionCode```](#<expansioncode>) component"
       },
       "ImagesDemo": {
         "pageAbout": "Pictures are needed in order to visually demonstrate some information",

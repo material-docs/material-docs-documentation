@@ -66,7 +66,8 @@ import RCDEReactComponentApiPageAPI
 import RCDEStyleAPI from "./pages/Extensions/ReactComponentsDocsExtension/APIs/StyleAPI";
 import ReactComponentApiPageDemo
     from "./pages/Extensions/ReactComponentsDocsExtension/Components/ReactComponentApiPageDemo";
-import CodeDemo from "./pages/Components/Code";
+import CodeDemo from "./pages/Components/CodeDemo";
+import TablesDemo from "./pages/Components/TablesDemo";
 
 
 export default function Documentation() {
@@ -115,6 +116,7 @@ export default function Documentation() {
                     <MarkdownDemo/>
                     <TextStylingDemo/>
                     <ImagesDemo/>
+                    <TablesDemo/>
                 </PagesGroup>
                 <PagesGroup name={"Component APIs"}>
                     <DocsLayoutAPI/>
@@ -159,11 +161,11 @@ export default function Documentation() {
                 </PagesGroup>
                 <PagesGroup name={"Extensions"}>
                     <PagesGroup name={"React Components Docs Extension"}>
-                        <ReactComponentApiPageDemo />
+                        <ReactComponentApiPageDemo/>
                         <PagesGroup name={"Component API"}>
-                            <RCDEPropAPI />
-                            <RCDEStyleAPI />
-                            <RCDEReactComponentApiPageAPI />
+                            <RCDEPropAPI/>
+                            <RCDEStyleAPI/>
+                            <RCDEReactComponentApiPageAPI/>
                         </PagesGroup>
                     </PagesGroup>
                 </PagesGroup>

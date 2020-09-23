@@ -1331,10 +1331,10 @@
     react-syntax-highlighter "^13.0.0"
     routing-manager "^2.0.4"
 
-"@material-docs/react-components-docs-extension@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.1.9.tgz#17af89e13e990328fcaf8813a8d43377442546e1"
-  integrity sha512-YHGH+EgRQUeWFctx/f6D2zZG0pcXDo3n9CS81Gf29GliQpZvfkFhIOW3N3uXAbE7rM+qbEjEepWEE9BQUNKslw==
+"@material-docs/react-components-docs-extension@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@material-docs/react-components-docs-extension/-/react-components-docs-extension-0.2.0.tgz#8179354884a696a1dff04ec0259d7fbfe42fd790"
+  integrity sha512-bPaKv4eKIRB1P0IJ//jFX1RxuV2H4YIPUH+jIrMu8xj0rvSwA/qs9f498W4JHWI+mjpPAgRbRmMGPCm5QPXTMg==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/styles" "^4.10.0"

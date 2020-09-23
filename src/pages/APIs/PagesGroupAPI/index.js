@@ -4,12 +4,12 @@
  */
 
 import React from "react";
-import {Link} from "@material-ui/core";
 
 import {H2, List, ListItem, useLang} from "@material-docs/core";
 import ApiPage from "../../../components/ApiPage";
 
 import importCode from "./importCode.md";
+import Link from "@material-docs/core/components/Link";
 
 export default function PagesGroupAPI() {
     const {lang} = useLang();
@@ -30,7 +30,7 @@ export default function PagesGroupAPI() {
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link>Lists</Link></ListItem>
+                <ListItem><Link page={["Components", "Layout"]}>Layout</Link></ListItem>
             </List>
         </ApiPage>
     );
