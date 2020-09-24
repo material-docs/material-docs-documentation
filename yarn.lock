@@ -1310,10 +1310,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.4.6":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.6.tgz#e4525e61f5af2d6d4403d6b626bba400a9b089d5"
-  integrity sha512-nwSRDkGQpuIWtQ2FDLSKldhWqKJz6HGpoLZyFywEIk59lv156bVo2LrtE13q/vBitdgkPE5RrOlFMYNCgerOPw==
+"@material-docs/core@^0.4.7":
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.4.7.tgz#ef202edc1afa4a9fe8ddada02ecf1bad7809a825"
+  integrity sha512-si8gP5MnImDoFcmOtZC56Skoz9E7Y3gWodN53oWWfImMQbdUeiM0wHyHnW6/gkmo272HcQaJEraey5ebUBZ9Aw==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
