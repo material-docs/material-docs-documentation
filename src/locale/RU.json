@@ -1202,6 +1202,33 @@
         "ComponentNameHeader": "Имя компонента",
         "ref": "Объект ```ref``` передан в корневой элемент."
       }
+    },
+    "MaterialDocs": {
+      "navigationList": {
+        "content": "Содержание"
+      },
+      "tooltips": {
+        "selectLanguage": "Выбрать язык",
+        "switchTheme": "Переключить светлую/тёмную тему"
+      },
+      "copyright": "Созданно с помощью MaterialDocs. Все права защищены.",
+      "SearchField": {
+        "label": "Поиск..."
+      },
+      "notices": {
+        "codeCopied": "Кол скопирован в буфер обмена",
+        "codeNotCopied": "Не удалось скопировать код в буфер обмена"
+      },
+      "ExpansionCode": {
+        "copyToClipboard": "Скопировать код в буфер обмена",
+        "expand": "Развернуть/свернуть код",
+        "moreActions": "Больше действий"
+      },
+      "DemoWithCode": {
+        "copyToClipboard": "Скопировать код в буфер обмена",
+        "expand": "Развернуть/свернуть код",
+        "moreActions": "Больше действий"
+      }
     }
   }
 }
