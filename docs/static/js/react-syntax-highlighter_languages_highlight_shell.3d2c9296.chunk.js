@@ -1,0 +1,2 @@
+(this["webpackJsonp@material-docs/material-docs-documentation"]=this["webpackJsonp@material-docs/material-docs-documentation"]||[]).push([[153],{1270:function(a,s){a.exports=function(a){return{name:"Shell Session",aliases:["console"],contains:[{className:"meta",begin:"^\\s{0,3}[/\\w\\d\\[\\]()@-]*[>%$#]",starts:{end:"$",subLanguage:"bash"}}]}}}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_highlight_shell.3d2c9296.chunk.js.map

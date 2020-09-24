@@ -1,2 +1,0 @@
-(this["webpackJsonpmaterial-docs-documentation"]=this["webpackJsonpmaterial-docs-documentation"]||[]).push([[125],{1196:function(t,e){t.exports=function(t){return{name:"Plain text",aliases:["text","txt"],disableAutodetect:!0}}}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_plaintext.02b5b4d9.chunk.js.map
