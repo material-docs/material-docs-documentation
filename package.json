@@ -1,6 +1,6 @@
 {
   "name": "@material-docs/material-docs-documentation",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "Documentation for Material Docs. material-docs - react framework for easy creating documentation site in material design style.",
   "homepage": "http://material-docs.com/",
