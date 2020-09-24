@@ -38,6 +38,7 @@ export default function TextStylingDemo() {
                 defaultExpanded
                 theme={"darcula"}
                 name={locale.overview}
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/TextStyling/TextStylingOverview.js"}]}
             >
                 <Box p={2}>
                     <TextStylingOverview/>
@@ -50,6 +51,7 @@ export default function TextStylingDemo() {
                 code={nestedCode}
                 theme={"darcula"}
                 name={locale.nestedComponents}
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/TextStyling/TextStylingNested.js"}]}
             >
                 <Box p={2}>
                     <TextStylingNested/>

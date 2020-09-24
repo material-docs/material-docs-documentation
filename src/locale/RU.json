@@ -3,6 +3,24 @@
   "label": "Русский",
   "locale": {
     "pages": {
+      "TablesDemo": {
+        "searchDescription": "Demo of Table parts components.",
+        "searchTags": {
+          "demo": "demo",
+          "table": "table",
+          "row": "row",
+          "cell": "cell",
+          "demonstration": "demonstration",
+          "table_ru": "таблицф",
+          "demo_ru": "думо"
+        },
+        "simpleTableHeader": "Простая таблица",
+        "simpleTableSummary": "Таблицы нужны для демонстрации большого количества структурированных данных.",
+        "tablesWithMarkdownHeader": "Таблицы с markdown",
+        "tablesWithMarkdownSummary": "Для кастомизации таблиц вы можете использовать компонент __Markdown__. Не забудьте выставить пропы ```typographyInheritSize``` и ```inline``` в компоненте __Markdown__",
+        "moreInfoHeader": "Больше информации",
+        "moreInfoSummary": "Вы можете узнать больше информации о настройке таблиц [тут](https://material-ui.com/components/tables/)."
+      },
       "CodeDemo": {
         "searchDescription": "Демонстрация космпонентов Code showers",
         "searchTags": {

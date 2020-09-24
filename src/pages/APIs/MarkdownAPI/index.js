@@ -24,6 +24,8 @@ export default function MarkdownAPI() {
             properties={[
                 {name: "inline", type: "boolean", default: "false", description: locale.props.inline},
                 {name: "data", type: "object", default: "{}", description: locale.props.data},
+                {name: "typographyInheritSize", type: "boolean", default: "false", description: locale.props.typographyInheritSize},
+                {name: "locale", type: "string", default: "", description: locale.props.locale},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[

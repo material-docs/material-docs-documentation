@@ -18,39 +18,44 @@ import H2 from "@material-docs/core/components/H2";
 import List from "@material-docs/core/components/List";
 import ListItem from "@material-docs/core/components/ListItem";
 import Link from "@material-docs/core/components/Link";
+import {useLang} from "@material-docs/core";
 
 export default function TablesDemo() {
+    const {lang} = useLang();
+    const locale = lang.locale.pages.TablesDemo;
+
     return (
         <DocsPage
             name={"Tables"}
         >
             <H1>Tables</H1>
-            <Markdown></Markdown>
-            <H3>Simple Table</H3>
-            <Markdown>Таблицы нужны для демонстрации большого количества структурированных данных.</Markdown>
+            <H3>{locale.simpleTableHeader}</H3>
+            <Markdown>{locale.simpleTableSummary}</Markdown>
             <DemoWithCode
                 theme={"darcula"}
                 code={simpleTableCode}
                 paperContainer
                 defaultExpanded
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Tables/SimpleTable.js"}]}
             >
                 <Box p={1}>
                     <SimpleTable/>
                 </Box>
             </DemoWithCode>
-            <H3>Tables with markdown</H3>
-            <Markdown>Для кастомизации таблиц вы можете использовать компонент __Markdown__. Не забудьте выставить пропы ```typographyInheritSize``` и ```inline``` в компоненте __Markdown__</Markdown>
+            <H3>{locale.tablesWithMarkdownHeader}</H3>
+            <Markdown>{locale.tablesWithMarkdownSummary}</Markdown>
             <DemoWithCode
                 theme={"darcula"}
                 code={tableWithMarkdownCode}
                 paperContainer
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Tables/TableWithMarkdown.js"}]}
             >
                 <Box p={1}>
                     <TableWithMarkdown/>
                 </Box>
             </DemoWithCode>
-            <H2>Больше информации</H2>
-            <Markdown>Вы можете узнать больше информации о настройке таблиц [тут]()</Markdown>
+            <H2>{locale.moreInfoHeader}</H2>
+            <Markdown>{locale.moreInfoSummary}</Markdown>
             <H2>Demos</H2>
             <List>
                 <ListItem><Link page={["Component APIs", "Table"]}>Table</Link></ListItem>

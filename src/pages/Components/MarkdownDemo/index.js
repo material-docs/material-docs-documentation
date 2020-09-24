@@ -31,9 +31,9 @@ import codeBlockExample from "../../../examples/Markdown/CodeMD.md"
 
 
 const codeBlockExamples = {
-    "expansion-code": {code: expansionCodeBlockExample, demo: <ExpansionCodeMD/>},
-    "demo-with-code": {code: demoWithCodeBlockExample, demo: <DemoWithCodeMD/>},
-    "code": {code: codeBlockExample, demo: <CodeMD/>},
+    "expansion-code": {code: expansionCodeBlockExample, demo: <ExpansionCodeMD/>, page: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Markdown/ExpansionCodeMD.js"},
+    "demo-with-code": {code: demoWithCodeBlockExample, demo: <DemoWithCodeMD/>, page: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Markdown/DemoWithCodeMD.js"},
+    "code": {code: codeBlockExample, demo: <CodeMD/>, page: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Markdown/CodeMD.js"},
 }
 
 export default function MarkdownDemo() {
@@ -56,6 +56,7 @@ export default function MarkdownDemo() {
                 paperContainer
                 defaultExpanded
                 name={locale.overviewExample}
+                actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Markdown/MarkdownOverview.js"}]}
             >
                 <Box p={2}>
                     <TaggingContext.Provider value={{
@@ -82,6 +83,7 @@ export default function MarkdownDemo() {
                             code={demo.code}
                             theme={"darcula"}
                             paperContainer
+                            actions={[{label: "GitHub source", link: demo.page}]}
                         >
                             <Box p={2}>
                                 <TaggingContext.Provider value={{

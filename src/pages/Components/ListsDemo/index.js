@@ -36,7 +36,17 @@ export default function ListsDemo() {
                 can contain
                 its content and nested list items inside ```ListItemContained``` component.
             </Markdown>
-            <DemoWithCode code={simpleListCode} paperContainer theme={"darcula"} name={"Simple list"} defaultExpanded>
+            <DemoWithCode
+                code={simpleListCode}
+                paperContainer
+                theme={"darcula"}
+                name={"Simple list"}
+                defaultExpanded
+                actions={[{
+                    label: "GitHub source",
+                    link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Lists/SimpleList.js"
+                }]}
+            >
                 <Box p={2}>
                     <SimpleList/>
                 </Box>
@@ -46,15 +56,30 @@ export default function ListsDemo() {
                 You can create __nested lists__ inside ```ListItem``` component. Just place __nested items__ inside
                 ```ListItemContained``` component in ```ListItem```.
             </Markdown>
-            <DemoWithCode code={listWithNestedItemsCode} paperContainer theme={"darcula"}
-                          name={"List with nested items"}>
+            <DemoWithCode
+                code={listWithNestedItemsCode}
+                paperContainer theme={"darcula"}
+                name={"List with nested items"}
+                actions={[{
+                    label: "GitHub source",
+                    link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Lists/ListWithNestedItems.js"
+                }]}
+            >
                 <Box p={2}>
                     <ListWithNestedItems/>
                 </Box>
             </DemoWithCode>
 
             <Markdown>Lists can be __decorated__ with several points type.</Markdown>
-            <DemoWithCode code={decoratedListCode} paperContainer theme={"darcula"} name={"List with items decoration"}>
+            <DemoWithCode
+                code={decoratedListCode}
+                paperContainer theme={"darcula"}
+                name={"List with items decoration"}
+                actions={[{
+                    label: "GitHub source",
+                    link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Lists/DecoratedList.js"
+                }]}
+            >
                 <Box p={2}>
                     <DecoratedList/>
                 </Box>

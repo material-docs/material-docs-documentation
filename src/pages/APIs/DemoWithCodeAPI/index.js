@@ -29,6 +29,8 @@ export default function DemoWithCodeAPI() {
                 {name: "noTag", type: "boolean", default: "false", description: locale.props.noTag},
                 {name: "paperContainer", type: "boolean", default: "false", description: locale.props.paperContainer},
                 {name: "actions", type: "DemoCodeAction[]", default: "", description: locale.props.actions},
+                {name: "p", type: "number", default: "0", description: locale.props.p},
+                {name: "m", type: "number", default: "0", description: locale.props.m},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
