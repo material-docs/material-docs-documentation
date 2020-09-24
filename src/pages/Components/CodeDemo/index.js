@@ -26,23 +26,26 @@ import {TaggingContext} from "@material-docs/core/hooks/useTags"
 import demoWithCodeCode from "../../../examples/Code/demoWithCodeExampleCode.md";
 import DemoWithCodeExample from "../../../examples/Code/DemoWithCodeExpample";
 import H2 from "@material-docs/core/components/H2";
+import Locale from "@material-docs/core/components/Locale";
 
 export default function CodeDemo() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.CodeDemo;
+    const localeObj = lang.locale.pages.CodeDemo;
+
+    const locale = "pages/CodeDemo";
 
     return (
         <DocsPage
             name={"Code showers"}
-            searchDescription={locale.searchDescription}
-            searchTags={convertJsonToArray(locale.searchTags)}
+            searchDescription={localeObj.searchDescription}
+            searchTags={convertJsonToArray(localeObj.searchTags)}
         >
             <H1>Code showers</H1>
             <H3 noTag noDivider>Code showers - React components, designed to help you to share your source code.</H3>
-            <Markdown>{locale.globalDetails}</Markdown>
-            <H2>{locale.componentsHeader}</H2>
+            <Markdown locale={`${locale}/globalDetails`} />
+            <H2><Locale path={`${locale}/componentsHeader`}/></H2>
             <H3 noDivider>{"<Code/>"}</H3>
-            <Markdown>{locale.codeDetails}</Markdown>
+            <Markdown locale={`${locale}/codeDetails`}></Markdown>
             <DemoWithCode
                 code={codeCode}
                 theme={"darcula"}
@@ -52,13 +55,12 @@ export default function CodeDemo() {
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Code/CodeExample.js"
                 }]}
+                p={1}
             >
-                <Box p={1}>
-                    <CodeExample />
-                </Box>
+                <CodeExample/>
             </DemoWithCode>
             <H3 noDivider>{"<ExpansionCode/>"}</H3>
-            <Markdown>{locale.expansionCodeDetails}</Markdown>
+            <Markdown locale={`${locale}/expansionCodeDetails`}/>
             <DemoWithCode
                 code={expansionCodeCode}
                 theme={"darcula"}
@@ -68,15 +70,12 @@ export default function CodeDemo() {
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Code/ExpansionCodeExample.js"
                 }]}
+                p={1}
             >
-                <Box p={1}>
-                    <TaggingContext.Provider value={{setTag: () => {}, removeTag: () => {}}}>
-                        <ExpansionCodeExample />
-                    </TaggingContext.Provider>
-                </Box>
+                <ExpansionCodeExample/>
             </DemoWithCode>
             <H3 noDivider>{"<DemoWithCode/>"}</H3>
-            <Markdown>{locale.demoWithCodeDetails}</Markdown>
+            <Markdown locale={`${locale}/demoWithCodeDetails`}/>
             <DemoWithCode
                 code={demoWithCodeCode}
                 theme={"darcula"}
@@ -85,12 +84,9 @@ export default function CodeDemo() {
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Code/DemoWithCodeExpample.js"
                 }]}
+                p={1}
             >
-                <Box p={1}>
-                    <TaggingContext.Provider value={{setTag: () => {}, removeTag: () => {}}}>
-                        <DemoWithCodeExample />
-                    </TaggingContext.Provider>
-                </Box>
+                <DemoWithCodeExample/>
             </DemoWithCode>
             <H3>APIs</H3>
             <List>

@@ -42,16 +42,9 @@ export default function HeadersDemo() {
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Headers/AllHeaders.js"
                 }]}
+                p={2}
             >
-                <Box p={2}>
-                    <TaggingContext.Provider value={{
-                        setTag: () => {
-                        }, removeTag: () => {
-                        }, tags: {}
-                    }}>
-                        <AllHeaders/>
-                    </TaggingContext.Provider>
-                </Box>
+                <AllHeaders/>
             </DemoWithCode>
             <H2>Settings</H2>
             <H3 noDivider>{locale.contentAutoGeneration}</H3>
