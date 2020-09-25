@@ -18,7 +18,7 @@ export default function CodeAPI() {
         <ApiPage
             name={"Code"}
             localeName={"CodeAPI"}
-            overrideName={"MatDocs-Code"}
+            overrideName={"MaterialDocss-Code"}
             importCode={importCode}
             properties={[
                 {name: "language", type: "string", default: "\"javascript\"", description: locale.props.language},
@@ -28,8 +28,8 @@ export default function CodeAPI() {
                 {name: "children", type: "string", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "highlighterContainer", global: "MatDoc-highlighterContainer", description: locale.css.highlighterContainer},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "highlighterContainer", global: "MaterialDocs-highlighterContainer", description: locale.css.highlighterContainer},
             ]}
         >
             <H2>Demos</H2>

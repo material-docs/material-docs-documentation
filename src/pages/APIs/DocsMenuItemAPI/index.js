@@ -18,7 +18,7 @@ export default function DocsMenuItemAPI() {
         <ApiPage
             name={"DocsMenuItem"}
             localeName={"DocsMenuItemAPI"}
-            overrideName={"MatDoc-DocsMenuItem"}
+            overrideName={"MaterialDocs-DocsMenuItem"}
             importCode={importCode}
             properties={[
                 {name: "defaultExpanded", type: "boolean", default: "false", description: locale.props.defaultExpanded},
@@ -33,9 +33,9 @@ export default function DocsMenuItemAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "highlighted", global: "MatDoc-highlighted", description: locale.css.highlighted},
-                {name: "collapse", global: "MatDoc-collapse", description: locale.css.collapse},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "highlighted", global: "MaterialDocs-highlighted", description: locale.css.highlighted},
+                {name: "collapse", global: "MaterialDocs-collapse", description: locale.css.collapse},
             ]}
         >
             <H2>Demos</H2>

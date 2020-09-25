@@ -19,7 +19,7 @@ export default function ImageAPI() {
             lang={lang}
             name={"Image"}
             localeName={"ImageAPI"}
-            overrideName={"MatDoc-Image"}
+            overrideName={"MaterialDocs-Image"}
             importCode={importCode}
             properties={[
                 {name: "src", type: "string", default: "", description: locale.props.src},
@@ -30,8 +30,8 @@ export default function ImageAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "fullWidth", global: "MatDoc-fullWidth", description: locale.css.fullWidth},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "fullWidth", global: "MaterialDocs-fullWidth", description: locale.css.fullWidth},
             ]}
         >
             <H2>Demos</H2>

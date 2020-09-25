@@ -19,7 +19,7 @@ export default function ListItemAPI() {
         <ApiPage
             name={"ListItem"}
             localeName={"ListItemAPI"}
-            overrideName={"MatDoc-ListItem"}
+            overrideName={"MaterialDocs-ListItem"}
             importCode={importCode}
             properties={[
                 {name: "type", type: "\"circle\" | \"square\" | \"upper-roman\" | \"lower-alpha\" | \"none\"", default: "\"circle\"", description: locale.props.type},
@@ -27,14 +27,14 @@ export default function ListItemAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "typeCircle", global: "MatDoc-typeCircle", description: locale.css.typeCircle},
-                {name: "typeSquare", global: "MatDoc-typeSquare", description: locale.css.typeSquare},
-                {name: "typeRoman", global: "MatDoc-typeRoman", description: locale.css.typeRoman},
-                {name: "typeAlpha", global: "MatDoc-typeAlpha", description: locale.css.typeAlpha},
-                {name: "typeNone", global: "MatDoc-typeNone", description: locale.css.typeNone},
-                {name: "list", global: "MatDoc-list", description: locale.css.list},
-                {name: "dense", global: "MatDoc-dense", description: locale.css.dense},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "typeCircle", global: "MaterialDocs-typeCircle", description: locale.css.typeCircle},
+                {name: "typeSquare", global: "MaterialDocs-typeSquare", description: locale.css.typeSquare},
+                {name: "typeRoman", global: "MaterialDocs-typeRoman", description: locale.css.typeRoman},
+                {name: "typeAlpha", global: "MaterialDocs-typeAlpha", description: locale.css.typeAlpha},
+                {name: "typeNone", global: "MaterialDocs-typeNone", description: locale.css.typeNone},
+                {name: "list", global: "MaterialDocs-list", description: locale.css.list},
+                {name: "dense", global: "MaterialDocs-dense", description: locale.css.dense},
             ]}
         >
             <H2>Demos</H2>

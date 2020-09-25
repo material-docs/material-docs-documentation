@@ -18,7 +18,7 @@ export default function TableCellAPI() {
         <ApiPage
             name={"TableCell"}
             localeName={"TableCellAPI"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MuiDemoWithCode"}
             importCode={importCode}
             properties={[
                 {name: "align", type: "\"center\" | \"inherit\" | \"justify\" | \"left\" | \"right\"", default: "\"inherit\"", description: locale.props.align},
@@ -31,18 +31,18 @@ export default function TableCellAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "head", global: "MatDoc-head", description: locale.css.head},
-                {name: "body", global: "MatDoc-body", description: locale.css.body},
-                {name: "footer", global: "MatDoc-footer", description: locale.css.footer},
-                {name: "sizeSmall", global: "MatDoc-sizeSmall", description: locale.css.sizeSmall},
-                {name: "paddingCheckbox", global: "MatDoc-paddingCheckbox", description: locale.css.paddingCheckbox},
-                {name: "paddingNone", global: "MatDoc-paddingNone", description: locale.css.paddingNone},
-                {name: "alignLeft", global: "MatDoc-alignLeft", description: locale.css.alignLeft},
-                {name: "alignCenter", global: "MatDoc-alignCenter", description: locale.css.alignCenter},
-                {name: "alignRight", global: "MatDoc-alignRight", description: locale.css.alignRight},
-                {name: "alignJustify", global: "MatDoc-alignJustify", description: locale.css.alignJustify},
-                {name: "stickyHeader", global: "MatDoc-stickyHeader", description: locale.css.stickyHeader},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "head", global: "MaterialDocs-head", description: locale.css.head},
+                {name: "body", global: "MaterialDocs-body", description: locale.css.body},
+                {name: "footer", global: "MaterialDocs-footer", description: locale.css.footer},
+                {name: "sizeSmall", global: "MaterialDocs-sizeSmall", description: locale.css.sizeSmall},
+                {name: "paddingCheckbox", global: "MaterialDocs-paddingCheckbox", description: locale.css.paddingCheckbox},
+                {name: "paddingNone", global: "MaterialDocs-paddingNone", description: locale.css.paddingNone},
+                {name: "alignLeft", global: "MaterialDocs-alignLeft", description: locale.css.alignLeft},
+                {name: "alignCenter", global: "MaterialDocs-alignCenter", description: locale.css.alignCenter},
+                {name: "alignRight", global: "MaterialDocs-alignRight", description: locale.css.alignRight},
+                {name: "alignJustify", global: "MaterialDocs-alignJustify", description: locale.css.alignJustify},
+                {name: "stickyHeader", global: "MaterialDocs-stickyHeader", description: locale.css.stickyHeader},
             ]}
         >
             <H2>Demos</H2>

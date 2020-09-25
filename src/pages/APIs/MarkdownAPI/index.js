@@ -19,7 +19,7 @@ export default function MarkdownAPI() {
         <ApiPage
             name={"Markdown"}
             localeName={"MarkdownAPI"}
-            overrideName={"MatDoc-Markdown"}
+            overrideName={"MaterialDocs-Markdown"}
             importCode={importCode}
             properties={[
                 {name: "inline", type: "boolean", default: "false", description: locale.props.inline},
@@ -29,7 +29,7 @@ export default function MarkdownAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
             <H2>Demos</H2>

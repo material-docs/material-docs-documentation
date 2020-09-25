@@ -20,7 +20,7 @@ export default function TableBodyAPI() {
         <ApiPage
             name={"TableBody"}
             localeName={"TableBodyAPI"}
-            overrideName={"MatDoc-TableBody"}
+            overrideName={"MuiTableBody"}
             searchTags={["table", "cell", "row", "header", "api", "body"]}
             importCode={importCode}
             properties={[
@@ -28,7 +28,7 @@ export default function TableBodyAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
             <H2>Demos</H2>

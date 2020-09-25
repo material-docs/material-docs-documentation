@@ -20,7 +20,7 @@ export default function TableAPI() {
         <ApiPage
             name={"Table"}
             localeName={"TableAPI"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MaterialDocs-Table"}
             importCode={importCode}
             properties={[
                 {name: "component", type: "elementType", default: "\"table\"", description: locale.props.component},
@@ -30,8 +30,8 @@ export default function TableAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "stickyHeader", global: "MatDoc-stickyHeader", description: locale.css.stickyHeader},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "stickyHeader", global: "MaterialDocs-stickyHeader", description: locale.css.stickyHeader},
             ]}
         >
             <H2>Demos</H2>

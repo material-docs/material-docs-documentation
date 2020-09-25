@@ -17,7 +17,7 @@ export default function AutoDocsMenuAPI() {
     return (
         <ApiPage
             name={"AutoDocsMenu"}
-            overrideName={"MatDoc-AutoDocsMenu"}
+            overrideName={"MaterialDocs-AutoDocsMenu"}
             localeName={"AutoDocsMenuAPI"}
             importCode={importCode}
             properties={[

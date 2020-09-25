@@ -18,15 +18,15 @@ export default function BoldAPI() {
     return (
         <ApiPage
             name={"Bold"}
-            overrideName={"MatDoc-Bold"}
+            overrideName={"MaterialDocs-Bold"}
             localeName={"BoldAPI"}
             importCode={importCode}
             properties={[
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDocs-root", description: locale.css.root},
-                {name: "bold", global: "MatDocs-bold", description: locale.css.bold},
+                {name: "root", global: "MaterialDocss-root", description: locale.css.root},
+                {name: "bold", global: "MaterialDocss-bold", description: locale.css.bold},
             ]}
         >
             <H2>Demos</H2>

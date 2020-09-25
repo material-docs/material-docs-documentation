@@ -19,7 +19,7 @@ export default function ListItemContainedAPI() {
         <ApiPage
             name={"ListItemContained"}
             localeName={"ListItemContainedAPI"}
-            overrideName={"MatDoc-ListItemContained"}
+            overrideName={"MaterialDocs-ListItemContained"}
             importCode={importCode}
             properties={[
                 {name: "children", type: "node", default: "", description: locale.props.children},

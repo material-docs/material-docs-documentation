@@ -18,7 +18,7 @@ export default function ListAPI() {
         <ApiPage
             name={"List"}
             localeName={"ListAPI"}
-            overrideName={"MatDoc-List"}
+            overrideName={"MaterialDocs-List"}
             importCode={importCode}
             properties={[
                 {name: "image", type: "string", default: "", description: locale.props.image},
@@ -26,12 +26,12 @@ export default function ListAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "stylePositionInside", global: "MatDoc-stylePositionInside", description: locale.css.stylePositionInside},
-                {name: "stylePositionOutside", global: "MatDoc-stylePositionOutside", description: locale.css.stylePositionOutside},
-                {name: "stylePositionInherit", global: "MatDoc-stylePositionInherit", description: locale.css.stylePositionInherit},
-                {name: "stylePositionRevert", global: "MatDoc-stylePositionRevert", description: locale.css.stylePositionRevert},
-                {name: "stylePositionUnset", global: "MatDoc-stylePositionUnset", description: locale.css.stylePositionUnset},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "stylePositionInside", global: "MaterialDocs-stylePositionInside", description: locale.css.stylePositionInside},
+                {name: "stylePositionOutside", global: "MaterialDocs-stylePositionOutside", description: locale.css.stylePositionOutside},
+                {name: "stylePositionInherit", global: "MaterialDocs-stylePositionInherit", description: locale.css.stylePositionInherit},
+                {name: "stylePositionRevert", global: "MaterialDocs-stylePositionRevert", description: locale.css.stylePositionRevert},
+                {name: "stylePositionUnset", global: "MaterialDocs-stylePositionUnset", description: locale.css.stylePositionUnset},
             ]}
         >
             <H2>Demos</H2>

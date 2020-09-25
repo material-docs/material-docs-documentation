@@ -19,7 +19,7 @@ export default function LocaleAPI() {
         <ApiPage
             name={"Locale"}
             localeName={"LocaleAPI"}
-            overrideName={"MatDoc-Locale"}
+            overrideName={"MaterialDocs-Locale"}
             importCode={importCode}
             properties={[
                 {name: "path", type: "string", default: "", description: locale.props.path},

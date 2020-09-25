@@ -18,7 +18,7 @@ export default function DemoWithCodeAPI() {
     return (
         <ApiPage
             name={"DemoWithCode"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MaterialDocs-DemoWithCode"}
             localeName={"DemoWithCodeAPI"}
             importCode={importCode}
             properties={[
@@ -37,12 +37,12 @@ export default function DemoWithCodeAPI() {
                 {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "collapse", global: "MatDoc-collapse", description: locale.css.collapse},
-                {name: "toolbar", global: "MatDoc-toolbar", description: locale.css.toolbar},
-                {name: "paperContainer", global: "MatDoc-paperContainer", description: locale.css.paperContainer},
-                {name: "menuButtonLink", global: "MatDoc-menuButtonLink", description: locale.css.menuButtonLink},
-                {name: "demo", global: "MatDoc-demo", description: locale.css.demo},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "collapse", global: "MaterialDocs-collapse", description: locale.css.collapse},
+                {name: "toolbar", global: "MaterialDocs-toolbar", description: locale.css.toolbar},
+                {name: "paperContainer", global: "MaterialDocs-paperContainer", description: locale.css.paperContainer},
+                {name: "menuButtonLink", global: "MaterialDocs-menuButtonLink", description: locale.css.menuButtonLink},
+                {name: "demo", global: "MaterialDocs-demo", description: locale.css.demo},
             ]}
         >
             <H2>Demos</H2>

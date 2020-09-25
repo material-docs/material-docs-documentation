@@ -19,7 +19,7 @@ export default function DocsMenuAPI() {
         <ApiPage
             name={"DocsMenu"}
             localeName={"DocsMenuAPI"}
-            overrideName={"MatDoc-DocsMenu"}
+            overrideName={"MaterialDocs-DocsMenu"}
             searchTags={["docs", "menu", "container", "api"]}
             importCode={importCode}
             properties={[

@@ -19,7 +19,7 @@ export default function PagesGroupAPI() {
         <ApiPage
             name={"PagesGroup"}
             localeName={"PagesGroupAPI"}
-            overrideName={"MatDoc-PagesGroup"}
+            overrideName={"MaterialDocs-PagesGroup"}
             importCode={importCode}
             properties={[
                 {name: "name", type: "string", default: "", description: locale.props.name},

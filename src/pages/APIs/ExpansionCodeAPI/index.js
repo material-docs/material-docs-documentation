@@ -18,7 +18,7 @@ export default function ExpansionCodeAPI() {
         <ApiPage
             name={"ExpansionCode"}
             localeName={"ExpansionCodeAPI"}
-            overrideName={"MatDoc-ExpansionCode"}
+            overrideName={"MaterialDocs-ExpansionCode"}
             searchTags={["demo", "with", "code", "api"]}
             importCode={importCode}
             properties={[
@@ -33,12 +33,12 @@ export default function ExpansionCodeAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "collapsedCode", global: "MatDoc-collapsedCode", description: locale.css.collapsedCode},
-                {name: "collapse", global: "MatDoc-collapse", description: locale.css.collapse},
-                {name: "toolbar", global: "MatDoc-toolbar", description: locale.css.toolbar},
-                {name: "codeName", global: "MatDoc-codeName", description: locale.css.codeName},
-                {name: "menuButtonLink", global: "MatDoc-menuButtonLink", description: locale.css.menuButtonLink},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "collapsedCode", global: "MaterialDocs-collapsedCode", description: locale.css.collapsedCode},
+                {name: "collapse", global: "MaterialDocs-collapse", description: locale.css.collapse},
+                {name: "toolbar", global: "MaterialDocs-toolbar", description: locale.css.toolbar},
+                {name: "codeName", global: "MaterialDocs-codeName", description: locale.css.codeName},
+                {name: "menuButtonLink", global: "MaterialDocs-menuButtonLink", description: locale.css.menuButtonLink},
             ]}
         >
             <H2>Demos</H2>

@@ -16,7 +16,7 @@ export default function BlockAPI() {
     return (
         <ApiPage
             name={"Block"}
-            overrideName={"MatDoc-Block"}
+            overrideName={"MaterialDocs-Block"}
             localeName={"BlockAPI"}
             searchTags={["block", "tip", "slided", "separated", "blockquote", "quote"]}
             importCode={importCode}
@@ -25,9 +25,9 @@ export default function BlockAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "colorLight", global: "MatDoc-colorLight", description: locale.css.colorLight},
-                {name: "colorDark", global: "MatDoc-colorDark", description: locale.css.colorDark},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "colorLight", global: "MaterialDocs-colorLight", description: locale.css.colorLight},
+                {name: "colorDark", global: "MaterialDocs-colorDark", description: locale.css.colorDark},
             ]}
         >
             <H2>Demos</H2>

@@ -19,14 +19,14 @@ export default function ItalicAPI() {
         <ApiPage
             name={"Italic"}
             localeName={"ItalicAPI"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MaterialDocs-DemoWithCode"}
             importCode={importCode}
             properties={[
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "italic", global: "MatDoc-italic", description: locale.css.italic},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "italic", global: "MaterialDocs-italic", description: locale.css.italic},
             ]}
         >
             <H2>Demos</H2>

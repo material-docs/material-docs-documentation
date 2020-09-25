@@ -19,14 +19,14 @@ export default function LanguageSelectorAPI() {
         <ApiPage
             name={"LanguageSelector"}
             localeName={"LanguageSelectorAPI"}
-            overrideName={"MatDoc-LanguageSelector"}
+            overrideName={"MaterialDocs-LanguageSelector"}
             searchTags={["language", "locale", "select", "api"]}
             importCode={importCode}
             properties={[
                 {name: "size", type: "\"small\" | \"large\"", default: "\"large\"", description: locale.props.size},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
             <H2>Demos</H2>
