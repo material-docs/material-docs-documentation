@@ -105,10 +105,13 @@ export default function Documentation() {
                 <MaterialDocsLanding/>
             </Landing>
             <DocsPages>
-                <PagesGroup name={"Getting started"}>
+                <PagesGroup name={"Getting started"} order={1}>
                     <Installation/>
                 </PagesGroup>
-                <PagesGroup name={"Components"}>
+                <PagesGroup name={"Tutorials"} order={2}>
+                    <CreatingMaterialDocs/>
+                </PagesGroup>
+                <PagesGroup name={"Components"} order={3}>
                     <CodeDemo/>
                     <ListsDemo/>
                     <LayoutDemo/>
@@ -118,7 +121,7 @@ export default function Documentation() {
                     <ImagesDemo/>
                     <TablesDemo/>
                 </PagesGroup>
-                <PagesGroup name={"Component APIs"}>
+                <PagesGroup name={"Component APIs"} order={4}>
                     <DocsLayoutAPI/>
                     <DocsPageAPI/>
                     <DemoWithCodeAPI/>
@@ -156,10 +159,10 @@ export default function Documentation() {
                         <TagableAPI/>
                     </PagesGroup>
                 </PagesGroup>
-                <PagesGroup name={"Tutorials"}>
-                    <CreatingMaterialDocs/>
+                <PagesGroup name={"System"} order={5}>
+
                 </PagesGroup>
-                <PagesGroup name={"Extensions"}>
+                <PagesGroup name={"Extensions"} order={6}>
                     <PagesGroup name={"React Components Docs Extension"}>
                         <ReactComponentApiPageDemo/>
                         <PagesGroup name={"Component API"}>
@@ -168,9 +171,6 @@ export default function Documentation() {
                             <RCDEReactComponentApiPageAPI/>
                         </PagesGroup>
                     </PagesGroup>
-                </PagesGroup>
-                <PagesGroup name={"System"}>
-
                 </PagesGroup>
             </DocsPages>
         </DocsLayout>
