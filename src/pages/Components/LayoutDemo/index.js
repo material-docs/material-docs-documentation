@@ -30,7 +30,7 @@ export default function LayoutDemo() {
                 __Material Docs__ starts here.
             </Markdown>
             <H3 noDivider>Simple layout</H3>
-            <Code theme={"darcula"}>
+            <Code themeLight={"darcula"}>
                 {simpleLayoutCode}
             </Code>
             <Markdown>
@@ -39,7 +39,7 @@ export default function LayoutDemo() {
                 ```DocsMenuItem``` prop ___name___ is a page identifier.
             </Markdown>
             <H3 noDivider>Layout with auto menu</H3>
-            <Code theme={"darcula"}>{layoutWithAutoMenuCode}</Code>
+            <Code themeLight={"darcula"}>{layoutWithAutoMenuCode}</Code>
             <Markdown>
                 Here is ```DocsLayout``` with automated menu. You can add __pages__ and __groups__ in other __groups__
                 to create

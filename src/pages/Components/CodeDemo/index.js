@@ -48,7 +48,7 @@ export default function CodeDemo() {
             <Markdown locale={`${locale}/codeDetails`}></Markdown>
             <DemoWithCode
                 code={codeCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 actions={[{label: "Source code", link: ""}]}
                 actions={[{
@@ -63,7 +63,7 @@ export default function CodeDemo() {
             <Markdown locale={`${locale}/expansionCodeDetails`}/>
             <DemoWithCode
                 code={expansionCodeCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 actions={[{label: "Source code", link: ""}]}
                 actions={[{
@@ -78,7 +78,7 @@ export default function CodeDemo() {
             <Markdown locale={`${locale}/demoWithCodeDetails`}/>
             <DemoWithCode
                 code={demoWithCodeCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 actions={[{
                     label: "GitHub source",

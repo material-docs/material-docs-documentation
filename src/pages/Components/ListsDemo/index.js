@@ -39,7 +39,7 @@ export default function ListsDemo() {
             <DemoWithCode
                 code={simpleListCode}
                 paperContainer
-                theme={"darcula"}
+                themeLight={"darcula"}
                 name={"Simple list"}
                 defaultExpanded
                 actions={[{
@@ -60,6 +60,7 @@ export default function ListsDemo() {
                 code={listWithNestedItemsCode}
                 paperContainer theme={"darcula"}
                 name={"List with nested items"}
+                themeLight={"darcula"}
                 actions={[{
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Lists/ListWithNestedItems.js"
@@ -75,6 +76,7 @@ export default function ListsDemo() {
                 code={decoratedListCode}
                 paperContainer theme={"darcula"}
                 name={"List with items decoration"}
+                themeLight={"darcula"}
                 actions={[{
                     label: "GitHub source",
                     link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Lists/DecoratedList.js"

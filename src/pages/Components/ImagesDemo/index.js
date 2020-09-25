@@ -30,7 +30,7 @@ export default function ImagesDemo() {
             <Markdown>{locale.infoBlock}</Markdown>
             <DemoWithCode
                 code={imagesOverviewCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 defaultExpanded
                 actions={[{

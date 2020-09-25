@@ -52,7 +52,7 @@ export default function MarkdownDemo() {
             <Markdown>{locale.infoBlock1}</Markdown>
             <DemoWithCode
                 code={markdownOverviewCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 defaultExpanded
                 name={locale.overviewExample}
@@ -81,7 +81,7 @@ export default function MarkdownDemo() {
                         {demo &&
                         <DemoWithCode
                             code={demo.code}
-                            theme={"darcula"}
+                            themeLight={"darcula"}
                             paperContainer
                             actions={[{label: "GitHub source", link: demo.page}]}
                         >
