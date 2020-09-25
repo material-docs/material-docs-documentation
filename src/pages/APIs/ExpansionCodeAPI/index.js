@@ -26,7 +26,9 @@ export default function ExpansionCodeAPI() {
                 {name: "noTag", type: "boolean", default: "false", description: locale.props.noTag},
                 {name: "collapsedHeight", type: "number | string", default: "100px", description: locale.props.collapsedHeight},
                 {name: "actions", type: "DemoCodeAction[]", default: "", description: locale.props.actions},
-                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.theme},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "", description: locale.props.theme},
+                {name: "themeLight", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.themeLight},
+                {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
                 {name: "language", type: "string", default: "\"javascript\"", description: locale.props.language},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}

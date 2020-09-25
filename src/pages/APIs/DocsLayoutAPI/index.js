@@ -40,6 +40,8 @@ export default function DocsLayoutAPI() {
                 {name: "name", type: "string", default: "", description: locale.props.name},
                 {name: "version", type: "string", default: "", description: locale.props.version},
                 {name: "logo", type: "string", default: "", description: locale.props.logo},
+                {name: "onNameClick", type: "function(event: Event): void", default: "", description: locale.props.logo},
+                {name: "onVersionClick", type: "function(event: Event): void", default: "", description: locale.props.logo},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[

@@ -68,6 +68,10 @@ import ReactComponentApiPageDemo
     from "./pages/Extensions/ReactComponentsDocsExtension/Components/ReactComponentApiPageDemo";
 import CodeDemo from "./pages/Components/CodeDemo";
 import TablesDemo from "./pages/Components/TablesDemo";
+import LangProviderAPI from "./pages/APIs/LangProviderAPI";
+import LocaleAPI from "./pages/APIs/LocaleAPI";
+import LandingAPI from "./pages/APIs/LandingAPI";
+import LinkAPI from "./pages/APIs/LinkAPI";
 
 
 export default function Documentation() {
@@ -153,7 +157,11 @@ export default function Documentation() {
                     <H6API/>
                     <HeaderAPI/>
                     <AutoDocsMenuAPI/>
+                    <LocaleAPI/>
+                    <LandingAPI/>
+                    <LinkAPI/>
                     <PagesGroup name={"System components"}>
+                        <LangProviderAPI/>
                         <LanguageSelectorAPI/>
                         <SearchFieldAPI/>
                         <TagableAPI/>

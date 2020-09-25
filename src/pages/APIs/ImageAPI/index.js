@@ -23,8 +23,10 @@ export default function ImageAPI() {
             importCode={importCode}
             properties={[
                 {name: "src", type: "string", default: "", description: locale.props.src},
+                {name: "placeholderSrc", type: "string", default: "", description: locale.props.placeholderSrc},
                 {name: "alt", type: "string", default: "", description: locale.props.alt},
                 {name: "fullWidth", type: "boolean", default: "false", description: locale.props.fullWidth},
+                {name: "frame", type: "boolean", default: "false", description: locale.props.frame},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[

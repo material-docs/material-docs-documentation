@@ -11,25 +11,24 @@ import Link from "@material-docs/core/components/Link/Link";
 
 import importCode from "./importCode.md";
 
-export default function LocaleAPI() {
+export default function LandingAPI() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.LocaleAPI;
+    const locale = lang.locale.pages.LandingAPI;
 
     return (
         <ApiPage
-            name={"Locale"}
-            localeName={"LocaleAPI"}
-            overrideName={"MatDoc-Locale"}
+            name={"Landing"}
+            localeName={"LandingAPI"}
+            overrideName={"MaterialDocs-Landing"}
             importCode={importCode}
             properties={[
-                {name: "path", type: "string", default: "", description: locale.props.path},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             enableCss={false}
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link page={["Components", "Lists"]}>Lists</Link></ListItem>
+                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
             </List>
         </ApiPage>
     );

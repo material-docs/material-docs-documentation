@@ -27,6 +27,7 @@ export default function TablesDemo() {
     return (
         <DocsPage
             name={"Tables"}
+            searchDescription={"Tables demo page."}
         >
             <H1>Tables</H1>
             <H3>{locale.simpleTableHeader}</H3>

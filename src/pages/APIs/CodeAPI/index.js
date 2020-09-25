@@ -22,7 +22,9 @@ export default function CodeAPI() {
             importCode={importCode}
             properties={[
                 {name: "language", type: "string", default: "\"javascript\"", description: locale.props.language},
-                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.theme},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "", description: locale.props.theme},
+                {name: "themeLight", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.themeLight},
+                {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
                 {name: "children", type: "string", default: "", description: locale.props.children},
             ]}
             css={[

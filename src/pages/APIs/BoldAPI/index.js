@@ -22,7 +22,7 @@ export default function BoldAPI() {
             localeName={"BoldAPI"}
             importCode={importCode}
             properties={[
-                {name: "chidlren", type: "node", default: "", description: locale.props.children},
+                {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
                 {name: "root", global: "MatDocs-root", description: locale.css.root},

@@ -50,6 +50,7 @@ export default function ApiPage(props, ref) {
         <ReactComponentApiPage
             name={name}
             searchDescription={locale.searchDescription}
+            searchLabel={name + " API"}
             searchTags={searchTags}
         >
             <ReactComponentApiPageSummary>

@@ -32,6 +32,9 @@ export default function DemoWithCodeAPI() {
                 {name: "p", type: "number", default: "0", description: locale.props.p},
                 {name: "m", type: "number", default: "0", description: locale.props.m},
                 {name: "children", type: "node", default: "", description: locale.props.children},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "", description: locale.props.theme},
+                {name: "themeLight", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.themeLight},
+                {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
             ]}
             css={[
                 {name: "root", global: "MatDoc-root", description: locale.css.root},

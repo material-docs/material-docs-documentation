@@ -10,22 +10,24 @@ import ApiPage from "../../../components/ApiPage";
 import Link from "@material-docs/core/components/Link/Link";
 
 import importCode from "./importCode.md";
-
-export default function LocaleAPI() {
+export default function LinkAPI() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.LocaleAPI;
+    const locale = lang.locale.pages.LinkAPI;
 
     return (
         <ApiPage
-            name={"Locale"}
-            localeName={"LocaleAPI"}
-            overrideName={"MatDoc-Locale"}
+            name={"Link"}
+            localeName={"LinkAPI"}
+            overrideName={"MaterialDocs-Link"}
             importCode={importCode}
             properties={[
-                {name: "path", type: "string", default: "", description: locale.props.path},
+                {name: "page", type: "string | string[]", default: "", description: locale.props.page},
+                {name: "href", type: "string", default: "", description: locale.props.href},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
-            enableCss={false}
+            css={[
+                {name: "root", global: "MatDoc-root", description: locale.css.root},
+            ]}
         >
             <H2>Demos</H2>
             <List>

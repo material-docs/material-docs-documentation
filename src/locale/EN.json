@@ -182,8 +182,11 @@
           "noTag": "If true and name prop is defined - header with name will not generate tag for content tab.",
           "paperContainer": "If true - demo content will be wrapped in Paper component.",
           "actions": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button.",
-          "p": "Padding of demo block in theme.spacing units.",
-          "m": "Margin of demo block in theme.spacing units.",
+          "p": "Padding of demo block in _theme.spacing_ units.",
+          "m": "Margin of demo block in _theme.spacing_ units.",
+          "theme": "Code highlighting and background styling type.",
+          "themeLight": "Code highlighting and background styling type when global theme in light mode.",
+          "themeDark": "Code highlighting and background styling type when global theme in dark mode.",
           "children": "Children of an element. Will be placed in demo block."
         },
         "css": {
@@ -206,6 +209,8 @@
         "props": {
           "language": "Language name for code highlighter.",
           "theme": "Code highlighting and background styling type.",
+          "themeLight": "Code highlighting and background styling type when global theme in light mode.",
+          "themeDark": "Code highlighting and background styling type when global theme in dark mode.",
           "children": "Code to display in code highlighter."
         },
         "css": {
@@ -225,9 +230,66 @@
           "name": "Name of the group. Will be displayed on button in menu.",
           "getData": "Callback, provided to get group data without context usage.",
           "order": "As lower order as higher will be displayed menu item.",
+          "defaultExpanded": "If true, menu group will be expanded on startup.",
           "children": "Children of an element."
         },
         "css": {}
+      },
+      "LandingAPI": {
+        "searchDescription": "Landing - react component, designed to provide documentation with free style landing page.",
+        "searchTags": {
+          "page": "page",
+          "landing": "landing",
+          "container": "container"
+        },
+        "props": {
+          "children": "Children of an element."
+        },
+        "css": {}
+      },
+      "LangProviderAPI": {
+        "searchDescription": "LangProvider - react component, designed to provide children with locale lang settings.",
+        "searchTags": {
+          "page": "page",
+          "lang": "lang",
+          "provider": "provider",
+          "locale": "locale",
+          "container": "container"
+        },
+        "props": {
+          "lang": "lang extension, will be merged with main lang. To main lang will be added fields from provider lang if in main lang they are not defined.",
+          "children": "Children of an element."
+        },
+        "css": {}
+      },
+      "LocaleAPI": {
+        "searchDescription": "Locale - react component, designed to provide user with flexible locale access.",
+        "searchTags": {
+          "locale": "locale",
+          "lang": "lang"
+        },
+        "props": {
+          "path": "Path to the data in the Lang.locale. Exampele: \"hello/darkness/my\".",
+          "children": "Children of an element. Will be displayed by default if can not load data from Lang."
+        },
+        "css": {}
+      },
+      "LinkAPI": {
+        "searchDescription": "Link - react component, designed to create links to outside resource or inner docs page.",
+        "searchTags": {
+          "link": "link",
+          "page": "page",
+          "href": "href",
+          "redirect": "redirect"
+        },
+        "props": {
+          "page": "Page route. Can be passed as string or as array of routes.",
+          "href": "Link to external resource.",
+          "children": "Children of an element. Will be displayed by default if can not load data from Lang."
+        },
+        "css": {
+          "root": "Styles applied to the root element."
+        }
       },
       "ImageAPI": {
         "searchDescription": "Image - react component, designed to show images. Image component uses lazy load technology.",
@@ -242,8 +304,10 @@
         },
         "props": {
           "src": "Source link. Used to define image path.",
+          "placeholderSrc": "Src of low quality image, which will be displayed while main image is loading.",
           "alt": "Alternative text. Will be displayed if image can not load.",
           "fullWidth": "If true - image will be 100 percent wide.",
+          "frame": "If true, image will be placed inside decorative border frame.",
           "children": "Elements, which will appear in image caption."
         },
         "css": {
@@ -288,6 +352,8 @@
           "collapsedHeight": "Height of the component when it is collapsed.",
           "actions": "Array of additional actions. The actions will be displayed in the dropdown menu when you click the ExpandMore icon button.",
           "theme": "Code highlighting and background styling type.",
+          "themeLight": "Code highlighting and background styling type when global theme in light mode.",
+          "themeDark": "Code highlighting and background styling type when global theme in dark mode.",
           "language": "Language name for code highlighter.",
           "children": "Code to display in code highlighter. This code will appear in the Code block if component is expanded."
         },
@@ -699,6 +765,8 @@
           "name": "Name of the docs. Needs for metadata. Will be displayed in app header. Also you can find this name near version label in side menu drawer.",
           "version": "Version of the docs. Needs for metadata.",
           "logo": "A path to the logo image, will be displayed in drawer near name and version.",
+          "onNameClick": "Callback, designed to handle click on docs name in drawer badge.",
+          "onVersionClick": "Callback, designed to handle click on docs version in drawer badge.",
           "children": "Children of an element. Normally DocsMenu and DocsPages."
         },
         "forwardRef": true,
