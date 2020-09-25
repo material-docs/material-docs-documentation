@@ -19,7 +19,7 @@ export default function SearchFieldAPI() {
         <ApiPage
             name={"SearchField"}
             localeName={"SearchFieldAPI"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MaterialDocs-DemoWithCode"}
             searchTags={["search", "engine", "selector", "results", "api"]}
             importCode={importCode}
             properties={[
@@ -27,14 +27,14 @@ export default function SearchFieldAPI() {
                 {name: "doSearch", type: "function(query, searchData): Promise<SearchDataItem[]>", default: "", description: locale.props.doSearch},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "rootFocused", global: "MatDoc-rootFocused", description: locale.css.rootFocused},
-                {name: "input", global: "MatDoc-input", description: locale.css.input},
-                {name: "iconButton", global: "MatDoc-iconButton", description: locale.css.iconButton},
-                {name: "icon", global: "MatDoc-icon", description: locale.css.icon},
-                {name: "iconClickable", global: "MatDoc-iconClickable", description: locale.css.iconClickable},
-                {name: "popper", global: "MatDoc-popper", description: locale.css.popper},
-                {name: "listPaper", global: "MatDoc-listPaper", description: locale.css.listPaper},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "rootFocused", global: "MaterialDocs-rootFocused", description: locale.css.rootFocused},
+                {name: "input", global: "MaterialDocs-input", description: locale.css.input},
+                {name: "iconButton", global: "MaterialDocs-iconButton", description: locale.css.iconButton},
+                {name: "icon", global: "MaterialDocs-icon", description: locale.css.icon},
+                {name: "iconClickable", global: "MaterialDocs-iconClickable", description: locale.css.iconClickable},
+                {name: "popper", global: "MaterialDocs-popper", description: locale.css.popper},
+                {name: "listPaper", global: "MaterialDocs-listPaper", description: locale.css.listPaper},
             ]}
         >
             <H2>Demos</H2>

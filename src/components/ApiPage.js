@@ -50,6 +50,7 @@ export default function ApiPage(props, ref) {
         <ReactComponentApiPage
             name={name}
             searchDescription={locale.searchDescription}
+            searchLabel={name + " API"}
             searchTags={searchTags}
         >
             <ReactComponentApiPageSummary>
@@ -60,7 +61,7 @@ export default function ApiPage(props, ref) {
                 </H3>
             </ReactComponentApiPageSummary>
             <ReactComponentApiPageImport>
-                <Code theme={"darcula"}>{importCode}</Code>
+                <Code themeLight={"darcula"}>{importCode}</Code>
                 <Markdown>{componentAPILocale.importDifferenceText}</Markdown>
                 {overrideName && <Markdown data={{name: overrideName}}>{componentAPILocale.componentName}</Markdown>}
             </ReactComponentApiPageImport>

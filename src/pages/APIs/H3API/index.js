@@ -17,7 +17,7 @@ export default function H3API() {
         <ApiPage
             name={"H3"}
             localeName={"H3API"}
-            overrideName={"MatDoc-H3"}
+            overrideName={"MaterialDocs-H3"}
             importCode={importCode}
             properties={[
                 {name: "noDivider", type: "boolean", default: "false", description: locale.props.noDivider},
@@ -26,8 +26,8 @@ export default function H3API() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "h1", global: "MatDoc-h1", description: locale.css.h1},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "h1", global: "MaterialDocs-h1", description: locale.css.h1},
             ]}
         >
             <H2>Demos</H2>

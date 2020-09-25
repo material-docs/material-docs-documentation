@@ -35,7 +35,7 @@ export default function HeadersDemo() {
             <DemoWithCode
                 paperContainer
                 code={AllHeadersCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 defaultExpanded
                 name={locale.headersExample}
                 actions={[{
@@ -49,13 +49,13 @@ export default function HeadersDemo() {
             <H2>Settings</H2>
             <H3 noDivider>{locale.contentAutoGeneration}</H3>
             <Markdown> {locale.tagsInfo} </Markdown>
-            <Code theme={"darcula"}>
+            <Code themeLight={"darcula"}>
                 {`return(\n    <H1 noTag>I am H1 header than not generates navigation tags!</H1>\n)`}
             </Code>
             <Markdown>{locale.noTagInfo}</Markdown>
             <H3 noDivider>{locale.divider}</H3>
             <Markdown>{locale.dividerInfo}</Markdown>
-            <Code theme={"darcula"}>
+            <Code themeLight={"darcula"}>
                 {`return(\n    <H1 noDivider>I am H1 without divider at the bottom!</H1>\n)`}
             </Code>
             <Markdown>{locale.noDividerInfo}</Markdown>

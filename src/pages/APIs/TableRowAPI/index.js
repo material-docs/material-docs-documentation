@@ -17,7 +17,7 @@ export default function TableRowAPI() {
         <ApiPage
             name={"TableRow"}
             localeName={"TableRowAPI"}
-            overrideName={"MatDoc-TableRow"}
+            overrideName={"MuiTableRow"}
             importCode={importCode}
             properties={[
                 {name: "component", type: "elementType", default: "\"tr\"", description: locale.props.component},
@@ -26,11 +26,11 @@ export default function TableRowAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "selected", global: "MatDoc-selected", description: locale.css.selected},
-                {name: "hover", global: "MatDoc-hover", description: locale.css.hover},
-                {name: "head", global: "MatDoc-head", description: locale.css.head},
-                {name: "footer", global: "MatDoc-footer", description: locale.css.footer},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "selected", global: "MaterialDocs-selected", description: locale.css.selected},
+                {name: "hover", global: "MaterialDocs-hover", description: locale.css.hover},
+                {name: "head", global: "MaterialDocs-head", description: locale.css.head},
+                {name: "footer", global: "MaterialDocs-footer", description: locale.css.footer},
             ]}
         >
             <H2>Demos</H2>

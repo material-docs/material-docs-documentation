@@ -19,12 +19,13 @@ export default function PagesGroupAPI() {
         <ApiPage
             name={"PagesGroup"}
             localeName={"PagesGroupAPI"}
-            overrideName={"MatDoc-PagesGroup"}
+            overrideName={"MaterialDocs-PagesGroup"}
             importCode={importCode}
             properties={[
                 {name: "name", type: "string", default: "", description: locale.props.name},
                 {name: "getData", type: "function(data: PagesGroupData): void", default: "", description: locale.props.code},
                 {name: "order", type: "number", default: "", description: locale.props.code},
+                {name: "defaultExpanded", type: "boolean", default: "false", description: locale.props.defaultExpanded},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             enableCss={false}

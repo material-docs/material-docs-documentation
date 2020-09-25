@@ -18,14 +18,14 @@ export default function TableHeadAPI() {
         <ApiPage
             name={"TableHead"}
             localeName={"TableHeadAPI"}
-            overrideName={"MatDoc-TableHead"}
+            overrideName={"MuiTableHead"}
             importCode={importCode}
             properties={[
                 {name: "component", type: "elementType", default: "\"thead\"", description: locale.props.component},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
             <H2>Demos</H2>

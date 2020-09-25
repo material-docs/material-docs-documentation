@@ -13,13 +13,13 @@ import importCode from "./importCode.md";
 
 export default function LocaleAPI() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.ListItemContainedAPI;
+    const locale = lang.locale.pages.LocaleAPI;
 
     return (
         <ApiPage
             name={"Locale"}
             localeName={"LocaleAPI"}
-            overrideName={"MatDoc-Locale"}
+            overrideName={"MaterialDocs-Locale"}
             importCode={importCode}
             properties={[
                 {name: "path", type: "string", default: "", description: locale.props.path},

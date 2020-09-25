@@ -18,7 +18,7 @@ export default function ExpansionCodeAPI() {
         <ApiPage
             name={"ExpansionCode"}
             localeName={"ExpansionCodeAPI"}
-            overrideName={"MatDoc-ExpansionCode"}
+            overrideName={"MaterialDocs-ExpansionCode"}
             searchTags={["demo", "with", "code", "api"]}
             importCode={importCode}
             properties={[
@@ -26,17 +26,19 @@ export default function ExpansionCodeAPI() {
                 {name: "noTag", type: "boolean", default: "false", description: locale.props.noTag},
                 {name: "collapsedHeight", type: "number | string", default: "100px", description: locale.props.collapsedHeight},
                 {name: "actions", type: "DemoCodeAction[]", default: "", description: locale.props.actions},
-                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.theme},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "", description: locale.props.theme},
+                {name: "themeLight", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.themeLight},
+                {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
                 {name: "language", type: "string", default: "\"javascript\"", description: locale.props.language},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "collapsedCode", global: "MatDoc-collapsedCode", description: locale.css.collapsedCode},
-                {name: "collapse", global: "MatDoc-collapse", description: locale.css.collapse},
-                {name: "toolbar", global: "MatDoc-toolbar", description: locale.css.toolbar},
-                {name: "codeName", global: "MatDoc-codeName", description: locale.css.codeName},
-                {name: "menuButtonLink", global: "MatDoc-menuButtonLink", description: locale.css.menuButtonLink},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "collapsedCode", global: "MaterialDocs-collapsedCode", description: locale.css.collapsedCode},
+                {name: "collapse", global: "MaterialDocs-collapse", description: locale.css.collapse},
+                {name: "toolbar", global: "MaterialDocs-toolbar", description: locale.css.toolbar},
+                {name: "codeName", global: "MaterialDocs-codeName", description: locale.css.codeName},
+                {name: "menuButtonLink", global: "MaterialDocs-menuButtonLink", description: locale.css.menuButtonLink},
             ]}
         >
             <H2>Demos</H2>

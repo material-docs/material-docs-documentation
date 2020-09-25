@@ -18,7 +18,7 @@ export default function CodeSpanAPI() {
     return (
         <ApiPage
             name={"CodeSpan"}
-            overrideName={"MatDoc-CodeSpan"}
+            overrideName={"MaterialDocs-CodeSpan"}
             localeName={"CodeSpanAPI"}
             importCode={importCode}
             properties={[
@@ -27,15 +27,15 @@ export default function CodeSpanAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "colorDefault", global: "MatDoc-colorDefault", description: locale.css.colorDefault},
-                {name: "colorPrimary", global: "MatDoc-colorPrimary", description: locale.css.colorPrimary},
-                {name: "colorSecondary", global: "MatDoc-colorSecondary", description: locale.css.colorSecondary},
-                {name: "colorGrey", global: "MatDoc-colorGrey", description: locale.css.colorGrey},
-                {name: "font", global: "MatDoc-font", description: locale.css.font},
-                {name: "textInherit", global: "MatDoc-textInherit", description: locale.css.textInherit},
-                {name: "textWhite", global: "MatDoc-textWhite", description: locale.css.textWhite},
-                {name: "textBlack", global: "MatDoc-textBlack", description: locale.css.textBlack},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "colorDefault", global: "MaterialDocs-colorDefault", description: locale.css.colorDefault},
+                {name: "colorPrimary", global: "MaterialDocs-colorPrimary", description: locale.css.colorPrimary},
+                {name: "colorSecondary", global: "MaterialDocs-colorSecondary", description: locale.css.colorSecondary},
+                {name: "colorGrey", global: "MaterialDocs-colorGrey", description: locale.css.colorGrey},
+                {name: "font", global: "MaterialDocs-font", description: locale.css.font},
+                {name: "textInherit", global: "MaterialDocs-textInherit", description: locale.css.textInherit},
+                {name: "textWhite", global: "MaterialDocs-textWhite", description: locale.css.textWhite},
+                {name: "textBlack", global: "MaterialDocs-textBlack", description: locale.css.textBlack},
             ]}
         >
             <H2>Demos</H2>

@@ -18,7 +18,7 @@ export default function DocsPageAPI() {
         <ApiPage
             name={"DocsPage"}
             localeName={"DocsPageAPI"}
-            overrideName={"MatDoc-DocsPage"}
+            overrideName={"MaterialDocs-DocsPage"}
             importCode={importCode}
             properties={[
                 {name: "name", type: "string", default: "", description: locale.props.name},
@@ -31,11 +31,11 @@ export default function DocsPageAPI() {
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "contentItem", global: "MatDoc-contentItem", description: locale.css.contentItem},
-                {name: "contentItemActive", global: "MatDoc-contentItemActive", description: locale.css.contentItemActive},
-                {name: "contentLink", global: "MatDoc-contentLink", description: locale.css.contentLink},
-                {name: "copyright", global: "MatDoc-copyright", description: locale.css.copyright},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "contentItem", global: "MaterialDocs-contentItem", description: locale.css.contentItem},
+                {name: "contentItemActive", global: "MaterialDocs-contentItemActive", description: locale.css.contentItemActive},
+                {name: "contentLink", global: "MaterialDocs-contentLink", description: locale.css.contentLink},
+                {name: "copyright", global: "MaterialDocs-copyright", description: locale.css.copyright},
             ]}
         >
             <H2>Demos</H2>

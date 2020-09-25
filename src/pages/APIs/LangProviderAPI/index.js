@@ -11,26 +11,25 @@ import Link from "@material-docs/core/components/Link/Link";
 
 import importCode from "./importCode.md";
 
-export default function DocsMenuAPI() {
+export default function LangProviderAPI() {
     const {lang} = useLang();
-    const locale = lang.locale.pages.DocsMenuAPI;
+    const locale = lang.locale.pages.LangProviderAPI;
 
     return (
         <ApiPage
-            name={"DocsMenu"}
-            localeName={"DocsMenuAPI"}
-            overrideName={"MaterialDocs-DocsMenu"}
-            searchTags={["docs", "menu", "container", "api"]}
+            name={"LangProvider"}
+            localeName={"LangProviderAPI"}
+            overrideName={"MaterialDocs-LangProvider"}
             importCode={importCode}
             properties={[
-                {name: "dense", type: "boolean", default: "false", description: locale.props.dense},
+                {name: "lang", type: "{locale: object}", default: "", description: locale.props.lang},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             enableCss={false}
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link page={["Components", "Layout"]}>Layout</Link></ListItem>
+                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
             </List>
         </ApiPage>
     );

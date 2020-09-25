@@ -18,7 +18,7 @@ export default function DocsLayoutAPI() {
     return (
         <ApiPage
             name={"DocsLayout"}
-            overrideName={"MatDoc-DocsLayout"}
+            overrideName={"MaterialDocs-DocsLayout"}
             localeName={"DocsLayoutAPI"}
             searchTags={["docs", "layout", "main", "component", "api"]}
             importCode={importCode}
@@ -40,23 +40,25 @@ export default function DocsLayoutAPI() {
                 {name: "name", type: "string", default: "", description: locale.props.name},
                 {name: "version", type: "string", default: "", description: locale.props.version},
                 {name: "logo", type: "string", default: "", description: locale.props.logo},
+                {name: "onNameClick", type: "function(event: Event): void", default: "", description: locale.props.logo},
+                {name: "onVersionClick", type: "function(event: Event): void", default: "", description: locale.props.logo},
                 {name: "children", type: "node", default: "", description: locale.props.children},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "appBar", global: "MatDoc-appBar", description: locale.css.appBar},
-                {name: "appBarShift", global: "MatDoc-appBarShift", description: locale.css.appBarShift},
-                {name: "menuButton", global: "MatDoc-menuButton", description: locale.css.menuButton},
-                {name: "hide", global: "MatDoc-hide", description: locale.css.hide},
-                {name: "drawer", global: "MatDoc-drawer", description: locale.css.drawer},
-                {name: "drawerPaper", global: "MatDoc-drawerPaper", description: locale.css.drawerPaper},
-                {name: "drawerHeader", global: "MatDoc-drawerHeader", description: locale.css.drawerHeader},
-                {name: "content", global: "MatDoc-content", description: locale.css.content},
-                {name: "contentShift", global: "MatDoc-contentShift", description: locale.css.contentShift},
-                {name: "headerText", global: "MatDoc-headerText", description: locale.css.headerText},
-                {name: "toolbar", global: "MatDoc-toolbar", description: locale.css.toolbar},
-                {name: "headerIcon", global: "MatDoc-headerIcon", description: locale.css.headerIcon},
-                {name: "version", global: "MatDoc-version", description: locale.css.version},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "appBar", global: "MaterialDocs-appBar", description: locale.css.appBar},
+                {name: "appBarShift", global: "MaterialDocs-appBarShift", description: locale.css.appBarShift},
+                {name: "menuButton", global: "MaterialDocs-menuButton", description: locale.css.menuButton},
+                {name: "hide", global: "MaterialDocs-hide", description: locale.css.hide},
+                {name: "drawer", global: "MaterialDocs-drawer", description: locale.css.drawer},
+                {name: "drawerPaper", global: "MaterialDocs-drawerPaper", description: locale.css.drawerPaper},
+                {name: "drawerHeader", global: "MaterialDocs-drawerHeader", description: locale.css.drawerHeader},
+                {name: "content", global: "MaterialDocs-content", description: locale.css.content},
+                {name: "contentShift", global: "MaterialDocs-contentShift", description: locale.css.contentShift},
+                {name: "headerText", global: "MaterialDocs-headerText", description: locale.css.headerText},
+                {name: "toolbar", global: "MaterialDocs-toolbar", description: locale.css.toolbar},
+                {name: "headerIcon", global: "MaterialDocs-headerIcon", description: locale.css.headerIcon},
+                {name: "version", global: "MaterialDocs-version", description: locale.css.version},
             ]}
         >
             <H2>Demos</H2>

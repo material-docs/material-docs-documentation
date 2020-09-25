@@ -21,8 +21,8 @@ export default function ImagesDemo() {
     return (
         <DocsPage
             name={"Images"}
-            searchLabel={"Text decorators"}
-            searchDescription={"Text styling demonstration page."}
+            searchLabel={"Images"}
+            searchDescription={"Images demo page."}
             keys={["text", "styling", "decoration", "wrappers", "demo"]}
         >
             <H1>Images</H1>
@@ -30,7 +30,7 @@ export default function ImagesDemo() {
             <Markdown>{locale.infoBlock}</Markdown>
             <DemoWithCode
                 code={imagesOverviewCode}
-                theme={"darcula"}
+                themeLight={"darcula"}
                 paperContainer
                 defaultExpanded
                 actions={[{

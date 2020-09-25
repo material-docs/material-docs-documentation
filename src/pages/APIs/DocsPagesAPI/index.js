@@ -19,7 +19,7 @@ export default function DocsPagesAPI() {
         <ApiPage
             name={"DocsPages"}
             localeName={"DocsPagesAPI"}
-            overrideName={"MatDoc-DocsPages"}
+            overrideName={"MaterialDocs-DocsPages"}
             importCode={importCode}
             properties={[
                 {name: "children", type: "node", default: "", description: locale.props.children},

@@ -27,12 +27,13 @@ export default function TablesDemo() {
     return (
         <DocsPage
             name={"Tables"}
+            searchDescription={"Tables demo page."}
         >
             <H1>Tables</H1>
             <H3>{locale.simpleTableHeader}</H3>
             <Markdown>{locale.simpleTableSummary}</Markdown>
             <DemoWithCode
-                theme={"darcula"}
+                themeLight={"darcula"}
                 code={simpleTableCode}
                 paperContainer
                 defaultExpanded
@@ -45,7 +46,7 @@ export default function TablesDemo() {
             <H3>{locale.tablesWithMarkdownHeader}</H3>
             <Markdown>{locale.tablesWithMarkdownSummary}</Markdown>
             <DemoWithCode
-                theme={"darcula"}
+                themeLight={"darcula"}
                 code={tableWithMarkdownCode}
                 paperContainer
                 actions={[{label: "GitHub source", link: "https://github.com/material-docs/material-docs-documentation/blob/master/src/examples/Tables/TableWithMarkdown.js"}]}

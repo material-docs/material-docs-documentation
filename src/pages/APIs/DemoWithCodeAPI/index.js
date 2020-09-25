@@ -18,7 +18,7 @@ export default function DemoWithCodeAPI() {
     return (
         <ApiPage
             name={"DemoWithCode"}
-            overrideName={"MatDoc-DemoWithCode"}
+            overrideName={"MaterialDocs-DemoWithCode"}
             localeName={"DemoWithCodeAPI"}
             importCode={importCode}
             properties={[
@@ -32,14 +32,17 @@ export default function DemoWithCodeAPI() {
                 {name: "p", type: "number", default: "0", description: locale.props.p},
                 {name: "m", type: "number", default: "0", description: locale.props.m},
                 {name: "children", type: "node", default: "", description: locale.props.children},
+                {name: "theme", type: "\"light\" | \"dark\" | \"darcula\"", default: "", description: locale.props.theme},
+                {name: "themeLight", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"light\"", description: locale.props.themeLight},
+                {name: "themeDark", type: "\"light\" | \"dark\" | \"darcula\"", default: "\"dark\"", description: locale.props.themeDark},
             ]}
             css={[
-                {name: "root", global: "MatDoc-root", description: locale.css.root},
-                {name: "collapse", global: "MatDoc-collapse", description: locale.css.collapse},
-                {name: "toolbar", global: "MatDoc-toolbar", description: locale.css.toolbar},
-                {name: "paperContainer", global: "MatDoc-paperContainer", description: locale.css.paperContainer},
-                {name: "menuButtonLink", global: "MatDoc-menuButtonLink", description: locale.css.menuButtonLink},
-                {name: "demo", global: "MatDoc-demo", description: locale.css.demo},
+                {name: "root", global: "MaterialDocs-root", description: locale.css.root},
+                {name: "collapse", global: "MaterialDocs-collapse", description: locale.css.collapse},
+                {name: "toolbar", global: "MaterialDocs-toolbar", description: locale.css.toolbar},
+                {name: "paperContainer", global: "MaterialDocs-paperContainer", description: locale.css.paperContainer},
+                {name: "menuButtonLink", global: "MaterialDocs-menuButtonLink", description: locale.css.menuButtonLink},
+                {name: "demo", global: "MaterialDocs-demo", description: locale.css.demo},
             ]}
         >
             <H2>Demos</H2>
