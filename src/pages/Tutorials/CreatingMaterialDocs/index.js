@@ -10,7 +10,8 @@ import Markdown from "@material-docs/core/components/Markdown/Markdown";
 import content from "./CreatingMaterialDocs.md";
 import BasicStructureImage from "./images/BasicStructureImage.png";
 import PageAboutMeImage from "./images/PageAboutMeImage.png";
-
+import ResultImage1 from "./images/ResultImage1.png";
+import ResultImage2 from "./images/ResultImage2.png";
 
 export default function CreatingMaterialDocs() {
     return (
@@ -21,8 +22,14 @@ export default function CreatingMaterialDocs() {
         >
             <Markdown
                 data={{
+                    locale: "pages/CreatingMaterialDocsTutorial",
                     BasicStructureImage,
                     PageAboutMeImage,
+                    ResultImage1,
+                    ResultImage2,
+                    createReactAppLink: "https://reactjs.org/docs/create-a-new-react-app.html",
+                    gitHubSource: "https://github.com/material-docs/material-docs-example-project/tree/creating-material-docs",
+
                 }}
                 children={content}
             />

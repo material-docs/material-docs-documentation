@@ -3,6 +3,47 @@
   "label": "English",
   "locale": {
     "pages": {
+      "CreatingMaterialDocsTutorial": {
+        "headers": {
+          "creatingMaterialDocs": "Creating Material Docs",
+          "creatingProject": "Creating project",
+          "materialDocsSetup": "Material Docs setup",
+          "indexSetup": "Setting up index.html",
+          "extraFilesDeleting": "Extra files deletion",
+          "creatingDocs": "Создание документации",
+          "basicStructure": "Basic structure",
+          "creatingPage": "Creating page",
+          "creatingPageComponent": "Creating page component",
+          "creatingAnotherPage": "Creating another page",
+          "pagesGrouping": "Группирование страниц",
+          "pagesRedirecting": "Redirecting between pages",
+          "result": "Result",
+          "gitHubSources": "GitHub sources"
+        },
+        "creatingProjectText": "Let's create a new project using the utility __create-react-app__. More about this utility [here](&&createReactAppLink).  \nWe named the project _material-docs-example-project_ :).",
+        "setup": "After the project is created, you need to install Material Docs.  ",
+        "withYarn": "Using __yarn__:",
+        "withNpm": "Using __npm__:",
+        "indexSetup": "Material Docs uses the _Roboto_ font, let's install it.\nIn the directory __public__ add to file ___index.html___ the next:\n",
+        "indexOverview": "File ___index.html___ should look something like this:",
+        "deleteFiles": "You can delete files:",
+        "basicStructure": "First, let's create the following structure in the __index.js__ file:",
+        "indexJsDescription": "This is the basic structure for a Material Docs app.  \nWe have specified the following parameters for the component ```<DocsLayout/>```:",
+        "props": {
+          "name": "Documentation name.",
+          "version": "Documentation version.",
+          "logo": "Path to logo image.",
+          "keywords": "Key words of the page so that search engines can index it.",
+          "description": "Page description for metadata.",
+          "author": "Author's name."
+        },
+        "moreInfo": "You can get more information on components in the __Component APIs__ section of this documentation. For example, here is [__documentation of the component__ ```<DocsLayout/>```]().  \n\nIn the ```<DocsMenu/>``` component stored information about menu structure. Component ```<AutoDocsMenu/>``` allows don't think about creating the menu manually.  \n\nInside ```<DocsPages/>``` component there will be pages.  ",
+        "creatingPage": "Let's start writing the information page. Create a page about yourself:",
+        "creatingPageComponent": "In order to make it easier to edit pages, we recommend creating page components and placing them in separate files. For example, let's wrap our page in a component:",
+        "pagesGrouping": "In order for the automatic menu to create groups of pages, they must be wrapped in a ```<PagesGroup/>``` component. \nLet's wrap the FirstPage in a group \"My Group\"",
+        "redirecting": "The ```<Link/>```  component has ___page___ prop,in which the path is passed to the inner page. \nSince the page we want to redirect to is in the __My Group__, the path will look like this:",
+        "githubExample": "You can find this example on GitHub [here](&&gitHubSource)"
+      },
       "TablesDemo": {
         "searchDescription": "Demo of Table parts components.",
         "searchTags": {

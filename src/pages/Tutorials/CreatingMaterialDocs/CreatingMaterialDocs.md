@@ -1,28 +1,26 @@
-# Создание Material Docs
-## Создание проекта
-Создадим новый проект с помощью утилиты __create-react-app__. Подробнее об этой утилите [здесь](https://reactjs.org/docs/create-a-new-react-app.html).  
-Мы назвали проект _material-docs-example-project_ :).
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+# &{&&locale/headers/creatingMaterialDocs}&
+## &{&&locale/headers/creatingProject}&
+&{&&locale/creatingProjectText}&
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 $ npx create-react-app material-docs-example-project
 ```
-## Установка Material Material Docs
-После того, как проект создан - надо установить Material Docs.  
-С помощью __yarn__:
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+## &{&&locale/headers/materialDocsSetup}&
+&{&&locale/setup}&
+&{&&locale/withYarn}&
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 $ yarn add @material-docs/core
 ```
-С помощью __npm__:
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+&{&&locale/withNpm}&
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 $ npm install @material-docs/core
 ```
-### Настройка index.html
-Material Docs использует шрифт _Roboto_, давайте установим его.
-В директории __public__ добавьте в файл ___index.html___ следующее:
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+### &{&&locale/headers/indexSetup}&
+&{&&locale/indexSetup}&
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 ```
-Файл ___index.html___ должен выглядеть примерно так:
-```{"type": "expansion-code", "theme": "darcula", "language": "javascript", "name": "index.html"}
+&{&&locale/indexOverview}&
+```{"type": "expansion-code", "themeLight": "darcula", "language": "javascript", "name": "index.html"}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -45,19 +43,19 @@ Material Docs использует шрифт _Roboto_, давайте уста�
   </body>
 </html>
 ```
-### Удаление ненужных файлов
-Вы можете удалить файлы:
+### &{&&locale/headers/extraFilesDeleting}&
+&{&&locale/deleteFiles}&
 * App.css
 * App.test.js
 * App.js
 
 Они нам не понадобятся. 
-## Создание документации
-### Базовая структура
-![Basic structure](&&BasicStructureImage)
-Для начала, создадим в файле __index.js__ следующую структуру:
+## &{&&locale/headers/creatingDocs}&
+### &{&&locale/headers/basicStructure}&
+![{"alt": "Basic structure", "src": "&&BasicStructureImage", "fullWidth": true, "frame": true}]()
+&{&&locale/basicStructure}&
 ##### index.js
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
@@ -90,28 +88,21 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-Это базовая структура для приложения Material Docs.  
-Мы указали следующие параметры для компонента DocsLayout:
-* ___name___ - Название документации.
-* ___version___ - версия документации.
-* ___logo___ - путь к картинке логотипу.
-* ___keywords___ - Ключевые слова страницы для того, чтоб поисковые движки могли проиндексировать её.
-* ___description___ - описание страницы для метаданных.
-* ___author___ - Имя автора.
+&{&&locale/indexJsDescription}&
+* ___name___ - &{&&locale/props/name}&
+* ___version___ - &{&&locale/props/version}&
+* ___logo___ - &{&&locale/props/logo}&
+* ___keywords___ - &{&&locale/props/keywords}&
+* ___description___ - &{&&locale/props/description}&
+* ___author___ - &{&&locale/props/author}&
 
-Больше информации о компонентах вы можете получить в разделе __Component APIs__ этой документации. К примеру,
-вот [__документация компонента__ ```DocsLayout```]().
+&{&&locale/moreInfo}& 
 
-В компоненте ```DocsMenu``` хранится информация о структуре меню. Компонент ```AutoDocsMenu``` позволяет 
-не задумываться о создании меню вручную.
-
-Внутри компонента ```DocsPages``` будут находиться страницы.  
-
-## Создание страницы
-![Page image](&&PageAboutMeImage)
-Приступим к написанию страницы с информацией. Создадим страницу о себе:
+## &{&&locale/headers/creatingPage}&
+![{"alt": "Page image", "src": "&&PageAboutMeImage", "fullWidth": true, "frame": true}]()
+&{&&locale/creatingPage}& 
 ##### index.html
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
@@ -165,10 +156,9 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-### Создание страничного компонента
-Для того, чтоб было удобнее редактировать страницы мы рекомендуем создавать страничные компоненты и размещать их в 
-отдельных файлах. Например, обернем нашу страницу в компонент:
-```{"type": "expansion-code", "theme": "darcula", "language": "javascript", "name": "FirstPage.js"}
+### &{&&locale/headers/creatingPageComponent}&
+&{&&locale/creatingPageComponent}& 
+```{"type": "expansion-code", "themeLight": "darcula", "language": "javascript", "name": "FirstPage.js"}
 import React from "react";
 import DocsPage from "@material-docs/core/components/DocsPage";
 import H1 from "@material-docs/core/components/H1";
@@ -199,7 +189,7 @@ export default function FirstPage() {
     );
 }
 ```
-```{"type": "expansion-code", "theme": "darcula", "language": "javascript", "name": "index.js"}
+```{"type": "expansion-code", "themeLight": "darcula", "language": "javascript", "name": "index.js"}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
@@ -233,8 +223,8 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-### Создадим еще одну страницу
-```{"type": "expansion-code", "theme": "darcula", "language": "javascript", "name": "SecondPage.js"}
+### &{&&locale/headers/creatingAnotherPage}&
+```{"type": "expansion-code", "themeLight": "darcula", "language": "javascript", "name": "SecondPage.js"}
 import React from "react";
 import DocsPage from "@material-docs/core/components/DocsPage";
 import H1 from "@material-docs/core/components/H1";
@@ -285,10 +275,9 @@ export default function SecondPage() {
     );
 }
 ```
-### Группирование страниц
-Для того, чтоб автоматическое меню могло создавать группы страниц, их надо оборачивать в компонент ```PagesGroup```. 
-Давайте обернём страницу FirstPage в группу "My Group"
-```{"type": "expansion-code", "theme": "darcula", "language": "javascript", "name": "index.js"}
+### &{&&locale/headers/pagesGrouping}&
+&{&&locale/pagesGrouping}& 
+```{"type": "expansion-code", "themeLight": "darcula", "language": "javascript", "name": "index.js"}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
@@ -327,16 +316,19 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-### Переадресация между страницами
-У компонента ```Link``` есть параметр ___page___, в который передается путь  внутренней странице. 
-Так как страница, на которую мы хотим сделать переадресацию находится в группе __My Group__ - путь будет выглядеть так:
+### &{&&locale/headers/pagesRedirecting}&
+&{&&locale/redirecting}& 
 ```
 ["My Group", "Page about me"]
 ```
 #### SecondPage.js
-```{"type": "code", "theme": "darcula", "language": "javascript"}
+```{"type": "code", "themeLight": "darcula", "language": "javascript"}
 <Link page={["My Group", "Page about me"]}>Redirect to Page About Me</Link>
 ```
-
-#### Исходники на GitHub
-Вы можете найти этот пример на GitHub [здесь](https://github.com/material-docs/material-docs-example-project/tree/creating-material-docs)
+## &{&&locale/headers/result}&
+##### Page about me (```FirstPaage.js```)
+![{"alt": "Результат", "src": "&&ResultImage1", "fullWidth": true, "frame": true}]()
+##### Features page (```SecondPage.js```)
+![{"alt": "Результат", "src": "&&ResultImage2", "fullWidth": true, "frame": true}]()
+## &{&&locale/headers/gitHubSources}&
+&{&&locale/githubExample}&
