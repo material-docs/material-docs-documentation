@@ -73,6 +73,7 @@ import LocaleAPI from "./pages/APIs/LocaleAPI";
 import LandingAPI from "./pages/APIs/LandingAPI";
 import LinkAPI from "./pages/APIs/LinkAPI";
 import HostingMaterialDocsOnGHPages from "./pages/Tutorials/HostingMaterialDocsOnGHPages";
+import AdvancedMaterialDocsUsage from "./pages/Tutorials/AdvancedMatrialDocsUsage";
 
 
 export default function Documentation() {
@@ -116,6 +117,7 @@ export default function Documentation() {
                 <PagesGroup name={"Tutorials"} order={2}>
                     <CreatingMaterialDocs/>
                     <HostingMaterialDocsOnGHPages/>
+                    <AdvancedMaterialDocsUsage/>
                 </PagesGroup>
                 <PagesGroup name={"Components"} order={3}>
                     <CodeDemo/>
