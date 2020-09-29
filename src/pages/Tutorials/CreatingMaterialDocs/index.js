@@ -19,6 +19,7 @@ export default function CreatingMaterialDocs() {
             name={"Creating Material Docs"}
             searchTags={["create", "material", "docs", "tutorial", "faq", "manual"]}
             searchLabel={"Creating Material Docs"}
+            order={1}
         >
             <Markdown
                 data={{

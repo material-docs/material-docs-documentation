@@ -73,7 +73,7 @@ import LocaleAPI from "./pages/APIs/LocaleAPI";
 import LandingAPI from "./pages/APIs/LandingAPI";
 import LinkAPI from "./pages/APIs/LinkAPI";
 import HostingMaterialDocsOnGHPages from "./pages/Tutorials/HostingMaterialDocsOnGHPages";
-import AdvancedMaterialDocsUsage from "./pages/Tutorials/AdvancedMatrialDocsUsage";
+import AdvancedMaterialDocsUsage from "./pages/Tutorials/LocalizationWorkflow";
 
 
 export default function Documentation() {

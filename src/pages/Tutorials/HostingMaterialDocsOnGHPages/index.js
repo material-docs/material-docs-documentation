@@ -19,6 +19,7 @@ export default function HostingMaterialDocsOnGHPages() {
             name={"Hosting on GitHub Pages"}
             searchTags={["create", "material", "docs", "tutorial", "faq", "manual"]}
             searchLabel={"Hosting you Material Docs based documentation on GitHub pages"}
+            order={2}
         >
             <Markdown
                 data={{

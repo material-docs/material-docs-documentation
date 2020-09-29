@@ -1310,10 +1310,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-docs/core@^0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.5.4.tgz#8243db7556190b0ee7d7cb482b91ef0bcec2163d"
-  integrity sha512-GiI8beFhgTdyOkr8QXvCuDKmeCOFlqK+GxyJPQQmlsJ2HSU8cLCimQhUdcg/FCx3Hc5uOSFlD4v5fcNU/kVUiQ==
+"@material-docs/core@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@material-docs/core/-/core-0.5.5.tgz#b60281f797fdaec309cb9784ea2e391133a2f7c6"
+  integrity sha512-gX7HHPHTiXmJq060571+QFcHEfaAtitglKwcL4gjYYYUYulf9n69wJv53VOBrwJyStWXQAgK1CRQ4lWtHfcNfQ==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@material-ui/icons" "^4.9.1"
@@ -1326,7 +1326,6 @@
     prop-types "^15.7.2"
     react-helmet-async "^1.0.6"
     react-lazy-load-image-component "^1.5.0"
-    react-router-dom "^5.2.0"
     react-scripts "3.4.1"
     react-syntax-highlighter "^13.0.0"
     routing-manager "^2.0.4"

@@ -7,18 +7,20 @@ import React from "react";
 import DocsPage from "@material-docs/core/components/DocsPage/DocsPage";
 import Markdown from "@material-docs/core/components/Markdown/Markdown";
 
-import content from "./AdvancedMaterialDocsUsage.md";
+import content from "./LocalizationWorkflow.md";
 
 export default function AdvancedMaterialDocsUsage() {
     return (
         <DocsPage
-            name={"Advanced Material Docs Usage"}
-            searchTags={["create", "material", "docs", "tutorial", "faq", "manual", "advanced"]}
-            searchLabel={"Hosting you Material Docs based documentation on GitHub pages"}
+            name={"Localization workflow"}
+            searchTags={["create", "material", "docs", "tutorial", "faq", "manual", "advanced", "localization"]}
+            searchLabel={"Localization of Material Docs based documentation."}
+            order={3}
         >
             <Markdown
                 data={{
                     locale: "pages/HostingMaterialDocsOnGHPagesTutorial",
+                    GitHubLink: "https://github.com/material-docs/material-docs-example-project/tree/localization-workflow"
                 }}
                 children={content}
             />
