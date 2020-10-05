@@ -26,10 +26,10 @@ export default function LandingAPI() {
             ]}
             enableCss={false}
         >
-            <H2>Demos</H2>
-            <List>
-                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
-            </List>
+            {/*<H2>Demos</H2>*/}
+            {/*<List>*/}
+            {/*    <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>*/}
+            {/*</List>*/}
         </ApiPage>
     );
 }

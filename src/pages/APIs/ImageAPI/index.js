@@ -36,7 +36,7 @@ export default function ImageAPI() {
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link page={["Components", "Images"]}>Text styling</Link></ListItem>
+                <ListItem><Link page={["Components", "Images"]}>Images</Link></ListItem>
             </List>
         </ApiPage>
     );

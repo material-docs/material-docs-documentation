@@ -1,25 +1,19 @@
-# Хостинг Material Docs на GitHub Pages
-> Этот туториал использует проект, созданный в [{"text": "предыдущем уроке", "page": "Tutorials/Creating Material Docs"}]().
-## Настройка проекта для GitHub Pages
-### Проблема
-Material Docs - это одно страничное React приложение, которое использует __react-router-dom__. Это означает, что
-при переключении между страницами _URL_ меняется без перезагрузки страницы. Когда пользователь обращается на сайт, который 
-хостится с помощью GitHub Pages, хостинг вернет страницу __index.thml__ или же ту, которая указана в _URL_. 
+# &{&&locale/headers/hostingOnGH}&
+> &{&&locale/prevTutorial}& [{"text": "&{&&locale/prevLesson}&", "page": "Tutorials/Creating Material Docs"}]().
+## &{&&locale/headers/projectSetup}&
+### &{&&locale/headers/problem}&
+&{&&locale/overview}&
 > _URL_: ```https://material-docs.github.io/material-docs-example-project/PAGE_NAME```
 
-Проще говоря, если мы захостим Material Docs на GitHub Pages без дополнительной настройки - при перезагрузке страницы 
-будем получать страницу __404 | Not found__.
-### Решение в теории
-Для того, чтоб предотвратить данную проблему, предлагается: 
-* Создать страницу __404.html__, которая будет помещать путь из _URL_ в __query string__ запроса и делать редирект на 
-_URL_, который ведет на __index.html__. 
-* На странице __index.html__ мы будем обратно разбирать __query string__ и возвращать все на место __до того, как запустится react__.
+&{&&locale/overview2}&
+### &{&&locale/headers/solutionTheory}&
+&{&&locale/suggestions}&
 
-### Решение на практике
-Создайте файл __.nojekyll__ в директории __public__. Он нужен для того, чтоб GitHub Pages ну использовала фреймворк Jekyll.
-> По умолчанию, GitHub Pages использует Jekyll
+### &{&&locale/headers/solutionPractice}&
+&{&&locale/jekyll}&
+> &{&&locale/jekyllNote}& Jekyll
 
-Теперь, необходимо добавить в директорию __public__ файл __404.html__ с таким содержанием:
+&{&&locale/page404}&
 ##### 404.html
 ```{"type": "code", "themeLight": "darcula"}
 <!DOCTYPE html>
@@ -64,11 +58,9 @@ _URL_, который ведет на __index.html__.
 </body>
 </html>
 ``` 
-> Переменная ___segmentCount___ указывает количество элементов пути, которые не надо сериализовать.  
-> В случае GitHub Pages - необходимо выставить значение ___segmentCount___ = 1.  
-> Если вы собираетесь привязать собственный домен - посчитайте ___segmentCount___ и выставьте его.
+&{&&locale/segmentCount}&
 
-Далее, добавьте в файл __index.html__ в тэг _head_ следующий код:
+&{&&locale/pageIndex}&
 ##### index.html
 ```{"type": "code", "themeLight": "darcula"}
 <!-- Start Single Page Apps for GitHub Pages -->
@@ -104,10 +96,10 @@ _URL_, который ведет на __index.html__.
 <!-- End Single Page Apps for GitHub Pages -->
 ```
 Теперь, осталось скомпилировать Material Docs и настроить GitHub Pages :)
-## Создание репозитория
+## &{&&locale/headers/repoCreating}&
 Создайте репозиторий на _GitHub_ с любым названием, в нашем случае - ___material-docs-example-project___. После, 
 загрузите в него файлы с помощью любого программного обеспечения на ваше усмотрение.
-## Компиляция
+## &{&&locale/headers/compilation}&
 > В файле __package.json__ добавьте поле _homepage_ с адресом страницы на GitHub Pages.  
 > Пример адреса ```https://YOUR_USERNAME.github.io/REPOSITORY_NAME/```
 
@@ -123,13 +115,13 @@ $ npm run build
 ```
 Таким образом мы получили практически готовую к публикации веб страницу в директории __build__.  
 Переименуйте эту директорию в __docs__.
-## Настройка GitHub Pages
-### Базовая настройка
+## &{&&locale/headers/ghPagesSetup}&
+### &{&&locale/headers/basicSetup}&
 Зайдите в раздел __Settings__ своего репозитория и найдите там подраздел __GitHub Pages__.
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesInitialImage", "fullWidth": true, "frame": true}]()
 В разделе __Source__ выберите целевую ветку и в поле __директория__ выберите ___/docs___. Сохраните настройки.
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesSetupImage", "fullWidth": true, "frame": true}]()
-### Привязывание собственного домена
+### &{&&locale/headers/ownDomainHooking}&
 > Для примера, мы будем использовать поддомен ___example.material-docs.com___  
 > _Интерфейс управления доменом может отличаться в зависимости от вашего хостинга. В примере хостинг_ __Imena.ua__
 
@@ -137,11 +129,11 @@ $ npm run build
 ![{"alt": "GitHub Pages", "src": "&&DNSSetup", "fullWidth": true, "frame": true}]()
 > Если вы используете не поддомен - вместо _example_ введите ___www___  
 > _185.199.111.153 - адрес GitHub Pages на момент создания туториала._
-#### Дальнейшие шаги
+#### &{&&locale/headers/nextSteps}&
 * Посчитайте значение параметра ___segmentCount___ в файле __404.html__. ([Как это сделать](#решение-на-практике)) 
 * В файле __package.json__ выставьте __свой домен__ в поле _homepage_.
 * Добавляем домен в настройки GitHub Pages в поле для домена.
 
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesDNSSetup", "fullWidth": true, "frame": true}]()
-## Исходники на GitHub
-Вы можете найти єтот пример пример на GitHub [здесь](https://github.com/material-docs/material-docs-example-project/tree/hosting-on-gh-pages)
+## &{&&locale/headers/ghSources}&
+Вы можете найти этот пример на GitHub [здесь](https://github.com/material-docs/material-docs-example-project/tree/hosting-on-gh-pages)
