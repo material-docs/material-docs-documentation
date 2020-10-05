@@ -3,6 +3,32 @@
   "label": "English",
   "locale": {
     "pages": {
+      "HostingMaterialDocsOnGHPagesTutorial": {
+        "headers": {
+          "hostingOnGH": "Хостинг Material Docs на GitHub Pages",
+          "projectSetup": "Настройка проекта для GitHub Pages",
+          "problem": "Проблема",
+          "solutionTheory": "Решение в теории",
+          "solutionPractice": "Решение на практике",
+          "repoCreating": "Создание репозитория",
+          "compilation": "Компиляция",
+          "ghPagesSetup": "Настройка GitHub Pages",
+          "basicSetup": "Базовая настройка",
+          "ownDomainHooking": "Привязывание собственного домена",
+          "nextSteps": "Дальнейшие шаги",
+          "ghSources": "Исходники на GitHub"
+        },
+        "prevTutorial": "Этот туториал использует проект, созданный в",
+        "prevLesson": "предыдущем уроке",
+        "overview": "Material Docs - это одно страничное React приложение, которое использует __react-router-dom__. Это означает, что\nпри переключении между страницами _URL_ меняется без перезагрузки страницы. Когда пользователь обращается на сайт, который \nхостится с помощью GitHub Pages, хостинг вернет страницу __index.thml__ или же ту, которая указана в _URL_. ",
+        "overview2": "Проще говоря, если мы захостим Material Docs на GitHub Pages без дополнительной настройки - при перезагрузке страницы \nбудем получать страницу __404 | Not found__.",
+        "suggestions": "Для того, чтоб предотвратить данную проблему, предлагается: \n* Создать страницу __404.html__, которая будет помещать путь из _URL_ в __query string__ запроса и делать редирект на \n_URL_, который ведет на __index.html__. \n* На странице __index.html__ мы будем обратно разбирать __query string__ и возвращать все на место __до того, как запустится react__.",
+        "jekyll": "Создайте файл __.nojekyll__ в директории __public__. Он нужен для того, чтоб GitHub Pages ну использовала фреймворк Jekyll.",
+        "jekyllNote": "По умолчанию, GitHub Pages использует",
+        "page404": "Теперь, необходимо добавить в директорию __public__ файл __404.html__ с таким содержанием:",
+        "segmentCount": "> Переменная ___segmentCount___ указывает количество элементов пути, которые не надо сериализовать.  \n> В случае GitHub Pages - необходимо выставить значение ___segmentCount___ = 1.  \n> Если вы собираетесь привязать собственный домен - посчитайте ___segmentCount___ и выставьте его.",
+        "pageIndex": "Далее, добавьте в файл __index.html__ в тэг _head_ следующий код:"
+      },
       "CreatingMaterialDocsTutorial": {
         "headers": {
           "creatingMaterialDocs": "Creating Material Docs",

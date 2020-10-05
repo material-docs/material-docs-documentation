@@ -27,7 +27,7 @@ export default function AutoDocsMenuAPI() {
         >
             <H2>Demos</H2>
             <List>
-                <ListItem><Link page={["Components", "Text decorators"]}>Text styling</Link></ListItem>
+                <ListItem><Link page={["Components", "Layout"]}>Layout</Link></ListItem>
             </List>
         </ApiPage>
     );

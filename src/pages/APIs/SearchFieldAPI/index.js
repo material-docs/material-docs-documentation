@@ -37,10 +37,10 @@ export default function SearchFieldAPI() {
                 {name: "listPaper", global: "MaterialDocs-listPaper", description: locale.css.listPaper},
             ]}
         >
-            <H2>Demos</H2>
-            <List>
-                <ListItem><Link>Search</Link></ListItem>
-            </List>
+            {/*<H2>Demos</H2>*/}
+            {/*<List>*/}
+            {/*    <ListItem><Link>Search</Link></ListItem>*/}
+            {/*</List>*/}
         </ApiPage>
     );
 }

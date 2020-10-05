@@ -29,10 +29,10 @@ export default function LanguageSelectorAPI() {
                 {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
-            <H2>Demos</H2>
-            <List>
-                <ListItem><Link>Locales</Link></ListItem>
-            </List>
+            {/*<H2>Demos</H2>*/}
+            {/*<List>*/}
+            {/*    <ListItem><Link>Locales</Link></ListItem>*/}
+            {/*</List>*/}
         </ApiPage>
     );
 }

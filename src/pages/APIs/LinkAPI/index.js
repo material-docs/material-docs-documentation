@@ -29,10 +29,10 @@ export default function LinkAPI() {
                 {name: "root", global: "MaterialDocs-root", description: locale.css.root},
             ]}
         >
-            <H2>Demos</H2>
-            <List>
-                <ListItem><Link page={["Components", "Lists"]}>Lists</Link></ListItem>
-            </List>
+            {/*<H2>Demos</H2>*/}
+            {/*<List>*/}
+            {/*    <ListItem><Link page={["Components", "Lists"]}>Lists</Link></ListItem>*/}
+            {/*</List>*/}
         </ApiPage>
     );
 }
