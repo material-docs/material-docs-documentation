@@ -1,2 +1,0 @@
-(this["webpackJsonpmaterial-docs-documentation"]=this["webpackJsonpmaterial-docs-documentation"]||[]).push([[174],{1245:function(n,t){n.exports=function(n){return{name:"VBScript in HTML",subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_vbscriptHtml.86c90181.chunk.js.map

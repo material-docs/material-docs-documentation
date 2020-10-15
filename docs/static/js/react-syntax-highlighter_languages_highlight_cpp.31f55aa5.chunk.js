@@ -1,2 +1,0 @@
-(this["webpackJsonpmaterial-docs-documentation"]=this["webpackJsonpmaterial-docs-documentation"]||[]).push([[34],{1101:function(e,a){e.exports=function(e){var a=e.requireLanguage("c-like").rawDefinition();return a.disableAutodetect=!1,a.name="C++",a.aliases=["cc","c++","h++","hpp","hh","hxx","cxx"],a}}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_cpp.31f55aa5.chunk.js.map
