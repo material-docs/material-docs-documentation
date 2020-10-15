@@ -23,7 +23,7 @@
         "overview": "Material Docs - is a single page application that uses __react-router-dom__. It means that when switching between pages, _URL_ changes without reloading the page. When a user visits a site that hosted with GitHub Pages, the hosting will return the __index.thml__ page or the one specified in the _URL_.",
         "overview2": "Simply put, if we host Material Docs on GitHub Pages without additional configuration - on page reload will receive page __404 | Not found__.",
         "suggestions": "In order to prevent this problem, it is proposed:\n* Create a __404.html__ page that will put the path from _URL_ into the __query string__ of the request and redirect to _URL_, which leads to __index.html__.\n* On the __index.html__ page, we will parse the __query string__ back and put everything back in the __ position before react__ starts.",
-        "jekyll": "Create a __.nojekyll__ file in the __public__ directory. It is needed in order for GitHub Pages to use the Jekyll framework.",
+        "jekyll": "Create a __.nojekyll__ file in the __public__ directory. It is needed so that GitHub Pages does not use the Jekyll framework.",
         "jekyllNote": "By default, GitHub Pages uses",
         "page404": "Now, you need to add the __404.html__ file to the __public__ directory with the following content:",
         "segmentCount": "> The variable ___segmentCount___ indicates the number of path elements that do not need to be serialized.\n> In the case of GitHub Pages, you need to set the value ___segmentCount___ = 1.\n> If you are going to link your own domain, count ___segmentCount___ and set it.",
