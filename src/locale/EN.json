@@ -3,6 +3,41 @@
   "label": "English",
   "locale": {
     "pages": {
+      "LocalizationWorkflowTutorial": {
+        "headers": {
+          "localizationProcess": "Localization process",
+          "localization": "Localization",
+          "creatingLang": "Creating a language pack",
+          "langAccess": "Access to the language pack",
+          "langTranslation": "Adding a translation",
+          "interfaceLocalization": "Interface localization",
+          "mechanismAccess": "Access to the localization engine",
+          "sourcesOnGitHub": "Source codes on"
+        },
+        "langStructureCaption": "Material Docs has a built-in localization mechanism. The language pack has the following structure:",
+        "langStructureName": "The name of the language pack. (_recommends naming according to standards, e.g. __en-us___)",
+        "langStructureLabel": "The nice name of the language pack will be displayed in the interface.",
+        "langStructureLocale": "The object that stores your localization data.",
+        "langStructureLoadLang": "The function to be called when the language is loaded. Needed to get localization from a remote host.",
+        "langStructureComment": "One of the parameters must be defined in the Lang object __: _locale_ or _loadLang_!__",
+        "creatingLang": "Let's create a language pack for existing pages and transfer it to",
+        "applyingLang": "Now that we have created one language pack, we can start the Material Docs localization system. To do this, you need to transfer the package to",
+        "appliedLang": "A language field appeared in the upper right corner.",
+        "accessingLang": "Now, let's get the text from the language pack. To do this, we will use the ```<Locale />``` component. In the parameter ___path___ specifies the path to the variable inside the _locale_ object in the language pack.",
+        "accessingLangComment": "> Please note that localization of the ```<Markdown />``` component needs to be done differently. This component contains\n> own parameter ___locale___, with which we advise you to specify the path in the language pack. ",
+        "translating": "After we have created ___defaultLanguage___, we can move on to translation.",
+        "translatingComment": "Use only the fields specified in the ___locale___ field of the __ default language pack__.",
+        "createTranslate": "Let's create a translation:",
+        "missingFieldsComment": "Note that __translation__ contains __not all of the fields__ that are in the standard language pack. Fields that are not in the translation __ will be taken from the standard package __.",
+        "providingLang": "Now, let's pass the ___langs___ parameter to the ```<DocsLayout />``` component:",
+        "languageSwitch": "Now, the language selection button on the top right of the interface is available and offers a choice of 2 languages.",
+        "interfaceTranslating": "The MaterialDocs interface is in English by default. In order to translate it, you need to add to the next\nstructure in the ___locale___ field of the language pack:",
+        "interfaceTranslated": "Now, the documentation interface has been translated. ",
+        "usingHooks": "You can access the localization engine using the ___useLang()___ hook or the ___withLang()___ higher-order component. We advise you to use them only as a last resort. ",
+        "sourcesOnGitHub": "You can find the sources for this example at",
+        "here": "here"
+
+      },
       "HostingMaterialDocsOnGHPagesTutorial": {
         "headers": {
           "hostingOnGH": "Hosting Material Docs on GitHub Pages",
