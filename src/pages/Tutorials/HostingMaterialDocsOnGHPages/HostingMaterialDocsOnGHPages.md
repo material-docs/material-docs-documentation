@@ -95,45 +95,37 @@
 </script>
 <!-- End Single Page Apps for GitHub Pages -->
 ```
-Теперь, осталось скомпилировать Material Docs и настроить GitHub Pages :)
+&{&&locale/compiling}&
 ## &{&&locale/headers/repoCreating}&
-Создайте репозиторий на _GitHub_ с любым названием, в нашем случае - ___material-docs-example-project___. После, 
-загрузите в него файлы с помощью любого программного обеспечения на ваше усмотрение.
+&{&&locale/repoCreation}&
 ## &{&&locale/headers/compilation}&
-> В файле __package.json__ добавьте поле _homepage_ с адресом страницы на GitHub Pages.  
-> Пример адреса ```https://YOUR_USERNAME.github.io/REPOSITORY_NAME/```
+&{&&locale/packageSetup}& ```https://YOUR_USERNAME.github.io/REPOSITORY_NAME/```
 
-Для того, чтоб разместить документацию на GtiHub Pages, необходимо скомпилировать проект. Для этого, необходимо выполнить
-команду в директории, где находится файл ```package.json``` :  
-Для __yarn__: 
+&{&&locale/building}& ```package.json``` :  
+&{&&locale/for}& __yarn__: 
 ```{"type": "code", "themeLight": "darcula"}
 $ yarn run build
 ```
-Для __npm__: 
+&{&&locale/for}& __npm__: 
 ```{"type": "code", "themeLight": "darcula"}
 $ npm run build
 ```
-Таким образом мы получили практически готовую к публикации веб страницу в директории __build__.  
-Переименуйте эту директорию в __docs__.
+&{&&locale/dirSetup}&
 ## &{&&locale/headers/ghPagesSetup}&
 ### &{&&locale/headers/basicSetup}&
-Зайдите в раздел __Settings__ своего репозитория и найдите там подраздел __GitHub Pages__.
+&{&&locale/settings}&
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesInitialImage", "fullWidth": true, "frame": true}]()
-В разделе __Source__ выберите целевую ветку и в поле __директория__ выберите ___/docs___. Сохраните настройки.
+&{&&locale/source}&
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesSetupImage", "fullWidth": true, "frame": true}]()
 ### &{&&locale/headers/ownDomainHooking}&
-> Для примера, мы будем использовать поддомен ___example.material-docs.com___  
-> _Интерфейс управления доменом может отличаться в зависимости от вашего хостинга. В примере хостинг_ __Imena.ua__
+&{&&locale/hostingSetup}&
 
-Заходим в настройки домена и добавляем запись:
+&{&&locale/hostingSettings}&
 ![{"alt": "GitHub Pages", "src": "&&DNSSetup", "fullWidth": true, "frame": true}]()
-> Если вы используете не поддомен - вместо _example_ введите ___www___  
-> _185.199.111.153 - адрес GitHub Pages на момент создания туториала._
+&{&&locale/hostingComment}&
 #### &{&&locale/headers/nextSteps}&
-* Посчитайте значение параметра ___segmentCount___ в файле __404.html__. ([Как это сделать](#решение-на-практике)) 
-* В файле __package.json__ выставьте __свой домен__ в поле _homepage_.
-* Добавляем домен в настройки GitHub Pages в поле для домена.
+&{&&locale/hostingSteps}&
 
 ![{"alt": "GitHub Pages", "src": "&&GitHubPagesDNSSetup", "fullWidth": true, "frame": true}]()
 ## &{&&locale/headers/ghSources}&
-Вы можете найти этот пример на GitHub [здесь](https://github.com/material-docs/material-docs-example-project/tree/hosting-on-gh-pages)
+&{&&locale/githubExample}& [&{&&locale/here}&](https://github.com/material-docs/material-docs-example-project/tree/hosting-on-gh-pages)

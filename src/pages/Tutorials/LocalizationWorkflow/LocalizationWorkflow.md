@@ -1,18 +1,18 @@
-# Процесс локализации
-## Локализация 
-### Создание языкового пакета
-В Material Docs присутствует встроенный механизм для локализации. Языковой пакет имеет следующую структуру:
+# &{&&locale/headers/localizationProcess}&
+## &{&&locale/headers/localization}&
+### &{&&locale/headers/creatingLang}&
+&{&&locale/langStructureCaption}&
 * Lang
-  * ```name: string``` -  Название языкового пакета. (_рекомендует называть в соответствии со стандартами, например __en-us___)
-  * ```label: string``` - Красивое названия языкового пакета, будет отображено в интерфейсе.
-  * ```locale: abject``` - Объект, в котором хранятся ваши данные о локализации. 
-  * ```loadLang(): object``` - Функция, которая будет вызвана при загрузке языка. Нужна для получения локализации с удаленного хоста.
+  * ```name: string``` -  &{&&locale/langStructureName}&
+  * ```label: string``` - &{&&locale/langStructureLabel}&
+  * ```locale: object``` - &{&&locale/langStructureLocale}&
+  * ```loadLang(): object``` - &{&&locale/langStructureLoadLang}&
 
-> В объекте Lang __обязательно должен быть определен один из параметров: _locale_ или _loadLang_!__
+> &{&&locale/langStructureComment}&
 
-Создадим языковой пакет для существующих страниц и передадим его в ```<DocsLayout/>```:
+&{&&locale/creatingLang}& ```<DocsLayout/>```:
 ##### locale/EN.js
-```
+```{"type": "code", "themeLight": "darcula"}
 export default {
     name: "en-us",
     label: "English",
@@ -33,9 +33,8 @@ export default {
     }
 }
 ```
-Теперь, когда мы создали один языковой пакет, мы можем запустить систему локализации Material Docs. Для этого 
-нужно передать пакет в ```<DocsLayout/>```:
-```
+&{&&locale/applyingLang}& ```<DocsLayout/>```:
+```{"type": "code", "themeLight": "darcula"}
 <DocsLayout
     name={"My documentation"}
     version={"1.0.0-alpha"}
@@ -49,14 +48,12 @@ export default {
 {/*...*/}
 </DocsLayout>
 ``` 
-В правом верхнем углу появилось поле с языком. 
-### Доступ к языковому пакету
-Теперь, давайте достанем текст из языкового пакета. Для этого воспользуемся компонентом ```<Locale/>```. В параметре ___path___
- указывается путь к переменной внутри объекта _locale_ в языковом пакете.
-> Обратите внимание, локализацию компонента ```<Markdown/>``` нужно проводить иначе. В этом компоненте присутствует 
-> собственный параметр ___locale___, с помощью которого мы советуем указывать путь в языковом пакете. 
+&{&&locale/appliedLang}& 
+### &{&&locale/headers/langAccess}&
+&{&&locale/accessingLang}& 
+&{&&locale/accessingLangComment}& 
 
-```
+```{"type": "code", "themeLight": "darcula"}
 import React from "react";
 import DocsPage from "@material-docs/core/components/DocsPage";
 import H1 from "@material-docs/core/components/H1";
@@ -90,12 +87,12 @@ export default function FirstPage() {
     );
 }
 ```
-### Добавление перевода
-После того, как мы создали ___defaultLanguage___, можно переходить к переводу.
-> Используйте только те поля, которые указаны в поле ___locale___ __языкового пакета по умолчанию__.
+### &{&&locale/headers/langTranslation}&
+&{&&locale/translating}& 
+> &{&&locale/translatingComment}& 
 
-Создадим перевод:
-```
+&{&&locale/createTranslate}& 
+```{"type": "code", "themeLight": "darcula"}
 export default {
     name: "ru-ru",
     label: "Русский",
@@ -109,11 +106,10 @@ export default {
     }
 }
 ```
-> Заметьте, __перевод__ содержит __не все поля__, которые присутствуют в стандартном языковом пакете. Поля, которых нет 
-> переводе __будут взяты из стандартного пакета__.
+> &{&&locale/missingFieldsComment}& 
 
-Теперь, давайте передадим в компонент ```<DocsLayout/>``` параметр ___langs___:
-```
+&{&&locale/providingLang}& 
+```{"type": "code", "themeLight": "darcula"}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
@@ -157,11 +153,10 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-Теперь, кнопка выбора языка справа сверху интерфейса доступна и предлагает на выбор 2 языка.
-### Локализация интерфейса Material Docs
-Интерфейс MaterialDocs по умолчанию имеет английский язык. Для того, чтоб перевести его, необходимо добавить в следующую
-структуру в поле ___locale___ языкового пакета:
-```javascript
+&{&&locale/languageSwitch}& 
+### &{&&locale/headers/interfaceLocalization}& Material Docs
+&{&&locale/interfaceTranslating}& 
+```{"type": "code", "themeLight": "darcula"}
 export default {
     name: "ru-ru",
     label: "Русский",
@@ -202,10 +197,9 @@ export default {
     }
 }
 ```
-Теперь, интерфейс документации переведен. 
-### Доступ к механизму локализации
-Вы можете получить доступ к механизму локализации с помощью хука ___useLang()___ или компонента высшего порядка ___withLang()___.
-Советуем пользоваться ими только в крайних случаях. 
+&{&&locale/interfaceTranslated}& 
+### &{&&locale/headers/mechanismAccess}&
+&{&&locale/usingHooks}& 
 
-## Исходники на GitHub
-Вы можете найти исходники этого примера на GitHub [здесь](&&GitHubLink)
+## &{&&locale/headers/sourcesOnGitHub}& GitHub
+&{&&locale/sourcesOnGitHub}&  GitHub [&{&&locale/here}& ](&&GitHubLink)

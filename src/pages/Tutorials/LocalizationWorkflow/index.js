@@ -19,7 +19,7 @@ export default function AdvancedMaterialDocsUsage() {
         >
             <Markdown
                 data={{
-                    locale: "pages/HostingMaterialDocsOnGHPagesTutorial",
+                    locale: "pages/LocalizationWorkflowTutorial",
                     GitHubLink: "https://github.com/material-docs/material-docs-example-project/tree/localization-workflow"
                 }}
                 children={content}

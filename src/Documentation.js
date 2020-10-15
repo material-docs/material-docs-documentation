@@ -103,6 +103,7 @@ export default function Documentation() {
                     tooltip: "Github source code"
                 }
             ]}
+            onVersionClick={() => window.location = "https://github.com/material-docs/material-docs/releases"}
         >
             <DocsMenu dense>
                 <AutoDocsMenu/>
