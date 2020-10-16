@@ -1,2 +1,0 @@
-(this["webpackJsonp@material-docs/material-docs-documentation"]=this["webpackJsonp@material-docs/material-docs-documentation"]||[]).push([[54],{1177:function(e,n){e.exports=function(e){return{name:"ERB",subLanguage:"xml",contains:[e.COMMENT("<%#","%>"),{begin:"<%[%=-]?",end:"[%-]?%>",subLanguage:"ruby",excludeBegin:!0,excludeEnd:!0}]}}}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_erb.d0571fb2.chunk.js.map

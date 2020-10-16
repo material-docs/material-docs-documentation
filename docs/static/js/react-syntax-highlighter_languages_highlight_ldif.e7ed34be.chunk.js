@@ -1,0 +1,2 @@
+(this["webpackJsonp@material-docs/material-docs-documentation"]=this["webpackJsonp@material-docs/material-docs-documentation"]||[]).push([[91],{1218:function(e,a){e.exports=function(e){return{name:"LDIF",contains:[{className:"attribute",begin:"^dn",end:": ",excludeEnd:!0,starts:{end:"$",relevance:0},relevance:10},{className:"attribute",begin:"^\\w",end:": ",excludeEnd:!0,starts:{end:"$",relevance:0}},{className:"literal",begin:"^-",end:"$"},e.HASH_COMMENT_MODE]}}}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_highlight_ldif.e7ed34be.chunk.js.map
