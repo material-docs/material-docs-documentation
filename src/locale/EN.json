@@ -3,6 +3,30 @@
   "label": "English",
   "locale": {
     "pages": {
+      "IntroductionPage": {
+        "headers": {
+          "introduction": "Introduction",
+          "what": "What is Material Docs",
+          "why": "Why Material Docs",
+          "mui": "A little about Material UI",
+          "docs": "Documentation"
+        },
+        "what": "__Material Docs__ is a Material Design-style documentation framework based on React. With Material Docs, you can easily create documentation pages without bothering with the table of contents, customization of paths, customization of search and complex customization of localization.",
+        "why1": "Material Docs has a built-in localization, search and basic markup system. ",
+        "why2": "Out of the box, you immediately get a large set of visual components for decorating content. ",
+        "why3": "All Material Docs components work well with each other and have __built-in theming__.",
+        "why4": "System of __automatic menu generation__, based on page settings.",
+        "why5": "Deep markdown support. You can create different __components of material Docs__ with __markdown__!",
+        "why6": "Built-in dark and light theme.",
+        "why7": "The ability to expand the system. Material Docs includes tools that allow you to __create extensions__ and customize the system in general.",
+        "mui": "__Material Docs__ is based on the __Material UI__ visual component library. We recommend using it to create\ncustom extensions, though, you can use other libraries as well.",
+        "docs": "The documentation is divided into sections:",
+        "docsPart1": "information for a quick start.",
+        "docsPart2": "detailed lessons on different approaches to creating Material Docs.",
+        "docsPart3": "Material Docs component demo pages.",
+        "docsPart4": "api documentation for each of the components.",
+        "docsPart5": "documentation of official additions to Material Docs."
+      },
       "LocalizationWorkflowTutorial": {
         "headers": {
           "localizationProcess": "Localization process",

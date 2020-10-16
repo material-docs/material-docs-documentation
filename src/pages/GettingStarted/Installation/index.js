@@ -44,6 +44,7 @@ export default function Installation() {
             searchDescription={"Installation page for MaterialDocs."}
             searchLabel={"Installation"}
             searchTags={["installation", "getting", "started"]}
+            order={2}
         >
             <H1>Installation</H1>
             <H3 noTag noDivider>Install MaterialDocs - framework for creating documentation.</H3>
@@ -62,7 +63,7 @@ export default function Installation() {
             <H2>Info</H2>
             <Markdown>You can start using MaterialDocs with minimal front-end infrastructure. Package providing a lot of
                 components to create great documentation site.</Markdown>
-            <H4>Some steps tu get started</H4>
+            <H4>Some steps to get started</H4>
             <List>
                 <ListItem>Read <Bold>Components</Bold> tab and get access to demonstration source code.</ListItem>
                 <ListItem>Read <Bold>Component APIs</Bold> tab and get to know how to manipulate with

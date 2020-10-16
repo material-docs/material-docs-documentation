@@ -74,6 +74,7 @@ import LandingAPI from "./pages/APIs/LandingAPI";
 import LinkAPI from "./pages/APIs/LinkAPI";
 import HostingMaterialDocsOnGHPages from "./pages/Tutorials/HostingMaterialDocsOnGHPages";
 import AdvancedMaterialDocsUsage from "./pages/Tutorials/LocalizationWorkflow";
+import Introduction from "./pages/GettingStarted/Introduction";
 
 
 export default function Documentation() {
@@ -113,6 +114,7 @@ export default function Documentation() {
             </Landing>
             <DocsPages>
                 <PagesGroup name={"Getting started"} order={1}>
+                    <Introduction/>
                     <Installation/>
                 </PagesGroup>
                 <PagesGroup name={"Tutorials"} order={2}>
