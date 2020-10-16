@@ -29,6 +29,8 @@ import demoScreenshotDesktop1 from "./images/demo-screenshot-desktop-1.png";
 import demoScreenshotDesktop2 from "./images/demo-screenshot-desktop-2.png";
 import Divider from "@material-ui/core/Divider";
 import useSwitchPage from "@material-docs/core/hooks/useSwitchPage";
+import exampleCode from "./exampleCode.md";
+import BuildIcon from '@material-ui/icons/Build';
 
 export default function MaterialDocsLanding() {
     const classes = useStyles();
@@ -110,7 +112,7 @@ export default function MaterialDocsLanding() {
                                                 experience. But it is optional.</Typography>
                                             <Code
                                                 theme={"darcula"}>{"$ npm install @material-ui/core\n$ npm install @material-ui/icons"}</Code>
-                                            <CardActions>
+                                            <CardActions >
                                                 <Button onClick={() => switchPage(["Getting started", "Installation"])}>
                                                     Read installation docs
                                                 </Button>
@@ -124,7 +126,7 @@ export default function MaterialDocsLanding() {
                                     <Card className={classes.card}>
                                         <CardHeader
                                             avatar={
-                                                <Avatar><GetAppIcon/></Avatar>
+                                                <Avatar><BuildIcon/></Avatar>
                                             }
                                             title={<Typography variant={"h6"}>Installation</Typography>}
                                         />
@@ -132,12 +134,12 @@ export default function MaterialDocsLanding() {
                                             <Typography>MaterialDocs components work without any additional setup, and don't
                                                 pollute
                                                 the global scope.</Typography>
-                                            <Code theme={"darcula"}>$ npm install @material-docs/core</Code>
-                                            <CardActions>
-                                                <Button onClick={event => switchPage(["Tutorials", "Creating Material Docs"])}>
-                                                    Explore the docs
-                                                </Button>
-                                            </CardActions>
+                                            <Code theme={"darcula"}>{exampleCode}</Code>
+                                            {/*<CardActions>*/}
+                                            {/*    <Button onClick={event => switchPage(["Tutorials", "Creating Material Docs"])}>*/}
+                                            {/*        Explore the docs*/}
+                                            {/*    </Button>*/}
+                                            {/*</CardActions>*/}
                                         </CardContent>
                                     </Card>
                                 </Box>
